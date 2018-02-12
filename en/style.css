@@ -1,0 +1,481 @@
+/* font */
+
+@font-face {
+	font-family: "Tahoma Bold";
+	src: url(assets/font/tahomabd.ttf);
+}
+
+@font-face {
+	font-family: "Georgia";
+	src: url(assets/font/georgia.ttf);
+}
+
+@font-face {
+	font-family: "Century Gothic";
+	src: url(assets/font/Century Gothic.ttf);
+}
+
+/* global stylesheet */
+body {
+	margin: 0px auto;
+	min-width: 1024px;
+	text-align: center;
+}
+
+.box-container {
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0px auto;
+}
+
+.wrap {
+	width: 1024px;
+	height: 100%;
+	margin: 0px auto;
+	position: relative;
+}
+
+.text-transparent {
+	opacity: 0.65;
+}
+
+/* banner stylesheet */
+#banner {
+	max-width: 1920px;
+	height: 154px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#banner .logo {
+	background-image: url(assets/image/6/logo.png);
+	width: 63px;
+	height: 57px;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 68px;
+	left: 36px;
+}
+
+#banner .cp-name {
+	font-family: "Tahoma Bold";
+	font-size: 30px;
+	color: #333333;
+	left: 119px;
+	bottom: 38px;
+	position: absolute;
+}
+
+#banner .lang-en {
+	background-image: url(assets/image/6/flag_England.jpg);
+	width: 45px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	bottom: 43px;
+	right: 40px;
+}
+
+#banner .lang-cn {
+	background-image: url(assets/image/6/flag_china.jpg);
+	width: 45px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	bottom: 43px;
+	right: 95px;
+}
+
+#banner .nav {
+	background-repeat: no-repeat;
+	background-position: left;
+	position: absolute;
+	bottom: 38px;
+	text-align: left;
+	font-family: "Georgia";
+	font-size: 24px;
+}
+
+#banner .home {
+	background-image: url(assets/image/6/nav_icon_home_unpressed.png);
+	background-size: 20px 18px;
+	min-height: 18px;
+	min-width: 20px;
+	right: 1225px;
+	padding-left: 30px;
+	color: #333333;
+}
+
+#banner .research {
+	background-image: url(assets/image/6/nav_icon_quantamental_unpressed.png);
+	background-size: 15px 18px;
+	min-height: 18px;
+	min-width: 15px;
+	right: 915px;
+	padding-left: 25px;
+	color: #333333;
+}
+
+#banner .investing {
+	background-image: url(assets/image/6/nav_icon_alternative_unpressed.png);
+	background-size: 19px 18px;
+	min-height: 18px;
+	min-width: 19px;
+	right: 633px;
+	padding-left: 29px;
+	color: #333333;
+}
+
+#banner .blockchain {
+	background-image: url(assets/image/6/nav_icon_blockchain_unpressed.png);
+	background-size: 18px 20px;
+	min-height: 20px;
+	min-width: 18px;
+	right: 320px;
+	padding-left: 28px;
+	color: #333333;
+}
+
+#banner .career {
+	background-image: url(assets/image/6/nav_icon_career_unpressed.png);
+	background-size: 20px 17px;
+	min-height: 17px;
+	min-width: 20px;
+	right: 190px;
+	padding-left: 30px;
+	color: #333333;
+}
+
+/* footer sytlesheet */
+#footer {
+	max-width: 1920px;
+	height: 378px;
+	background-color: #003642;
+	margin: 0px auto;
+	position: relative;
+}
+
+#footer .logo {
+	background-image: url(assets/image/7/footer_logo.png);
+	width: 39px;
+	height: 34px;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 64px;
+	left: 0px;
+}
+
+#footer .cp-name {
+	font-family: "Tahoma Bold";
+	font-size: 24px;
+	color: #ffffff;
+	opacity: 0.8;
+	left: 55px;
+	top: 60px;
+	position: absolute;
+}
+
+#footer .content {
+	font-family: "Century Gothic";
+	font-size: 14px;
+	color: #ffffff;
+	opacity: 0.8;
+	left: 0px;
+	top: 104px;
+	position: absolute;
+	text-align: left;
+}
+
+#footer .split-line {
+	width: 1px;
+	height: 230px;
+	top: 64px;
+	position: absolute;
+	background-color: #ffffff;
+	opacity: 0.5;
+}
+
+#footer .line1 { left: 645px; }
+#footer .line2 { left: 830px; }
+
+#footer .outlink {
+	background-repeat: no-repeat;
+	background-position: left;
+	position: absolute;
+	text-align: left;
+	font-family: "Century Gothic";
+	font-size: 14px;
+	color: #ffffff;
+	left: 670px;
+}
+
+#footer .ol-wc {
+	background-image: url(assets/image/7/footer_licon_weixin.png);
+	background-size: 30px 24px;
+	min-height: 24px;
+	min-width: 30px;
+	padding-left: 50px;
+	top: 64px;
+}
+
+#footer .ol-wb {
+	background-image: url(assets/image/7/footer_licon_weibo.png);
+	background-size: 29px 23px;
+	min-height: 23px;
+	min-width: 29px;
+	padding-left: 49px;
+	top: 115px;
+}
+
+#footer .ol-fb {
+	background-image: url(assets/image/7/facebook.png);
+	background-size: 26px 26px;
+	min-height: 26px;
+	min-width: 26px;
+	padding-left: 46px;
+	top: 170px;
+}
+
+#footer .ol-tw {
+	background-image: url(assets/image/7/footer_licon_twitter.png);
+	background-size: 28px 23px;
+	min-height: 23px;
+	min-width: 28px;
+	padding-left: 48px;
+	top: 220px;
+}
+
+#footer .ol-yt {
+	background-image: url(assets/image/7/footer_licon_Youtube.png);
+	background-size: 28px 21px;
+	min-height: 21px;
+	min-width: 28px;
+	padding-left: 48px;
+	top: 275px;
+}
+
+#footer .innerlink {
+	position: absolute;
+	text-align: left;
+	font-family: "Century Gothic";
+	font-size: 14px;
+	color: #ffffff;
+	opacity: 0.8;
+	left: 855px;
+}
+
+#footer .il-home { top: 64px; }
+#footer .il-research { top: 115px; }
+#footer .il-investing { top: 170px; }
+#footer .il-blockchain { top: 220px; }
+#footer .il-career { top: 275px; }
+
+/* index.php stylesheet */
+#index { height: 3439px; }
+
+/* index.php stylesheet */
+#blockchain { height: 1852px; }
+
+#blockchain .header {
+	background-image: url(assets/image/3/Blockchain_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	height: 550px;
+	margin: 0px auto;
+}
+
+#blockchain .s1 {
+	height: 312px;
+	max-width: 1920px;
+	background-color: #e1edef;
+	margin: 0px auto;
+}
+
+#blockchain .s2 {
+	height: 478px;
+	max-width: 1920px;
+	margin: 0px auto;
+}
+
+#blockchain .s3 {
+	height: 512px;
+	max-width: 1920px;
+	background-color: #ebf2f3;
+	margin: 0px auto;
+}
+
+#blockchain .header-title {
+	font-family: "Century Gothic";
+	font-size: 72px;
+	color: #ffffff;
+	position: absolute;
+	top: 178px;
+	left: 0px;
+	text-align: left;
+}
+
+#blockchain .header-content {
+	font-family: "Georgia";
+	font-size: 22px;
+	color: #ffffff;
+	position: absolute;
+	top: 314px;
+	left: 390px;
+	text-align: left;
+}
+
+#blockchain .section-title {
+	top: 54px;
+	position: absolute;
+	left: 0px;
+	height: 40px;
+	width: 100%;
+}
+
+#blockchain .section-mark {
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	width: 8px;
+	height: 25px;
+	background-color: #006378;
+}
+
+#blockchain .section-line {
+	width: 100%;
+	height: 1px;
+	top: 39px;
+	position: absolute;
+	background-color: #9ba3a5;
+}
+
+#blockchain .section-title-text {
+	text-align: left;
+	padding-left: 25px;
+	font-family: "Georgia";
+	color: #333333;
+	font-size: 24px;
+}
+
+#blockchain .s1-text {
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+	width: 100%;
+	left: 0px;
+	top: 130px;
+	position: absolute;
+	text-align: left;
+}
+
+#blockchain .s2-frame {
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 242px;
+	height: 283px;
+	top: 135px;
+	position: absolute;
+}
+
+#blockchain .s2-frame-1 {
+	background-image: url(assets/image/3/Blockchain_advantage_pic1.jpg);
+	left: 122px;
+}
+
+#blockchain .s2-frame-2 {
+	background-image: url(assets/image/3/Blockchain_advantage_pic2.jpg);
+	left: 391px;
+}
+
+#blockchain .s2-frame-3 {
+	background-image: url(assets/image/3/Blockchain_advantage_pic3.jpg);
+	left: 658px;
+}
+
+#blockchain .s2-frame-title {
+	top: 170px;
+	width: 100%;
+	position: absolute;
+	font-family: "Georgia";
+	font-size: 24px;
+	color: #333333;
+}
+
+#blockchain .s2-frame-content {
+	top: 210px;
+	width: 100%;
+	position: absolute;
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+}
+
+#blockchain .s3-frame {
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 242px;
+	height: 314px;
+	top: 142px;
+	position: absolute;
+}
+
+#blockchain .s3-frame-1 {
+	background-image: url(assets/image/3/Blockchain_application_pic1.jpg);
+	left: 260px;
+}
+
+#blockchain .s3-frame-2 {
+	background-image: url(assets/image/3/Blockchain_application_pic2.jpg);
+	left: 525px;
+}
+
+#blockchain .s3-frame-title {
+	top: 146px;
+	width: 100%;
+	position: absolute;
+	font-family: "Georgia";
+	font-size: 24px;
+	color: #ffffff;
+}
+
+#blockchain .s3-frame1-content {
+	top: 247px;
+	width: 100%;
+	position: absolute;
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+}
+
+#blockchain .s3-frame2-content {
+	top: 220px;
+	width: 100%;
+	position: absolute;
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+}
+
+#blockchain .btn-lm {
+	background-image: url(assets/image/3/Blockchain_button_learn_more.png);
+	width: 90px;
+	height: 28px;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 275px;
+	left: 76px;
+}
+
+#blockchain .btn-lm-text {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: "Georgia";
+	font-size: 14px;
+	color: #005960;
+}
