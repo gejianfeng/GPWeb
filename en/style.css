@@ -12,7 +12,7 @@
 
 @font-face {
 	font-family: "Century Gothic";
-	src: url(assets/font/Century Gothic.ttf);
+	src: url(assets/font/CenturyGothic.ttf);
 }
 
 /* global stylesheet */
@@ -89,6 +89,17 @@ body {
 	position: absolute;
 	top: 68px;
 	left: 36px;
+}
+
+#banner .logo-gpex {
+	background-image: url(assets/image/5/GPEX_logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 64px;
+	left: 87px;
+	width: 218px;
+	height: 65px;
 }
 
 #banner .cp-name {
@@ -255,8 +266,26 @@ body {
 	top: 64px;
 }
 
+#footer .ol-wc-gpex {
+	background-image: url(assets/image/5/icon_weixin.png);
+	background-size: 30px 24px;
+	min-height: 24px;
+	min-width: 30px;
+	padding-left: 50px;
+	top: 64px;
+}
+
 #footer .ol-wb {
 	background-image: url(assets/image/7/footer_licon_weibo.png);
+	background-size: 29px 23px;
+	min-height: 23px;
+	min-width: 29px;
+	padding-left: 49px;
+	top: 115px;
+}
+
+#footer .ol-wb-gpex {
+	background-image: url(assets/image/5/icon_weibo.png);
 	background-size: 29px 23px;
 	min-height: 23px;
 	min-width: 29px;
@@ -273,6 +302,15 @@ body {
 	top: 170px;
 }
 
+#footer .ol-fb-gpex {
+	background-image: url(assets/image/5/icon_facebook.png);
+	background-size: 26px 26px;
+	min-height: 26px;
+	min-width: 26px;
+	padding-left: 46px;
+	top: 170px;
+}
+
 #footer .ol-tw {
 	background-image: url(assets/image/7/footer_licon_twitter.png);
 	background-size: 28px 23px;
@@ -282,8 +320,26 @@ body {
 	top: 220px;
 }
 
+#footer .ol-tw-gpex {
+	background-image: url(assets/image/5/icon_twitter.png);
+	background-size: 28px 23px;
+	min-height: 23px;
+	min-width: 28px;
+	padding-left: 48px;
+	top: 220px;
+}
+
 #footer .ol-yt {
 	background-image: url(assets/image/7/footer_licon_Youtube.png);
+	background-size: 28px 21px;
+	min-height: 21px;
+	min-width: 28px;
+	padding-left: 48px;
+	top: 275px;
+}
+
+#footer .ol-yt-gpex {
+	background-image: url(assets/image/5/icon_youtube.png);
 	background-size: 28px 21px;
 	min-height: 21px;
 	min-width: 28px;
@@ -429,6 +485,606 @@ body {
 #investing .rightarrow {
 	background-image: url(assets/image/2/Live_Events_arrow_right.png);
 	right: 0px;
+}
+
+/* gpex.php stylesheet */
+#gpex {	
+	height: 3410px; 
+	width: 1920px;
+}
+
+#gpex .header {
+	background-image: url(assets/image/5/banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	height: 551px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#gpex .s1 {
+	background-image: url(assets/image/5/bg1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	height: 606px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#gpex .s2 {
+	background-image: url(assets/image/5/bg2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	height: 649px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#gpex .s3 {
+	height: 955px;
+	max-width: 1920px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#gpex .s4 {
+	background-image: url(assets/image/5/bg3.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	height: 649px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#gpex .header-border1 {
+	position: absolute;
+	left: 0px;
+	top: 14px;
+	height: 537px;
+	width: 15px;
+	background-color: #c4c31d;
+}
+
+#gpex .header-border2 {
+	position: absolute;
+	left: 0px;
+	top: 14px;
+	height: 2px;
+	width: 100%;
+	background-color: #c4c31d;
+}
+
+#gpex .header-title {
+	font-family: "Georgia";
+	font-size: 48px;
+	color: #ffffff;
+	position: absolute;
+	top: 178px;
+	left: 195px;
+	text-align: left;
+}
+
+#gpex .header-content {
+	font-family: "Georgia";
+	font-size: 30px;
+	color: #ffffff;
+	position: absolute;
+	top: 275px;
+	left: 255px;
+	text-align: left;
+}
+
+#gpex .s1-border1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 48px;
+	width: 15px;
+	background-color: #3e4d53;
+}
+
+#gpex .s1-border2 {
+	position: absolute;
+	left: 0px;
+	top: 48px;
+	height: 2px;
+	width: 715px;
+	background-color: #3e4d53;
+}
+
+#gpex .s1-border3 {
+	position: absolute;
+	left: 1205px;
+	top: 48px;
+	height: 2px;
+	width: 715px;
+	background-color: #3e4d53;
+}
+
+#gpex .s1-border4 {
+	position: absolute;
+	right: 0px;
+	top: 48px;
+	height: 558px;
+	width: 15px;
+	background-color: #3e4d53;
+}
+
+#gpex .s1-title {
+	position: absolute;
+	width: 490px;
+	top: 28px;
+	left: 715px;
+	font-family: "Century Gothic";
+	font-size: 30px;
+	color: #333333;
+}
+
+#gpex .s1-content {
+	position: absolute;
+	width: 625px;
+}
+
+#gpex .s1-content-1 {
+	top: 135px;
+	left: 358px;
+}
+
+#gpex .s1-content-2 {
+	top: 255px;
+	left: 358px;
+}
+
+#gpex .s1-content-3 {
+	top: 435px;
+	left: 358px;
+}
+
+#gpex .s1-content-4 {
+	top: 135px;
+	left: 1020px;
+}
+
+#gpex .s1-content-5 {
+	top: 255px;
+	left: 1020px;
+}
+
+#gpex .s1-icon {
+	background-image: url(assets/image/5/icon1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 38px;
+	height: 43px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#gpex .s1-content-text {
+	width: 100%;
+	padding-left: 68px;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	font-family: "Georgia";
+	font-size: 24px;
+	color: #333333;
+	text-align: left;
+}
+
+#gpex .s2-border1 {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 48px;
+	width: 15px;
+	background-color: #c4c31d;
+}
+
+#gpex .s2-border2 {
+	position: absolute;
+	right: 0px;
+	top: 48px;
+	height: 2px;
+	width: 715px;
+	background-color: #c4c31d;
+}
+
+#gpex .s2-border3 {
+	position: absolute;
+	left: 0px;
+	top: 48px;
+	height: 2px;
+	width: 715px;
+	background-color: #c4c31d;
+}
+
+#gpex .s2-border4 {
+	position: absolute;
+	left: 0px;
+	top: 48px;
+	height: 601px;
+	width: 15px;
+	background-color: #c4c31d;
+}
+
+#gpex .s2-title {
+	position: absolute;
+	width: 490px;
+	top: 28px;
+	left: 715px;
+	font-family: "Century Gothic";
+	font-size: 30px;
+	color: #ffffff;
+}
+
+#gpex .s2-content {
+	position: absolute;
+	width: 625px;
+}
+
+#gpex .s2-content-1 {
+	top: 135px;
+	left: 358px;
+}
+
+#gpex .s2-content-2 {
+	top: 315px;
+	left: 358px;
+}
+
+#gpex .s2-content-3 {
+	top: 135px;
+	left: 1020px;
+}
+
+#gpex .s2-content-4 {
+	top: 315px;
+	left: 1020px;
+}
+
+#gpex .s2-icon {
+	background-image: url(assets/image/5/icon_compliance.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 43px;
+	height: 42px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#gpex .s2-content-text {
+	width: 100%;
+	padding-left: 68px;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	font-family: "Georgia";
+	font-size: 24px;
+	color: #ffffff;
+	text-align: left;
+}
+
+#gpex .s2-sub-content {
+	width: 557px;
+	position: absolute;
+	left: 68px;
+}
+
+#gpex .s2-sub-content-1 { top: 160px; }
+#gpex .s2-sub-content-2 { top: 245px; }
+
+#gpex .s2-sub-content-text {
+	width: 100%;
+	padding-left: 27px;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	font-family: "Georgia";
+	font-size: 24px;
+	color: #ffffff;
+	text-align: left;
+}
+
+#gpex .s2-sub-content-icon {
+	background-image: url(assets/image/5/icon_circle.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 10px;
+}
+
+#gpex .s3-border1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 48px;
+	width: 15px;
+	background-color: #3e4d53;
+}
+
+#gpex .s3-border2 {
+	position: absolute;
+	left: 0px;
+	top: 48px;
+	height: 2px;
+	width: 715px;
+	background-color: #3e4d53;
+}
+
+#gpex .s3-border3 {
+	position: absolute;
+	left: 1205px;
+	top: 48px;
+	height: 2px;
+	width: 715px;
+	background-color: #3e4d53;
+}
+
+#gpex .s3-border4 {
+	position: absolute;
+	right: 0px;
+	top: 48px;
+	height: 1872px;
+	width: 15px;
+	background-color: #3e4d53;
+}
+
+#gpex .s3-title {
+	position: absolute;
+	width: 490px;
+	top: 28px;
+	left: 715px;
+	font-family: "Century Gothic";
+	font-size: 30px;
+	color: #333333;
+}
+
+#gpex .s3-content {
+	position: absolute;
+	width: 600px;
+}
+
+#gpex .s3-content-1 {
+	top: 150px;
+	left: 308px;
+}
+
+#gpex .s3-content-2 {
+	top: 425px;
+	left: 308px;
+}
+
+#gpex .s3-content-3 {
+	top: 658px;
+	left: 308px;
+}
+
+#gpex .s3-content-4 {
+	top: 150px;
+	left: 984px;
+}
+
+#gpex .s3-content-5 {
+	top: 425px;
+	left: 984px;
+}
+
+#gpex .s3-icon-professionalism {
+	background-image: url(assets/image/5/icon_professionalism.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 15px;
+}
+
+#gpex .s3-icon-ability {
+	background-image: url(assets/image/5/icon_high_ability.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 0px;
+	top: 15px;
+}
+
+#gpex .s3-icon-cooperation {
+	background-image: url(assets/image/5/icon_cooperation.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 100px;
+	height: 64px;
+	left: 0px;
+	top: 15px;
+}
+
+#gpex .s3-icon-experience {
+	background-image: url(assets/image/5/icon_rich_experience.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 0px;
+	top: 15px;
+}
+
+#gpex .s3-icon-market {
+	background-image: url(assets/image/5/icon_market_insights.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 100px;
+	height: 66px;
+	left: 0px;
+	top: 15px;
+}
+
+#gpex .s3-content-title {
+	width: 100%;
+	padding-left: 120px;
+	position: absolute;
+	text-align: left;
+	top: 0px;
+	left: 0px;
+	font-family: "Century Gothic";
+	font-size: 24px;
+	color: #333333;
+}
+
+#gpex .s3-line {
+	height: 2px;
+	width: 340px;
+	position: absolute;
+	top: 45px;
+	left: 120px;
+	background-color: #3e4d53;
+}
+
+#gpex .s3-content-text {
+	width: 100%;
+	padding-left: 120px;
+	left: 0px;
+	top: 60px;
+	position: absolute;
+	font-family: "Georgia";
+	font-size: 24px;
+	color: #333333;
+	text-align: left;
+}
+
+#gpex .s4-border1 {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 48px;
+	width: 15px;
+	background-color: #c4c31d;
+}
+
+#gpex .s4-border2 {
+	position: absolute;
+	right: 0px;
+	top: 48px;
+	height: 2px;
+	width: 715px;
+	background-color: #c4c31d;
+}
+
+#gpex .s4-border3 {
+	position: absolute;
+	left: 0px;
+	top: 48px;
+	height: 2px;
+	width: 715px;
+	background-color: #c4c31d;
+}
+
+#gpex .s4-border4 {
+	position: absolute;
+	left: 0px;
+	top: 48px;
+	height: 601px;
+	width: 15px;
+	background-color: #c4c31d;
+}
+
+#gpex .s4-border5 {
+	position: absolute;
+	left: 0px;
+	top: 646px;
+	height: 3px;
+	width: 100%;
+	background-color: #c4c31d;
+}
+
+#gpex .s4-title {
+	position: absolute;
+	width: 490px;
+	top: 28px;
+	left: 715px;
+	font-family: "Century Gothic";
+	font-size: 30px;
+	color: #ffffff;
+}
+
+#gpex .s4-content {
+	position: absolute;
+	width: 1200px;
+	left: 368px;
+}
+
+#gpex .s4-content-1 { top: 120px; }
+#gpex .s4-content-2 { top: 515px; }
+
+#gpex .s4-content-icon {
+	background-image: url(assets/image/5/icon2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	left: 0px;
+	top: 0px;
+}
+
+#gpex .s4-content-text {
+	width: 100%;
+	padding-left: 80px;
+	left: 0px;
+	top: 5px;
+	position: absolute;
+	font-family: "Georgia";
+	font-size: 24px;
+	color: #ffffff;
+	text-align: left;
+}
+
+#gpex .s4-sub-content {
+	position: absolute;
+	width: 1120px;
+	left: 80px;
+}
+
+#gpex .s4-sub-content-icon {
+	background-image: url(assets/image/5/icon_circle.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 10px;
+}
+
+#gpex .s4-sub-content-1 { top: 85px; }
+#gpex .s4-sub-content-2 { top: 170px; }
+#gpex .s4-sub-content-3 { top: 220px; }
+#gpex .s4-sub-content-4 { top: 275px; }
+#gpex .s4-sub-content-5 { top: 330px; }
+
+#gpex .s4-sub-content-text {
+	width: 100%;
+	padding-left: 25px;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	font-family: "Georgia";
+	font-size: 24px;
+	color: #ffffff;
+	text-align: left;
 }
 
 /* blockchain.php stylesheet */
