@@ -15,6 +15,11 @@
 	src: url(assets/font/CenturyGothic.ttf);
 }
 
+@font-face {
+	font-family: "Georgia Italic";
+	src: url(assets/font/georgiai.ttf);
+}
+
 /* global stylesheet */
 body {
 	margin: 0px auto;
@@ -1085,6 +1090,390 @@ body {
 	font-size: 24px;
 	color: #ffffff;
 	text-align: left;
+}
+
+/* research.php stylesheet */
+#research { height: 4067px; }
+
+#research .header {
+	background-image: url(assets/image/1/banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	height: 550px;
+	margin: 0px auto;
+}
+
+#research .s1 {
+	height: 240px;
+	max-width: 1920px;
+	background-color: #e1edef;
+	margin: 0px auto;
+}
+
+#research .s2 {
+	background-image: url(assets/image/0/bg1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	height: 709px;
+	margin: 0px auto;
+}
+
+#research .s3 {
+	height: 394px;
+	max-width: 1920px;
+	background-color: #f2f6f7;
+	margin: 0px auto;
+}
+
+#research .s4 {
+	height: 980px;
+	max-width: 1920px;
+	background-color: #ffffff;
+	margin: 0px auto;
+}
+
+#research .s5 {
+	height: 1194px;
+	max-width: 1920px;
+	background-color: #d9e6e8;
+	margin: 0px auto;
+}
+
+#research .header-title {
+	font-family: "Century Gothic";
+	font-size: 72px;
+	color: #ffffff;
+	position: absolute;
+	top: 194px;
+	left: 0px;
+	text-align: left;
+}
+
+#research .header-content {
+	font-family: "Georgia";
+	font-size: 22px;
+	color: #ffffff;
+	position: absolute;
+	top: 305px;
+	padding-left: 450px;
+	width: 100%;
+	text-align: left;
+}
+
+#research .section-title {
+	height: 40px;
+	width: 100%;
+	position: absolute;
+}
+
+#research .section-title-mark {
+	background-image: url(assets/image/1/line_green.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 7px;
+	height: 25px;
+	position: absolute;
+	top: 5px;
+	left: 0px;
+}
+
+#research .section-title-line {
+	height: 1px;
+	width: 100%;
+	position: absolute;
+	bottom: 1px;
+	left: 0px;
+	background-color: #acacac;
+}
+
+#research .section-title-text {
+	font-family: "Georgia";
+	font-size: 24px;
+	color: #333333;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding-left: 22px;
+}
+
+#research .s1-text {
+	width: 100%;
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+	position: absolute;
+	top: 130px;
+	text-align: left;
+}
+
+#research .s2-btn {
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 165px;
+	height: 54px;
+	position: absolute;
+	left: 0px;
+	cursor: pointer;
+	display: table;
+}
+
+#research .s2-btn-text {
+	display: table-cell;
+	vertical-align: middle;
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+	padding-left: 30px;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+}
+
+#research .s2-chart-mm {
+	background-image: url(assets/image/1/chart_MOMO.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 821px;
+	height: 543px;
+	position: absolute;
+	top: 153px;
+	left: 217px;
+}
+
+#research .s2-chart-yy {
+	background-image: url(assets/image/1/chart_YY.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 832px;
+	height: 543px;
+	position: absolute;
+	top: 153px;
+	left: 217px;
+}
+
+#research .s2-chart-tx {
+	background-image: url(assets/image/1/chart_Tencent.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 825px;
+	height: 543px;
+	position: absolute;
+	top: 153px;
+	left: 217px;
+}
+
+#research .s2-chart-ne {
+	background-image: url(assets/image/1/chart_NetEase.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 817px;
+	height: 543px;
+	position: absolute;
+	top: 153px;
+	left: 217px;
+}
+
+#research .s2-line {
+	width: 1px;
+	height: 534px;
+	position: absolute;
+	background-color: #a0a0a0;
+	top: 152px;
+	left: 164px;
+}
+
+#research .s3-icon {
+	background-image: url(assets/image/1/pic1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 357px;
+	height: 270px;
+	position: absolute;
+	top: 71px;
+	left: 0px;
+}
+
+#research .s3-title {
+	font-family: "Century Gothic";
+	font-size: 24px;
+	color: #333333;
+	position: absolute;
+	top: 80px;
+	left: 430px;
+}
+
+#research .s3-mark {
+	width: 116px;
+	height: 7px;
+	background-color: #006478;
+	position: absolute;
+	top: 125px;
+	left: 430px;
+}
+
+#research .s3-line {
+	width: 594px;
+	height: 1px;
+	background-color: #a4a8a9;
+	position: absolute;
+	top: 131px;
+	left: 430px;
+}
+
+#research .s3-text {
+	width: 594px;
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+	position: absolute;
+	top: 155px;
+	text-align: left;
+	left: 430px;
+}
+
+#research .s4-container {
+	width: 300px;
+	position: absolute;
+}
+
+#research .s4c1 { left: 0px; top: 260px; }
+#research .s4c2 { left: 364px; top: 155px; }
+#research .s4c3 { right: 0px; top: 210px; }
+
+#research .s4c1-icon {
+	background-image: url(assets/image/1/pic2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#research .s4c2-icon {
+	background-image: url(assets/image/1/pic3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 238px;
+	position: absolute;
+	top: 430px;
+	left: 0px;
+}
+
+#research .s4c3-icon {
+	background-image: url(assets/image/1/pic4.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 247px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#research .s4-title {
+	font-family: "Century Gothic";
+	font-size: 24px;
+	color: #333333;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 0px;
+}
+
+#research .s4-line {
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	left: 0px;
+	background-color: #adadad; 
+}
+
+#research .s4-mark {
+	width: 116px;
+	height: 7px;
+	left: 92px;
+	position: absolute;
+}
+
+#research .s4-text {
+	width: 100%;
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+	position: absolute;
+	text-align: left;
+	left: 0px;
+}
+
+#research .s5-title {
+	font-family: "Century Gothic";
+	font-size: 24px;
+	color: #333333;
+	position: absolute;
+	text-align: center;
+	left: 0px;
+}
+
+#research .s5-line {
+	width: 478px;
+	height: 1px;
+	position: absolute;
+	left: 0px;
+	background-color: #adadad;
+}
+
+#research .s5-mark {
+	height: 7px;
+	background-color: #006478;
+	position: absolute;
+	left: 0px;
+}
+
+#research .s5-icon1 {
+	background-image: url(assets/image/1/pic5.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 242px;
+	height: 221px;
+	position: absolute;
+	left: 0px;
+	top: 163px;
+}
+
+#research .s5-icon2 {
+	background-image: url(assets/image/1/pic6.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 298px;
+	height: 377px;
+	position: absolute;
+	right: 0px;
+	top: 366px;
+}
+
+#research .s5-icon3 {
+	background-image: url(assets/image/1/pic7.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 318px;
+	height: 270px;
+	position: absolute;
+	left: 0px;
+	top: 816px;
+}
+
+#research .s5-text {
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+	position: absolute;
+	text-align: left;
+	left: 0px;
 }
 
 /* blockchain.php stylesheet */
