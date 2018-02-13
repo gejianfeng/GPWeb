@@ -39,6 +39,39 @@ body {
 	opacity: 0.65;
 }
 
+.section-title {
+	top: 54px;
+	position: absolute;
+	left: 0px;
+	height: 40px;
+	width: 100%;
+}
+
+.section-mark {
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	width: 8px;
+	height: 25px;
+	background-color: #006378;
+}
+
+.section-line {
+	width: 100%;
+	height: 1px;
+	top: 39px;
+	position: absolute;
+	background-color: #9ba3a5;
+}
+
+.section-title-text {
+	text-align: left;
+	padding-left: 25px;
+	font-family: "Georgia";
+	color: #333333;
+	font-size: 24px;
+}
+
 /* banner stylesheet */
 #banner {
 	max-width: 1920px;
@@ -277,7 +310,128 @@ body {
 /* index.php stylesheet */
 #index { height: 3439px; }
 
-/* index.php stylesheet */
+/* investing.php stylesheet */
+#investing { height: 1938px; }
+
+#investing .header {
+	background-image: url(assets/image/2/Alternative_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	height: 550px;
+	margin: 0px auto;
+}
+
+#investing .s1 {
+	height: 280px;
+	max-width: 1920px;
+	background-color: #e2edef;
+	margin: 0px auto;
+}
+
+#investing .s2 {
+	height: 508px;
+	max-width: 1920px;
+	margin: 0px auto;
+}
+
+#investing .s3 {
+	height: 600px;
+	max-width: 1920px;
+	background-color: #eaf2f4;
+	margin: 0px auto;
+}
+
+#investing .header-title {
+	font-family: "Century Gothic";
+	font-size: 72px;
+	color: #ffffff;
+	position: absolute;
+	top: 178px;
+	left: 0px;
+	text-align: left;
+}
+
+#investing .header-content {
+	font-family: "Georgia";
+	font-size: 22px;
+	color: #ffffff;
+	position: absolute;
+	top: 297px;
+	left: 390px;
+	text-align: left;
+}
+
+#investing .s1-text {
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+	width: 100%;
+	left: 0px;
+	top: 130px;
+	position: absolute;
+	text-align: left;
+}
+
+#investing .s2-text {
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+	width: 50%;
+	left: 0px;
+	top: 170px;
+	position: absolute;
+	text-align: left;
+}
+
+#investing .s2-image {
+	background-image: url(assets/image/2/Alternative_logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 424px;
+	height: 313px;
+	position: absolute;
+	right: 0px;
+	top: 130px;
+}
+
+#investing .live-event-image {
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 208px;
+	height: 278px;
+	position: absolute;
+}
+
+#investing .scrollrect {
+	width: 868px;
+	height: 278px;
+	position: absolute;
+	overflow: hidden;
+	top: 240px;
+	left: 78px;
+}
+
+#investing .arrow {
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 26px;
+	height: 40px;
+	top: 340px;
+}
+
+#investing .leftarrow {
+	background-image: url(assets/image/2/Live_Events_arrow_left.png);
+	left: 0px;
+}
+
+#investing .rightarrow {
+	background-image: url(assets/image/2/Live_Events_arrow_right.png);
+	right: 0px;
+}
+
+/* blockchain.php stylesheet */
 #blockchain { height: 1852px; }
 
 #blockchain .header {
@@ -327,39 +481,6 @@ body {
 	top: 314px;
 	left: 390px;
 	text-align: left;
-}
-
-#blockchain .section-title {
-	top: 54px;
-	position: absolute;
-	left: 0px;
-	height: 40px;
-	width: 100%;
-}
-
-#blockchain .section-mark {
-	position: absolute;
-	top: 5px;
-	left: 0px;
-	width: 8px;
-	height: 25px;
-	background-color: #006378;
-}
-
-#blockchain .section-line {
-	width: 100%;
-	height: 1px;
-	top: 39px;
-	position: absolute;
-	background-color: #9ba3a5;
-}
-
-#blockchain .section-title-text {
-	text-align: left;
-	padding-left: 25px;
-	font-family: "Georgia";
-	color: #333333;
-	font-size: 24px;
 }
 
 #blockchain .s1-text {
