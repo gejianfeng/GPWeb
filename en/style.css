@@ -1093,7 +1093,7 @@ body {
 }
 
 /* research.php stylesheet */
-#research { height: 4067px; }
+#research { height: 4127px; }
 
 #research .header {
 	background-image: url(assets/image/1/banner.jpg);
@@ -1112,11 +1112,11 @@ body {
 }
 
 #research .s2 {
-	background-image: url(assets/image/0/bg1.jpg);
+	background-image: url(assets/image/1/bg.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	overflow: visible;
-	height: 709px;
+	height: 769px;
 	margin: 0px auto;
 }
 
