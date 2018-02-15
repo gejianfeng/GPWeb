@@ -20,6 +20,11 @@
 	src: url(assets/font/georgiai.ttf);
 }
 
+@font-face {
+	font-family: "Georgia Bold";
+	src: url(assets/font/georgiab.ttf);
+}
+
 /* global stylesheet */
 body {
 	margin: 0px auto;
@@ -1518,9 +1523,11 @@ body {
 }
 
 #career .s4 {
+	background-image: url(assets/image/4/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
 	height: 280px;
-	max-width: 1920px;
-	background-color: #000000;
 	margin: 0px auto;
 	position: relative;
 }
@@ -1840,6 +1847,356 @@ body {
 	font-size: 16px;
 	color: #333333;
 	position: absolute;
+}
+
+/* index.php stylesheet */
+#index { height: 3440px; }
+
+#index .header {
+	background-image: url(assets/image/0/banner1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	height: 774px;
+	margin: 0px auto;
+	position: relative;
+}
+#index .s1 {
+	background-image: url(assets/image/0/bg1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	height: 709px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#index .s2 {
+	height: 456px;
+	max-width: 1920px;
+	background-color: #fcfcfc;
+	margin: 0px auto;
+	position: relative;
+}
+
+#index .s3 {
+	height: 456px;
+	max-width: 1920px;
+	background-color: #006479;
+	margin: 0px auto;
+	position: relative;
+}
+
+#index .s4 {
+	background-image: url(assets/image/0/bg2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	height: 481px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#index .s5 {
+	height: 564px;
+	max-width: 1920px;
+	background-color: #ffffff;
+	margin: 0px auto;
+	position: relative;
+}
+
+#index .header-title {
+	font-family: "Georgia Bold";
+	font-size: 73px;
+	color: #ffffff;
+	position: absolute;
+	top: 230px;
+	left: 0px;
+	text-align: left;
+}
+
+#index .header-text {
+	font-family: "Georgia";
+	font-size: 36px;
+	color: #ffffff;
+	position: absolute;
+	top: 370px;
+	width: 100%;
+	padding-left: 210px;
+	text-align: left;
+}
+
+#index .s {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	left: 0px;
+}
+
+#index .s-icon {
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+}
+
+#index .s-title {
+	font-family: "Georgia Italic";
+	font-size: 24px;
+	position: absolute;
+	width: 100%;
+	padding-left: 60px;
+	text-align: left;
+	left: 0px;
+}
+
+#index .s-line {
+	width: 100%;
+	position: absolute;
+	top: 49px;
+	height: 1px;
+	background-color: #acacac;
+}
+
+#index .s-arrow {
+	width: 34px;
+	height: 16px;
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+
+#index .s-lm {
+	font-family: "Georgia";
+	font-size: 18px;
+	position: absolute;
+	top: 5px;
+	right: 44px;
+	text-align: left;
+}
+
+#index .circle {
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 380px;
+	cursor: pointer;
+}
+
+#index .s1-frame {
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 553px;
+	width: 337px;
+	top: 80px;
+	position: absolute;
+}
+
+#index .s1-title {
+	font-family: "Georgia";
+	font-size: 24px;
+	color: #333333;
+	position: absolute;
+	top: 240px;
+	width: 100%;
+	padding-left: 20px;
+	text-align: left;
+}
+
+#index .s1-text {
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+	position: absolute;
+	top: 285px;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
+}
+
+#index .s2-container {
+	width: 1024px;
+	height: 456px;
+	position: relative;
+	overflow: hidden;
+}
+
+#index .s2-frame {
+	width: 1024px;
+	height: 456px;
+	position: absolute;
+	top: 0px;
+	display: none;
+}
+
+#index .s3-container {
+	width: 1024px;
+	height: 456px;
+	position: relative;
+	overflow: hidden;
+}
+
+#index .s3-frame {
+	width: 1024px;
+	height: 456px;
+	position: absolute;
+	top: 0px;
+	display: none;
+}
+
+#index .s4-frame {
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 242px;
+	height: 283px;
+	top: 130px;
+}
+
+#index .s4-mark {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(assets/image/0/icon_chain.png);
+	position: absolute;
+	width: 54px;
+	height: 23px;
+	top: 240px;
+}
+
+#index .s4-icon1 {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(assets/image/0/icon_decentralization.png);
+	position: absolute;
+	width: 144px;
+	height: 179px;
+	top: 10px;
+	left: 49px;
+}
+
+#index .s4-icon2 {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(assets/image/0/icon_openness.png);
+	position: absolute;
+	width: 140px;
+	height: 81px;
+	top: 56px;
+	left: 51px;
+}
+
+#index .s4-icon3 {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(assets/image/0/icon_Ecosystem.png);
+	position: absolute;
+	width: 113px;
+	height: 123px;
+	top: 35px;
+	left: 65px;
+}
+
+#index .s4-title {
+	font-family: "Georgia Bold";
+	font-size: 24px;
+	color: #333333;
+	position: absolute;
+	top: 170px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+#index .s4-text {
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+	position: absolute;
+	top: 210px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+#index .s4-right-1 {
+	height: 68px;
+	width: 100%;
+	display: table;
+	position: relative;
+}
+
+#index .s4-right-2 {
+	height: 105px;
+	width: 100%;
+	position: relative;
+}
+
+#index .s4-right-3 {
+	height: 105px;
+	width: 100%;
+	position: relative;
+	margin-top: 5px;
+}
+
+#index .s4r1 {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	font-family: "Georgia Bold";
+	font-size: 24px;
+	color: #333333;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#index .s4r2 {
+	width: 142px;
+	height: 100%;
+	font-family: "Georgia";
+	font-size: 24px;
+	color: #333333;
+	text-align: left;
+	padding-left: 100px;
+	position: absolute;
+	left: 0px;
+	top: 35px;
+}
+
+#index .s4r3 {
+	width: 142px;
+	height: 100%;
+	font-family: "Georgia";
+	font-size: 24px;
+	color: #333333;
+	text-align: left;
+	padding-left: 100px;
+	position: absolute;
+	left: 0px;
+	top: 30px;
+}
+
+#index .s4r2-icon {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(assets/image/0/icon_GPEX.png);
+	position: absolute;
+	width: 44px;
+	height: 48px;
+	top: 30px;
+	left: 35px;
+}
+
+#index .s4r3-icon {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(assets/image/0/icon_livecoins.png);
+	position: absolute;
+	width: 46px;
+	height: 47px;
+	top: 25px;
+	left: 35px;
 }
 
 /* blockchain.php stylesheet */
