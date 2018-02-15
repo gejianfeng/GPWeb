@@ -8,6 +8,90 @@ Template Name: career.php
 
 <?php get_top_banner(); ?>
 
+<script type="text/javascript">
+
+	var bAnimPlayed = false;
+
+	$(window).scroll(function() {
+
+		if (!bAnimPlayed)
+		{
+			var cp_div = document.getElementById("path");
+			var bottomPos = cp_div.offsetTop + cp_div.offsetHeight;
+			if (bottomPos >= $(window).scrollTop() && bottomPos < ($(window).scrollTop()+$(window).height())) {
+				bAnimPlayed = true;
+
+				$("#point1").animate({"opacity" : "1"}, 500);
+
+				$("#line11").delay(500).animate({"opacity" : "1"}, 500);
+				$("#line12").delay(500).animate({"opacity" : "1"}, 500);
+
+				$("#sp11").delay(500).animate({"opacity" : "1"}, 500);
+				$("#sp12").delay(500).animate({"opacity" : "1"}, 500);
+
+				$("#st11").delay(1000).animate({"opacity" : "1"}, 500);
+				$("#st12").delay(1000).animate({"opacity" : "1"}, 500);
+
+				$("#point2").delay(1500).animate({"opacity" : "1"}, 500);
+
+				$("#line21").delay(2000).animate({"opacity" : "1"}, 500);
+				$("#line22").delay(2000).animate({"opacity" : "1"}, 500);
+
+				$("#sp21").delay(2000).animate({"opacity" : "1"}, 500);
+				$("#sp22").delay(2000).animate({"opacity" : "1"}, 500);
+
+				$("#st21").delay(2500).animate({"opacity" : "1"}, 500);
+				$("#st22").delay(2500).animate({"opacity" : "1"}, 500);
+
+				$("#point3").delay(3000).animate({"opacity" : "1"}, 500);
+
+				$("#line31").delay(3500).animate({"opacity" : "1"}, 500);
+				$("#line32").delay(3500).animate({"opacity" : "1"}, 500);
+
+				$("#sp31").delay(3500).animate({"opacity" : "1"}, 500);
+				$("#sp32").delay(3500).animate({"opacity" : "1"}, 500);
+
+				$("#st31").delay(4000).animate({"opacity" : "1"}, 500);
+				$("#st32").delay(4000).animate({"opacity" : "1"}, 500);
+
+				$("#point4").delay(4500).animate({"opacity" : "1"}, 500);
+
+				$("#line41").delay(5000).animate({"opacity" : "1"}, 500);
+				$("#line42").delay(5000).animate({"opacity" : "1"}, 500);
+
+				$("#sp41").delay(5000).animate({"opacity" : "1"}, 500);
+				$("#sp42").delay(5000).animate({"opacity" : "1"}, 500);
+
+				$("#st41").delay(5500).animate({"opacity" : "1"}, 500);
+				$("#st42").delay(5500).animate({"opacity" : "1"}, 500);
+
+				$("#point5").delay(6000).animate({"opacity" : "1"}, 500);
+
+				$("#line51").delay(6500).animate({"opacity" : "1"}, 500);
+				$("#line52").delay(6500).animate({"opacity" : "1"}, 500);
+
+				$("#sp51").delay(6500).animate({"opacity" : "1"}, 500);
+				$("#sp52").delay(6500).animate({"opacity" : "1"}, 500);
+
+				$("#st51").delay(7000).animate({"opacity" : "1"}, 500);
+				$("#st52").delay(7000).animate({"opacity" : "1"}, 500);
+
+				$("#point6").delay(7500).animate({"opacity" : "1"}, 500);
+
+				$("#line61").delay(8000).animate({"opacity" : "1"}, 500);
+				$("#line62").delay(8000).animate({"opacity" : "1"}, 500);
+
+				$("#sp61").delay(8000).animate({"opacity" : "1"}, 500);
+				$("#sp62").delay(8000).animate({"opacity" : "1"}, 500);
+
+				$("#st61").delay(8500).animate({"opacity" : "1"}, 500);
+				$("#st62").delay(8500).animate({"opacity" : "1"}, 500);
+			}
+		}
+	});
+
+</script>
+
 <div id="career">
 	<div class="header">
 		<div class="wrap">
@@ -29,11 +113,74 @@ Template Name: career.php
 		</div>
 	</div>
 
-	<div class="s2">
+	<div id="path" class="s2">
 		<div class="wrap">
 			<div class="section-mark" style="top: 55px; background-color: #006579;"></div>
 			<div class="section-title" style="top: 50px; color: #333333;">Career Path</div>
 			<div class="section-line" style="top: 95px; background-color: #3e4d53;"></div>
+
+			<div class="s2-image"></div>
+
+			<div id="point1" class="s2-point" style="left:101px;"></div>
+			<div id="point2" class="s2-point" style="left:264px;"></div>
+			<div id="point3" class="s2-point" style="left:427px;"></div>
+			<div id="point4" class="s2-point" style="left:590px;"></div>
+			<div id="point5" class="s2-point" style="left:753px;"></div>
+			<div id="point6" class="s2-point" style="left:916px;"></div>
+
+			<div id="line11" class="s2-line" style="left: 104px; top: 200px;"></div>
+			<div id="line12" class="s2-line" style="left: 104px; top: 256px;"></div>
+
+			<div id="line21" class="s2-line" style="left: 267px; top: 200px;"></div>
+			<div id="line22" class="s2-line" style="left: 267px; top: 256px;"></div>
+
+			<div id="line31" class="s2-line" style="left: 430px; top: 200px;"></div>
+			<div id="line32" class="s2-line" style="left: 430px; top: 256px;"></div>
+
+			<div id="line41" class="s2-line" style="left: 593px; top: 200px;"></div>
+			<div id="line42" class="s2-line" style="left: 593px; top: 256px;"></div>
+
+			<div id="line51" class="s2-line" style="left: 756px; top: 200px;"></div>
+			<div id="line52" class="s2-line" style="left: 756px; top: 256px;"></div>
+
+			<div id="line61" class="s2-line" style="left: 919px; top: 200px;"></div>
+			<div id="line62" class="s2-line" style="left: 919px; top: 256px;"></div>
+
+			<div id="sp11" class="s2-sp" style="left: 102px; top: 197px"></div>
+			<div id="sp12" class="s2-sp" style="left: 102px; top: 295px"></div>
+
+			<div id="sp21" class="s2-sp" style="left: 265px; top: 197px"></div>
+			<div id="sp22" class="s2-sp" style="left: 265px; top: 295px"></div>
+
+			<div id="sp31" class="s2-sp" style="left: 428px; top: 197px"></div>
+			<div id="sp32" class="s2-sp" style="left: 428px; top: 295px"></div>
+
+			<div id="sp41" class="s2-sp" style="left: 591px; top: 197px"></div>
+			<div id="sp42" class="s2-sp" style="left: 591px; top: 295px"></div>
+
+			<div id="sp51" class="s2-sp" style="left: 754px; top: 197px"></div>
+			<div id="sp52" class="s2-sp" style="left: 754px; top: 295px"></div>
+
+			<div id="sp61" class="s2-sp" style="left: 917px; top: 197px"></div>
+			<div id="sp62" class="s2-sp" style="left: 917px; top: 295px"></div>
+
+			<div id="st11" class="s2-text" style="left: 87px; top: 160px; font-size: 22px;">PTA</div>
+			<div id="st12" class="s2-text" style="left: 67px; top: 305px; font-size: 24px;">0<span style="font-size: 18px;">Months</span></div>
+
+			<div id="st21" class="s2-text" style="left: 170px; top: 128px; font-size: 22px;">Intern<br/>(Assistant Analyst)</div>
+			<div id="st22" class="s2-text" style="left: 230px; top: 305px; font-size: 24px;">3<span style="font-size: 18px;">Months</span></div>
+
+			<div id="st31" class="s2-text" style="left: 390px; top: 160px; font-size: 22px;">Analyst</div>
+			<div id="st32" class="s2-text" style="left: 380px; top: 305px; font-size: 24px;">15<span style="font-size: 18px;">Months</span></div>
+
+			<div id="st41" class="s2-text" style="left: 525px; top: 160px; font-size: 22px;">Senior Analyst</div>
+			<div id="st42" class="s2-text" style="left: 543px; top: 305px; font-size: 24px;">39<span style="font-size: 18px;">Months</span></div>
+
+			<div id="st51" class="s2-text" style="left: 713px; top: 160px; font-size: 22px;">Principle</div>
+			<div id="st52" class="s2-text" style="left: 708px; top: 305px; font-size: 24px;">63<span style="font-size: 18px;">Months</span></div>
+
+			<div id="st61" class="s2-text" style="left: 885px; top: 160px; font-size: 22px;">Partner</div>
+			<div id="st62" class="s2-text" style="left: 875px; top: 305px; font-size: 24px;">99<span style="font-size: 18px;">Months</span></div>
 		</div>
 	</div>
 

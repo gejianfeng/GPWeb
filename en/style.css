@@ -1619,6 +1619,53 @@ body {
 	text-align: left;
 }
 
+#career .s2-image {
+	background-image: url(assets/image/4/Career_path_line.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 245px;
+	width: 1024px;
+	left: 0px;
+	top: 124px;
+	position: absolute;
+}
+
+#career .s2-point {
+	background-image: url(assets/image/4/Career_path_circle_organe.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 8px;
+	width: 8px;
+	top: 243px;
+	position: absolute;
+	opacity: 0;
+}
+
+#career .s2-line {
+	width: 1px;
+	height: 40px;
+	position: absolute;
+	background-color: #333333;
+	opacity: 0;
+}
+
+#career .s2-sp {
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	border-radius: 2px;
+	background-color: #333333;
+	opacity: 0;
+}
+
+#career .s2-text {
+	font-family: "Century Gothic";
+	color: #333333;
+	text-align: center;
+	position: absolute;
+	opacity: 0;
+}
+
 #career .s3-icon {
 	background-image: url(assets/image/4/icon_letter.png);
 	background-repeat: no-repeat;
