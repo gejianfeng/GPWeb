@@ -46,8 +46,8 @@ Template Name: research.php
 <div id="research">
 	<div class="header">
 		<div class="wrap">
-			<div class="header-title">Quantamental Research</div>
-			<div class="header-content">Since 2012, we are one of the few earliest company to apply quantamental method in investment.</div>
+			<div class="header-title"><i>Quantamental</i> Research</div>
+			<div class="header-content">Since 2012, we are one of the few earliest company to apply <i>quantamental</i> method in investment.</div>
 		</div>
 	</div>
 
@@ -59,7 +59,7 @@ Template Name: research.php
 				<div class="section-title-text">Goldpebble Strength</div>
 			</div>
 
-			<div class="s1-text">With both infinite data and processing technology, Goldpebble has been able to develop continious edge in generating quantamental research, doing alternative investing and leading blockchain applications.</div>
+			<div class="s1-text">With both infinite data and processing technology, Goldpebble has been able to develop continious edge in generating <i>quantamental</i> research, doing alternative investing and leading blockchain applications.</div>
 		</div>
 	</div>
 
@@ -68,7 +68,7 @@ Template Name: research.php
 			<div class="section-title" style="top: 54px;">
 				<div class="section-title-mark"></div>
 				<div class="section-title-line"></div>
-				<div class="section-title-text"><font style="font-family: 'Georgia Italic'">Quantamental</font> leads to Precision</div>
+				<div class="section-title-text"><font style="font-family: 'Georgia Italic'"><i>Quantamental</i></font> leads to Precision</div>
 			</div>
 			
 			<div id="btn1" class="s2-btn" style="top: 257px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/1/figure_orange.png'; ?>);" onclick="SwitchChart(1);">
@@ -119,7 +119,7 @@ Template Name: research.php
 				<div class="s4-title" style="top: 210px;">Longest Track Record</div>
 				<div class="s4-line" style="top: 274px;"></div>
 				<div class="s4-mark" style="background-color: #00647b; top: 268px;"></div>
-				<div class="s4-text" style="top: 295px;">Since 2012, Goldpebble has been pioneering in providing quantamental research services to world-top investors. With the longest track record, Goldpebble is the first research company to adopt big data and cloud computing technologies in building investing edge.<br/><br/>Goldpebble's alernative data about companies' key operation metrics have been more accurate than Wall Street analysis for more than 20 quarters. The companies covered</div>
+				<div class="s4-text" style="top: 295px;">Since 2012, Goldpebble has been pioneering in providing <i>quantamental</i> research services to world-top investors. With the longest track record, Goldpebble is the first research company to adopt big data and cloud computing technologies in building investing edge.<br/><br/>Goldpebble's alernative data about companies' key operation metrics have been more accurate than Wall Street analysis for more than 20 quarters. The companies covered</div>
 			</div>
 
 			<div class="s4-container s4c2">
@@ -127,7 +127,7 @@ Template Name: research.php
 				<div class="s4-title" style="top: 330px;">Not Only Data, But Also Fundamentals</div>
 				<div class="s4-line" style="top: 304px;"></div>
 				<div class="s4-mark" style="background-color: #f46d01; top: 305px;"></div>
-				<div class="s4-text" style="top: 0px;">Goldpebble combines in-depth fundamental analysis with advanced quantitative research in its research in equities and macro issues.<br/><br/>With quantamental investing edge, Goldpebble can precisely estimate companies' financials, understand the subtle trend of market, and figure out firms' potentials that may lead to real edge over the whole market.</div>
+				<div class="s4-text" style="top: 0px;">Goldpebble combines in-depth fundamental analysis with advanced quantitative research in its research in equities and macro issues.<br/><br/>With <i>quantamental</i> investing edge, Goldpebble can precisely estimate companies' financials, understand the subtle trend of market, and figure out firms' potentials that may lead to real edge over the whole market.</div>
 			</div>
 
 			<div class="s4-container s4c3">
@@ -135,7 +135,7 @@ Template Name: research.php
 				<div class="s4-title" style="top: 290px;">Systems Make Things Different</div>
 				<div class="s4-line" style="top: 374px;"></div>
 				<div class="s4-mark" style="background-color: #00647b; top: 368px;"></div>
-				<div class="s4-text" style="top: 390px;">Supplemented by leading technology in big data processing, Goldpebble extends its experties in investment research.<br/><br/>Goldpebble has built several proprietary systems, including GP HIDEN, GP CORE, GP OS and GP Psyc, and provides the best quantamental research service in China to global mutual funds, hedge funds, corporate leaders and family offices.</div>
+				<div class="s4-text" style="top: 390px;">Supplemented by leading technology in big data processing, Goldpebble extends its experties in investment research.<br/><br/>Goldpebble has built several proprietary systems, including GP HIDEN, GP CORE, GP OS and GP Psyc, and provides the best <i>quantamental</i> research service in China to global mutual funds, hedge funds, corporate leaders and family offices.</div>
 			</div>
 		</div>
 	</div>

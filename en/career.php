@@ -97,7 +97,7 @@ Template Name: career.php
 		<div class="wrap">
 			<div class="header-title">Career</div>
 			<div class="header-line"></div>
-			<div class="header-btn">
+			<div class="header-btn" onclick="SwitchPage('mailto:hr@goldpebble.com');">
 				<div class="header-btn-text">Apply Now</div>
 			</div>
 		</div>
@@ -190,7 +190,7 @@ Template Name: career.php
 			<div class="s3-text">Coldpebble actively recruits passionate, open-minded, and accomplished people from around the world. If you are interested in pursuing a career with Goldpebble, please apply by email:</div>
 			<div class="s3-line"></div>
 			<div class="s3-btn">
-				<div class="s3-btn-text">hr@goldpebble.com</div>
+				<div class="s3-btn-text" onclick="SwitchPage('mailto:hr@goldpebble.com');">hr@goldpebble.com</div>
 			</div>
 		</div>
 	</div>

@@ -214,7 +214,7 @@ Template Name: index.php
 	<div class="header">
 		<div class="wrap">
 			<div class="header-title">Data&nbsp;&nbsp;&middot;&nbsp;&nbsp;Technology&nbsp;&nbsp;&middot;&nbsp;&nbsp;Edge</div>
-			<div class="header-text">We are building investing edge with quantamental data technology</div>
+			<div class="header-text">We are building investing edge with <i>quantamental</i> data technology</div>
 		</div>
 	</div>
 
@@ -232,7 +232,7 @@ Template Name: index.php
 
 			<div class="s1-frame" style="right: 0px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/pic_edge.png'; ?>);">
 				<div class="s1-title">Unique Analysis <span style="color: #f96700;">Edge</span></div>
-				<div class="s1-text">Since 2012, Goldpebble is one of the few earliest company to apply quantamental method in investment. With both infinite data and processing technology, Goldpebble has been able to develop continious edge in generating quantamental research, doing alternative investing and leading blockchain applications.</div>
+				<div class="s1-text">Since 2012, Goldpebble is one of the few earliest company to apply <i>quantamental</i> method in investment. With both infinite data and processing technology, Goldpebble has been able to develop continious edge in generating <i>quantamental</i> research, doing alternative investing and leading blockchain applications.</div>
 			</div>
 		</div>
 	</div>
@@ -420,12 +420,12 @@ Template Name: index.php
 					<div class="s4r1">Applications</div>
 				</div>
 
-				<div class="s4-right-2">
+				<div class="s4-right-2" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/gpex');">
 					<div class="s4r2-icon"></div>
 					<div class="s4r2">GPEX</div>
 				</div>
 
-				<div class="s4-right-3">
+				<div class="s4-right-3" onclick="SwitchPage('<?php echo home_url(); ?>/../../livecoin/en');">
 					<div class="s4r3-icon"></div>
 					<div class="s4r3">LiveCoins</div>
 				</div>
@@ -472,7 +472,7 @@ Template Name: index.php
 					<!-- 2013 -->
 					<div class="achievement-frame" style="top: 72px;">
 						<div id="ga_label_1" class="achievement-label" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(1);">
-							<div class="achievement-label-cell">Quantamental Research</div>
+							<div class="achievement-label-cell"><i>Quantamental</i> Research</div>
 						</div>
 
 						<div id="ga_timeline_1" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>

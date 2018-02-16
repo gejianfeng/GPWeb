@@ -13,6 +13,13 @@ Template Name: header.php
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+
+		<script text="text/javascript">
+			function SwitchPage(url)
+			{
+				window.location.href = url;
+			}
+		</script>
 	</head>
 
 	<body>
