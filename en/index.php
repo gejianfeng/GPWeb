@@ -14,6 +14,11 @@ Template Name: index.php
 	var research_move_max_cnt = 0;
 	var investing_move_max_cnt = 0;
 
+	var achievement_count = 0;
+	var achievement_index = 0;
+	var achievement_show_index = -1;
+	var achievement_animating = false;
+
 	$(document).ready(function(){
 		var obj = document.getElementById("research_container_0");
 
@@ -27,6 +32,18 @@ Template Name: index.php
 		if (obj != null) 
 		{
 			$("#investing_container_0").show();
+		}
+
+		var index = 0;
+		var obj_name = "ga_label_" + index.toString();
+		obj = document.getElementById(obj_name);
+
+		while (obj != null)
+		{
+			achievement_count++;
+			index++;
+			obj_name = "ga_label_" + index.toString();
+			obj = document.getElementById(obj_name);
 		}
 	});
 
@@ -103,6 +120,94 @@ Template Name: index.php
 
 		current_investing_index = index;
 	}
+
+	function OnUpArrowClicked()
+	{
+		if (achievement_count <= 4 || achievement_index == -(achievement_count - 4) || achievement_animating)
+		{
+			return;
+		}
+
+		achievement_animating = true;
+
+		var target_pos = (achievement_index - 1) * 72;
+		$("#scroll-container").animate({top:target_pos.toString() + 'px'}, 'slow', function(){
+			achievement_animating = false;
+			achievement_index--;
+		});
+	}
+
+	function OnDownArrowClicked()
+	{
+		if (achievement_count <= 4 || achievement_index == 0  || achievement_animating)
+		{
+			return;
+		}
+
+		achievement_animating = true;
+
+		var target_pos = (achievement_index + 1) * 72;
+		$("#scroll-container").animate({top:target_pos.toString() + 'px'}, 'slow', function(){
+			achievement_animating = false;
+			achievement_index++;
+		});
+	}
+
+	function OnLabelClicked(idx)
+	{
+		if (idx < 0 || idx >= achievement_count)
+		{
+			return;
+		}
+
+		if (achievement_show_index > -1)
+		{
+			var obj_name = "#ga_label_" + achievement_show_index.toString();
+			$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)");
+
+			obj_name = "#ga_timeline_" + achievement_show_index.toString();
+			$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)");
+
+			obj_name = "#ga_line_" + achievement_show_index.toString();
+			$(obj_name).css("background-color", "#acacac");
+
+			obj_name = "#ga_round_point_" + achievement_show_index.toString();
+			$(obj_name).css("background-color", "#acacac");
+
+			obj_name = "#ga_year_" + achievement_show_index.toString();
+			$(obj_name).css("color", "#333333");
+
+			obj_name = "#ga_label_text_" + achievement_show_index.toString();
+			$(obj_name).css("color", "#333333");
+
+			obj_name = "#ga_content_" + achievement_show_index.toString();
+			$(obj_name).hide();
+		}
+
+		var obj_name = "#ga_label_" + idx.toString();
+		$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_orange.png'; ?>)");
+
+		obj_name = "#ga_timeline_" + idx.toString();
+		$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_orange.png'; ?>)");
+
+		obj_name = "#ga_line_" + idx.toString();
+		$(obj_name).css("background-color", "#f96700");
+
+		obj_name = "#ga_round_point_" + idx.toString();
+		$(obj_name).css("background-color", "#f96700");
+
+		obj_name = "#ga_year_" + idx.toString();
+		$(obj_name).css("color", "#f96700");
+
+		obj_name = "#ga_label_text_" + idx.toString();
+		$(obj_name).css("color", "#f96700");
+
+		obj_name = "#ga_content_" + idx.toString();
+		$(obj_name).show();
+
+		achievement_show_index = idx;
+	}
+
 </script>
 
 <div id="index">
@@ -282,10 +387,10 @@ Template Name: index.php
 		<div class="wrap">
 			<div class="s" style="top: 48px;">
 				<div class="s-icon" style="top: 0px; left: 0px; width: 37px; height: 35px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/icon_block_chain.png'; ?>);"></div>
-				<div class="s-title">Blockchain Applications</div>
+				<div class="s-title" style="color: #333333;">Blockchain Applications</div>
 				<div class="s-line"></div>
 				<div class="s-arrow" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/icon_learn_more.png'; ?>);"></div>
-				<div class="s-lm">Learn More</div>
+				<div class="s-lm" style="color: #333333;">Learn More</div>
 			</div>
 
 			<div class="s4-frame" style="left: 0px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/Block_chain_rectangle.jpg'; ?>);">
@@ -334,7 +439,127 @@ Template Name: index.php
 
 	<div class="s5">
 		<div class="wrap">
-			
+			<div class="s" style="top: 56px;">
+				<div class="s-icon" style="top: 5px; left: 0px; width: 38px; height: 24px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/icon_eye.png'; ?>);"></div>
+				<div class="s-title" style="color: #333333;">Goldpebble Achievement</div>
+				<div class="s-line"></div>
+			</div>
+
+			<div class="s5-line"></div>
+
+			<div class="s5-up-arrow" onclick="OnUpArrowClicked();"></div>
+			<div class="s5-down-arrow" onclick="OnDownArrowClicked();"></div>
+
+			<div class="s5-scrollrect">
+				<div id="scroll-container" class="s5-scroll-container">
+					<!-- 2012 -->
+					<div class="achievement-frame" style="top: 0px;">
+						<div id="ga_label_0" class="achievement-label" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(0);">
+							<div class="achievement-label-cell">Company Milestones</div>
+						</div>
+
+						<div id="ga_timeline_0" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_0" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_0" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_0" class="achievement-label-year" style="color: #333333">2012</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_0" class="achievement-desc-text" style="color: #333333;">Defeat short sellers on New Oriental (EDU US)</div>
+						</div>
+					</div>
+
+					<!-- 2013 -->
+					<div class="achievement-frame" style="top: 72px;">
+						<div id="ga_label_1" class="achievement-label" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(1);">
+							<div class="achievement-label-cell">Quantamental Research</div>
+						</div>
+
+						<div id="ga_timeline_1" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_1" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_1" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_1" class="achievement-label-year" style="color: #333333">2013</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_1" class="achievement-desc-text" style="color: #333333;">Earliest in understanding YY's business model</div>
+						</div>
+					</div>
+
+					<!-- 2014 -->
+					<div class="achievement-frame" style="top: 144px;">
+						<div id="ga_label_2" class="achievement-label" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(2);">
+							<div class="achievement-label-cell">Alternative Investing</div>
+						</div>
+
+						<div id="ga_timeline_2" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_2" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_2" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_2" class="achievement-label-year" style="color: #333333">2014</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_2" class="achievement-desc-text" style="color: #333333;">Opened China branch</div>
+						</div>
+					</div>
+
+					<!-- 2018 -->
+					<div class="achievement-frame" style="top: 216px;">
+						<div id="ga_label_3" class="achievement-label" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(3);">
+							<div class="achievement-label-cell">Blockchain Application</div>
+						</div>
+
+						<div id="ga_timeline_3" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_3" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_3" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_3" class="achievement-label-year" style="color: #333333">2018</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_3" class="achievement-desc-text" style="color: #333333;">Enrich the portfolio of cryptocurrencies</div>
+						</div>
+					</div>
+
+					<!-- New Entry Template
+					<div class="achievement-frame" style="top: 288px;">
+						<div id="ga_label_4" class="achievement-label" style="background-image:url(<?php //echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(4);">
+							<div class="achievement-label-cell">Blockchain Application</div>
+						</div>
+
+						<div id="ga_timeline_4" class="achievement-label-point" style="background-image:url(<?php //echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_4" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_4" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_4" class="achievement-label-year" style="color: #333333">2018</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_4" class="achievement-desc-text" style="color: #333333;">Enrich the portfolio of cryptocurrencies</div>
+						</div>
+					</div>
+					-->
+				</div>
+			</div>
+
+			<div id="s5-content" class="s5-content-frame">
+				<!-- 2012 -->
+				<div id="ga_content_0" style="display: none;"></div>
+
+				<!-- 2013 -->
+				<div id="ga_content_1" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/logo_YY.jpg'; ?>); width: 288px; height: 103px; position: absolute; left: 72px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Goldpebble published a report about YY, which was not yet convered by any investment banks, The report helps institutional investors to better understand the live-streaming business. After the publishment, thestock price rose by 3 times, and trade volume rose by 5 times.</div>
+				</div>
+
+				<!-- 2014 -->
+				<div id="ga_content_2" style="display: none;"></div>
+
+				<!-- 2018 -->
+				<div id="ga_content_3" style="display: none;"></div>
+
+				<!-- New Entry Template
+				<div id="ga_content_4" style="display: none;"></div>
+				-->
+			</div>
 		</div>
 	</div>
 </div>

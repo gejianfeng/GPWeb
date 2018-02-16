@@ -2199,6 +2199,150 @@ body {
 	left: 35px;
 }
 
+#index .s5-up-arrow {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(assets/image/0/arraw_font.png);
+	position: absolute;
+	width: 40px;
+	height: 26px;
+	top: 140px;
+	left: 163px;
+	cursor: pointer;
+}
+
+#index .s5-down-arrow {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(assets/image/0/arraw_bottom.png);
+	position: absolute;
+	width: 40px;
+	height: 26px;
+	top: 455px;
+	left: 163px;
+	cursor: pointer;
+}
+
+#index .s5-line {
+	width: 1px;
+	height: 340px;
+	position: absolute;
+	top: 140px;
+	left: 183px;
+	background-color: #525252;
+}
+
+#index .s5-scrollrect {
+	width: 570px;
+	height: 270px;
+	position: absolute;
+	overflow: hidden;
+	top: 175px;
+	left: 0px;
+}
+
+#index .s5-scroll-container {
+	width: 570px;
+	height: 270px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#index .s5-content-frame {
+	width: 433px;
+	height: 359px;
+	position: absolute;
+	right: 0px;
+	top: 140px;
+}
+
+#index .achievement-frame {
+	width: 570px;
+	height: 54px;
+	position: absolute;
+	left: 0px;
+}
+
+#index .achievement-label {
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 165px;
+	height: 54px;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	display: table;
+}
+
+#index .achievement-label-cell {
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #333333;
+	padding-left: 40px;
+	text-align: left;
+	vertical-align: middle;
+	left: 0px;
+	top: 0px;
+	display: table-cell;
+}
+
+#index .achievement-label-point {
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	left: 177px;
+	top: 20px;
+}
+
+#index .achievement-label-line {
+	height: 1px;
+	width: 98px;
+	position: absolute;
+	left: 191px;
+	top: 26px;
+}
+
+#index .achievement-label-year {
+	font-family: "Georgia";
+	font-size: 24px;
+	color: #333333;
+	position: absolute;
+	left: 215px;
+	top: -5px;
+}
+
+#index .achievement-label-round-point {
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	border-radius: 2px;
+	left: 284px;
+	top: 24px;
+}
+
+#index .achievement-desc-frame {
+	width: 265px;
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	display: table;
+}
+
+#index .achievement-desc-text {
+	font-family: "Georgia";
+	font-size: 18px;
+	text-align: left;
+	vertical-align: middle;
+	left: 0px;
+	top: 0px;
+	display: table-cell;
+}
+
 /* blockchain.php stylesheet */
 #blockchain { height: 1852px; }
 
