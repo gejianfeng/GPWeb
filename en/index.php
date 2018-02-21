@@ -423,11 +423,11 @@ Template Name: index.php
 
 				if ($i == 0)
 				{
-					echo "<div id='" . $obj_name . "' class='circle' style='left: " . $pos . "px; background-image: url(" . $circle_selected . ")' onclick='SwitchResearch(" . $i . ", \"" . $research_array[$i]->post_title . "\");'></div>";
+					echo "<div id='" . $obj_name . "' class='circle' style='left: " . $pos . "px; background-image: url(" . $circle_selected . ")' onmouseover='SwitchResearch(" . $i . ", \"" . $research_array[$i]->post_title . "\");'></div>";
 				}
 				else
 				{
-					echo "<div id='" . $obj_name . "' class='circle' style='left: " . $pos . "px; background-image: url(" . $circle_unselected . ")' onclick='SwitchResearch(" . $i . ", \"" . $research_array[$i]->post_title . "\");'></div>";
+					echo "<div id='" . $obj_name . "' class='circle' style='left: " . $pos . "px; background-image: url(" . $circle_unselected . ")' onmouseover='SwitchResearch(" . $i . ", \"" . $research_array[$i]->post_title . "\");'></div>";
 				}
 			}
 		}
@@ -496,11 +496,11 @@ Template Name: index.php
 
 				if ($i == 0)
 				{
-					echo "<div id='" . $obj_name . "' class='circle' style='left: " . $pos . "px; background-image: url(" . $circle_selected . ")' onclick='SwitchInvesting(" . $i . ", \"" . $research_array[$i]->post_title . "\");'></div>";
+					echo "<div id='" . $obj_name . "' class='circle' style='left: " . $pos . "px; background-image: url(" . $circle_selected . ")' onmouseover='SwitchInvesting(" . $i . ", \"" . $research_array[$i]->post_title . "\");'></div>";
 				}
 				else
 				{
-					echo "<div id='" . $obj_name . "' class='circle' style='left: " . $pos . "px; background-image: url(" . $circle_unselected . ")' onclick='SwitchInvesting(" . $i . ", \"" . $research_array[$i]->post_title . "\");'></div>";
+					echo "<div id='" . $obj_name . "' class='circle' style='left: " . $pos . "px; background-image: url(" . $circle_unselected . ")' onmouseover='SwitchInvesting(" . $i . ", \"" . $research_array[$i]->post_title . "\");'></div>";
 				}
 			}
 		}
