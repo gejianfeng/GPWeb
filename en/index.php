@@ -14,6 +14,12 @@ Template Name: index.php
 	var research_move_max_cnt = 0;
 	var investing_move_max_cnt = 0;
 
+	var research_count = 0;
+	var investing_count = 0;
+
+	var auto_research_handler = -1;
+	var auto_investing_handler = -1;
+
 	var achievement_count = 0;
 	var achievement_index = 0;
 	var achievement_show_index = -1;
@@ -45,13 +51,131 @@ Template Name: index.php
 			obj_name = "ga_label_" + index.toString();
 			obj = document.getElementById(obj_name);
 		}
+
+		index = 0;
+		obj_name = "research_container_" + index.toString();
+		obj = document.getElementById(obj_name);
+
+		while (obj != null)
+		{
+			research_count++;
+			index++;
+			obj_name = "research_container_" + index.toString();
+			obj = document.getElementById(obj_name);
+		}
+
+		index = 0;
+		obj_name = "investing_container_" + index.toString();
+		obj = document.getElementById(obj_name);
+
+		while (obj != null)
+		{
+			investing_count++;
+			index++;
+			obj_name = "investing_container_" + index.toString();
+			obj = document.getElementById(obj_name);
+		}
+
+		if (research_count > 1)
+		{
+			auto_research_handler = self.setInterval("AutoSwitchResearch()", 5000);
+		}
+		
+		if (investing_count > 1)
+		{
+			auto_investing_handler = self.setInterval("AutoInvestingResearch()", 5000);
+		}
 	});
+
+	function AutoSwitchResearch()
+	{
+		if (research_move_max_cnt != 0)
+		{
+			return;
+		}
+
+		var index = (current_research_index + 1) % research_count;
+
+		var cur_circle_name = "#research_point_" + current_research_index;
+		var target_circle_name = "#research_point_" + index;
+
+		$(cur_circle_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/circle_unpressed.png'; ?>)");
+		$(target_circle_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/circle_pressed.png'; ?>)");
+
+		var cur_content_name = "#research_container_" + current_research_index;
+		var target_content_name = "#research_container_" + index;
+
+		var cur_end_pos = -1024;
+		var target_start_pos = 1024;
+		var target_end_pos = 0;
+
+		research_move_max_cnt = 2;
+
+		$(target_content_name).css({"left":target_start_pos.toString() + "px"});
+		$(target_content_name).show();
+
+		$(target_content_name).animate({left:target_end_pos.toString() + 'px'}, 'slow', function(){
+			research_move_max_cnt--;
+		});
+
+		$(cur_content_name).animate({left:cur_end_pos.toString() + 'px'}, 'slow', function(){
+			$(cur_content_name).hide();
+			research_move_max_cnt--;
+		});
+
+		current_research_index = index;
+	}
+
+	function AutoInvestingResearch()
+	{
+		if (investing_move_max_cnt != 0)
+		{
+			return;
+		}
+
+		var index = (current_investing_index + 1) % investing_count;
+
+		var cur_circle_name = "#investing_point_" + current_investing_index;
+		var target_circle_name = "#investing_point_" + index;
+
+		$(cur_circle_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/circle_unpressed.png'; ?>)");
+		$(target_circle_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/circle_orange_pressed.png'; ?>)");
+
+		var cur_content_name = "#investing_container_" + current_investing_index;
+		var target_content_name = "#investing_container_" + index;
+
+		var cur_end_pos = -1024;
+		var target_start_pos = 1024;
+		var target_end_pos = 0;
+
+		investing_move_max_cnt = 2;
+
+		$(target_content_name).css({"left":target_start_pos.toString() + "px"});
+		$(target_content_name).show();
+
+		$(target_content_name).animate({left:target_end_pos.toString() + 'px'}, 'slow', function(){
+			investing_move_max_cnt--;
+		});
+
+		$(cur_content_name).animate({left:cur_end_pos.toString() + 'px'}, 'slow', function(){
+			$(cur_content_name).hide();
+			investing_move_max_cnt--;
+		});
+
+		current_investing_index = index;
+	}
 
 	function SwitchResearch(index, post_title)
 	{
 		if (index == current_research_index || research_move_max_cnt != 0)
 		{
 			return;
+		}
+
+		if (auto_research_handler != -1)
+		{
+			self.clearInterval(auto_research_handler);
+			auto_research_handler = -1;
 		}
 
 		var cur_circle_name = "#research_point_" + current_research_index;
@@ -89,6 +213,12 @@ Template Name: index.php
 		if (index == current_investing_index || investing_move_max_cnt != 0)
 		{
 			return;
+		}
+
+		if (auto_investing_handler != -1)
+		{
+			self.clearInterval(auto_investing_handler);
+			auto_investing_handler = -1;
 		}
 
 		var cur_circle_name = "#investing_point_" + current_investing_index;
