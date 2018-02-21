@@ -21,71 +21,71 @@ Template Name: career.php
 			if (bottomPos >= $(window).scrollTop() && bottomPos < ($(window).scrollTop()+$(window).height())) {
 				bAnimPlayed = true;
 
-				$("#point1").animate({"opacity" : "1"}, 500);
+				$("#point1").animate({"opacity" : "1"}, 200);
 
-				$("#line11").delay(500).animate({"opacity" : "1"}, 500);
-				$("#line12").delay(500).animate({"opacity" : "1"}, 500);
+				$("#line11").delay(200).animate({"opacity" : "1"}, 200);
+				$("#line12").delay(200).animate({"opacity" : "1"}, 200);
 
-				$("#sp11").delay(500).animate({"opacity" : "1"}, 500);
-				$("#sp12").delay(500).animate({"opacity" : "1"}, 500);
+				$("#sp11").delay(200).animate({"opacity" : "1"}, 200);
+				$("#sp12").delay(200).animate({"opacity" : "1"}, 200);
 
-				$("#st11").delay(1000).animate({"opacity" : "1"}, 500);
-				$("#st12").delay(1000).animate({"opacity" : "1"}, 500);
+				$("#st11").delay(400).animate({"opacity" : "1"}, 200);
+				$("#st12").delay(400).animate({"opacity" : "1"}, 200);
 
-				$("#point2").delay(1500).animate({"opacity" : "1"}, 500);
+				$("#point2").delay(700).animate({"opacity" : "1"}, 200);
 
-				$("#line21").delay(2000).animate({"opacity" : "1"}, 500);
-				$("#line22").delay(2000).animate({"opacity" : "1"}, 500);
+				$("#line21").delay(900).animate({"opacity" : "1"}, 200);
+				$("#line22").delay(900).animate({"opacity" : "1"}, 200);
 
-				$("#sp21").delay(2000).animate({"opacity" : "1"}, 500);
-				$("#sp22").delay(2000).animate({"opacity" : "1"}, 500);
+				$("#sp21").delay(900).animate({"opacity" : "1"}, 200);
+				$("#sp22").delay(900).animate({"opacity" : "1"}, 200);
 
-				$("#st21").delay(2500).animate({"opacity" : "1"}, 500);
-				$("#st22").delay(2500).animate({"opacity" : "1"}, 500);
+				$("#st21").delay(1100).animate({"opacity" : "1"}, 200);
+				$("#st22").delay(1100).animate({"opacity" : "1"}, 200);
 
-				$("#point3").delay(3000).animate({"opacity" : "1"}, 500);
+				$("#point3").delay(1300).animate({"opacity" : "1"}, 200);
 
-				$("#line31").delay(3500).animate({"opacity" : "1"}, 500);
-				$("#line32").delay(3500).animate({"opacity" : "1"}, 500);
+				$("#line31").delay(1600).animate({"opacity" : "1"}, 200);
+				$("#line32").delay(1600).animate({"opacity" : "1"}, 200);
 
-				$("#sp31").delay(3500).animate({"opacity" : "1"}, 500);
-				$("#sp32").delay(3500).animate({"opacity" : "1"}, 500);
+				$("#sp31").delay(1600).animate({"opacity" : "1"}, 200);
+				$("#sp32").delay(1600).animate({"opacity" : "1"}, 200);
 
-				$("#st31").delay(4000).animate({"opacity" : "1"}, 500);
-				$("#st32").delay(4000).animate({"opacity" : "1"}, 500);
+				$("#st31").delay(1800).animate({"opacity" : "1"}, 200);
+				$("#st32").delay(1800).animate({"opacity" : "1"}, 200);
 
-				$("#point4").delay(4500).animate({"opacity" : "1"}, 500);
+				$("#point4").delay(2100).animate({"opacity" : "1"}, 200);
 
-				$("#line41").delay(5000).animate({"opacity" : "1"}, 500);
-				$("#line42").delay(5000).animate({"opacity" : "1"}, 500);
+				$("#line41").delay(2300).animate({"opacity" : "1"}, 200);
+				$("#line42").delay(2300).animate({"opacity" : "1"}, 200);
 
-				$("#sp41").delay(5000).animate({"opacity" : "1"}, 500);
-				$("#sp42").delay(5000).animate({"opacity" : "1"}, 500);
+				$("#sp41").delay(2300).animate({"opacity" : "1"}, 200);
+				$("#sp42").delay(2300).animate({"opacity" : "1"}, 200);
 
-				$("#st41").delay(5500).animate({"opacity" : "1"}, 500);
-				$("#st42").delay(5500).animate({"opacity" : "1"}, 500);
+				$("#st41").delay(2500).animate({"opacity" : "1"}, 200);
+				$("#st42").delay(2500).animate({"opacity" : "1"}, 200);
 
-				$("#point5").delay(6000).animate({"opacity" : "1"}, 500);
+				$("#point5").delay(2800).animate({"opacity" : "1"}, 200);
 
-				$("#line51").delay(6500).animate({"opacity" : "1"}, 500);
-				$("#line52").delay(6500).animate({"opacity" : "1"}, 500);
+				$("#line51").delay(3000).animate({"opacity" : "1"}, 200);
+				$("#line52").delay(3000).animate({"opacity" : "1"}, 200);
 
-				$("#sp51").delay(6500).animate({"opacity" : "1"}, 500);
-				$("#sp52").delay(6500).animate({"opacity" : "1"}, 500);
+				$("#sp51").delay(3000).animate({"opacity" : "1"}, 200);
+				$("#sp52").delay(3000).animate({"opacity" : "1"}, 200);
 
-				$("#st51").delay(7000).animate({"opacity" : "1"}, 500);
-				$("#st52").delay(7000).animate({"opacity" : "1"}, 500);
+				$("#st51").delay(3200).animate({"opacity" : "1"}, 200);
+				$("#st52").delay(3200).animate({"opacity" : "1"}, 200);
 
-				$("#point6").delay(7500).animate({"opacity" : "1"}, 500);
+				$("#point6").delay(3500).animate({"opacity" : "1"}, 200);
 
-				$("#line61").delay(8000).animate({"opacity" : "1"}, 500);
-				$("#line62").delay(8000).animate({"opacity" : "1"}, 500);
+				$("#line61").delay(3700).animate({"opacity" : "1"}, 200);
+				$("#line62").delay(3700).animate({"opacity" : "1"}, 200);
 
-				$("#sp61").delay(8000).animate({"opacity" : "1"}, 500);
-				$("#sp62").delay(8000).animate({"opacity" : "1"}, 500);
+				$("#sp61").delay(3700).animate({"opacity" : "1"}, 200);
+				$("#sp62").delay(3700).animate({"opacity" : "1"}, 200);
 
-				$("#st61").delay(8500).animate({"opacity" : "1"}, 500);
-				$("#st62").delay(8500).animate({"opacity" : "1"}, 500);
+				$("#st61").delay(3900).animate({"opacity" : "1"}, 200);
+				$("#st62").delay(3900).animate({"opacity" : "1"}, 200);
 			}
 		}
 	});
