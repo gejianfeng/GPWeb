@@ -551,7 +551,7 @@ body {
 
 /* gpex.php stylesheet */
 #gpex {	
-	height: 3410px; 
+	height: 3235px; 
 	width: 1920px;
 }
 
@@ -570,7 +570,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	overflow: visible;
-	height: 606px;
+	height: 504px;
 	margin: 0px auto;
 	position: relative;
 }
@@ -586,7 +586,7 @@ body {
 }
 
 #gpex .s3 {
-	height: 955px;
+	height: 882px;
 	max-width: 1920px;
 	margin: 0px auto;
 	position: relative;
@@ -671,7 +671,7 @@ body {
 	position: absolute;
 	right: 0px;
 	top: 48px;
-	height: 558px;
+	height: 456px;
 	width: 15px;
 	background-color: #3e4d53;
 }
@@ -688,32 +688,32 @@ body {
 
 #gpex .s1-content {
 	position: absolute;
-	width: 625px;
+	width: 550px;
 }
 
 #gpex .s1-content-1 {
-	top: 135px;
-	left: 358px;
+	top: 132px;
+	left: 396px;
 }
 
 #gpex .s1-content-2 {
-	top: 255px;
-	left: 358px;
+	top: 245px;
+	left: 396px;
 }
 
 #gpex .s1-content-3 {
-	top: 435px;
-	left: 358px;
+	top: 378px;
+	left: 396px;
 }
 
 #gpex .s1-content-4 {
-	top: 135px;
-	left: 1020px;
+	top: 132px;
+	left: 1010px;
 }
 
 #gpex .s1-content-5 {
-	top: 255px;
-	left: 1020px;
+	top: 245px;
+	left: 1010px;
 }
 
 #gpex .s1-icon {
@@ -734,7 +734,7 @@ body {
 	top: 0px;
 	position: absolute;
 	font-family: "Georgia";
-	font-size: 24px;
+	font-size: 20px;
 	color: #333333;
 	text-align: left;
 }
@@ -787,27 +787,27 @@ body {
 
 #gpex .s2-content {
 	position: absolute;
-	width: 625px;
+	width: 550px;
 }
 
 #gpex .s2-content-1 {
 	top: 135px;
-	left: 358px;
+	left: 392px;
 }
 
 #gpex .s2-content-2 {
 	top: 315px;
-	left: 358px;
+	left: 392px;
 }
 
 #gpex .s2-content-3 {
 	top: 135px;
-	left: 1020px;
+	left: 1000px;
 }
 
 #gpex .s2-content-4 {
 	top: 315px;
-	left: 1020px;
+	left: 1000px;
 }
 
 #gpex .s2-icon {
@@ -828,7 +828,7 @@ body {
 	top: 0px;
 	position: absolute;
 	font-family: "Georgia";
-	font-size: 24px;
+	font-size: 20px;
 	color: #ffffff;
 	text-align: left;
 }
@@ -839,8 +839,8 @@ body {
 	left: 68px;
 }
 
-#gpex .s2-sub-content-1 { top: 160px; }
-#gpex .s2-sub-content-2 { top: 245px; }
+#gpex .s2-sub-content-1 { top: 140px; }
+#gpex .s2-sub-content-2 { top: 225px; }
 
 #gpex .s2-sub-content-text {
 	width: 100%;
@@ -849,7 +849,7 @@ body {
 	top: 0px;
 	position: absolute;
 	font-family: "Georgia";
-	font-size: 24px;
+	font-size: 20px;
 	color: #ffffff;
 	text-align: left;
 }
@@ -1003,7 +1003,7 @@ body {
 	top: 0px;
 	left: 0px;
 	font-family: "Century Gothic";
-	font-size: 24px;
+	font-size: 22px;
 	color: #333333;
 }
 
@@ -1011,7 +1011,7 @@ body {
 	height: 2px;
 	width: 340px;
 	position: absolute;
-	top: 45px;
+	top: 40px;
 	left: 120px;
 	background-color: #3e4d53;
 }
@@ -1023,7 +1023,7 @@ body {
 	top: 60px;
 	position: absolute;
 	font-family: "Georgia";
-	font-size: 24px;
+	font-size: 20px;
 	color: #333333;
 	text-align: left;
 }
@@ -1110,7 +1110,7 @@ body {
 	top: 5px;
 	position: absolute;
 	font-family: "Georgia";
-	font-size: 24px;
+	font-size: 20px;
 	color: #ffffff;
 	text-align: left;
 }
@@ -1131,11 +1131,11 @@ body {
 	top: 10px;
 }
 
-#gpex .s4-sub-content-1 { top: 85px; }
-#gpex .s4-sub-content-2 { top: 170px; }
-#gpex .s4-sub-content-3 { top: 220px; }
-#gpex .s4-sub-content-4 { top: 275px; }
-#gpex .s4-sub-content-5 { top: 330px; }
+#gpex .s4-sub-content-1 { top: 70px; }
+#gpex .s4-sub-content-2 { top: 155px; }
+#gpex .s4-sub-content-3 { top: 205px; }
+#gpex .s4-sub-content-4 { top: 260px; }
+#gpex .s4-sub-content-5 { top: 315px; }
 
 #gpex .s4-sub-content-text {
 	width: 100%;
@@ -1144,7 +1144,7 @@ body {
 	top: 0px;
 	position: absolute;
 	font-family: "Georgia";
-	font-size: 24px;
+	font-size: 20px;
 	color: #ffffff;
 	text-align: left;
 }
