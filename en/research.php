@@ -116,10 +116,10 @@ Template Name: research.php
 
 			<div class="s4-container s4c1">
 				<div class="s4c1-icon"></div>
-				<div class="s4-title" style="top: 310px;">Longest Track Record</div>
-				<div class="s4-line" style="top: 374px;"></div>
-				<div class="s4-mark" style="background-color: #00647b; top: 368px;"></div>
-				<div class="s4-text" style="top: 390px;">Since 2012, Goldpebble has been pioneering in providing <i>quantamental</i> research services to world-top investors. With the longest track record, Goldpebble is the first research company to adopt big data and cloud computing technologies in building investing edge.<br/><br/>Goldpebble's alernative data about companies' key operation metrics have been more accurate than Wall Street analysis for more than 20 quarters. The companies covered</div>
+				<div class="s4-title" style="top: 275px;">Longest Track Record</div>
+				<div class="s4-line" style="top: 334px;"></div>
+				<div class="s4-mark" style="background-color: #00647b; top: 328px;"></div>
+				<div class="s4-text" style="top: 350px;">Since 2012, Goldpebble has been pioneering in providing <i>quantamental</i> research services to world-top investors. With the longest track record, Goldpebble is the first research company to adopt big data and cloud computing technologies in building investing edge.<br/><br/>Goldpebble's alernative data about companies' key operation metrics have been more accurate than Wall Street analysis for more than 20 quarters. The companies covered includes not only mid-cap stocks (e.g. MOMO, YY), but also mega-cap ones (e.g. Tencent, BABA).</div>
 			</div>
 
 			<div class="s4-container s4c2">
@@ -132,10 +132,10 @@ Template Name: research.php
 
 			<div class="s4-container s4c3">
 				<div class="s4c3-icon"></div>
-				<div class="s4-title" style="top: 290px;">Systems Make Things Different</div>
-				<div class="s4-line" style="top: 374px;"></div>
-				<div class="s4-mark" style="background-color: #00647b; top: 368px;"></div>
-				<div class="s4-text" style="top: 390px;">Supplemented by leading technology in big data processing, Goldpebble extends its experties in investment research.<br/><br/>Goldpebble has built several proprietary systems, including GP HIDEN, GP CORE, GP OS and GP Psyc, and provides the best <i>quantamental</i> research service in China to global mutual funds, hedge funds, corporate leaders and family offices.</div>
+				<div class="s4-title" style="top: 275px;">Systems Make Things Different</div>
+				<div class="s4-line" style="top: 364px;"></div>
+				<div class="s4-mark" style="background-color: #00647b; top: 358px;"></div>
+				<div class="s4-text" style="top: 380px;">Supplemented by leading technology in big data processing, Goldpebble extends its experties in investment research.<br/><br/>Goldpebble has built several proprietary systems, including GP HIDEN, GP CORE, GP OS and GP Psyc, and provides the best <i>quantamental</i> research service in China to global mutual funds, hedge funds, corporate leaders and family offices.</div>
 			</div>
 		</div>
 	</div>
