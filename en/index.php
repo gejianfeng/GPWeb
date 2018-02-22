@@ -572,7 +572,7 @@ Template Name: index.php
 			<div class="s" style="top: 56px;">
 				<div class="s-icon" style="top: 5px; left: 0px; width: 38px; height: 24px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/icon_eye.png'; ?>);"></div>
 				<div class="s-title" style="color: #333333;">Goldpebble Achievement</div>
-				<div class="s-line"></div>
+				<div class="s-line" style="background-color: rgb(244, 109, 0) !important;"></div>
 			</div>
 
 			<div class="s5-line"></div>
@@ -584,10 +584,6 @@ Template Name: index.php
 				<div id="scroll-container" class="s5-scroll-container">
 					<!-- 2012 -->
 					<div class="achievement-frame" style="top: 0px;">
-						<div id="ga_label_0" class="achievement-label" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(0);">
-							<div class="achievement-label-cell">Company Milestones</div>
-						</div>
-
 						<div id="ga_timeline_0" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
 						<div id="ga_line_0" class="achievement-label-line" style="background-color: #acacac;"></div>
 						<div id="ga_round_point_0" class="achievement-label-round-point" style="background-color: #acacac;"></div>
@@ -601,10 +597,6 @@ Template Name: index.php
 
 					<!-- 2013 -->
 					<div class="achievement-frame" style="top: 72px;">
-						<div id="ga_label_1" class="achievement-label" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(1);">
-							<div class="achievement-label-cell"><i>Quantamental</i> Research</div>
-						</div>
-
 						<div id="ga_timeline_1" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
 						<div id="ga_line_1" class="achievement-label-line" style="background-color: #acacac;"></div>
 						<div id="ga_round_point_1" class="achievement-label-round-point" style="background-color: #acacac;"></div>
@@ -618,10 +610,6 @@ Template Name: index.php
 
 					<!-- 2014 -->
 					<div class="achievement-frame" style="top: 144px;">
-						<div id="ga_label_2" class="achievement-label" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(2);">
-							<div class="achievement-label-cell">Alternative Investing</div>
-						</div>
-
 						<div id="ga_timeline_2" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
 						<div id="ga_line_2" class="achievement-label-line" style="background-color: #acacac;"></div>
 						<div id="ga_round_point_2" class="achievement-label-round-point" style="background-color: #acacac;"></div>
@@ -635,10 +623,6 @@ Template Name: index.php
 
 					<!-- 2018 -->
 					<div class="achievement-frame" style="top: 216px;">
-						<div id="ga_label_3" class="achievement-label" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(3);">
-							<div class="achievement-label-cell">Blockchain Application</div>
-						</div>
-
 						<div id="ga_timeline_3" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
 						<div id="ga_line_3" class="achievement-label-line" style="background-color: #acacac;"></div>
 						<div id="ga_round_point_3" class="achievement-label-round-point" style="background-color: #acacac;"></div>
@@ -669,6 +653,24 @@ Template Name: index.php
 					-->
 				</div>
 			</div>
+
+			<div id="ga_label_0" class="achievement-label" style="left: -140px; top: 170px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(0);">
+				<div class="achievement-label-cell">Company Milestones</div>
+			</div>
+
+			<div id="ga_label_1" class="achievement-label" style="left: -140px; top: 245px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(1);">
+				<div class="achievement-label-cell"><i>Quantamental</i> Research</div>
+			</div>
+
+			<div id="ga_label_2" class="achievement-label" style="left: -140px; top: 320px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(2);">
+				<div class="achievement-label-cell">Alternative Investing</div>
+			</div>
+
+			<div id="ga_label_3" class="achievement-label" style="left: -140px; top: 395px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(3);">
+				<div class="achievement-label-cell">Blockchain Application</div>
+			</div>
+
+			<div style="position: absolute; top: 105px; left: 20px; width: 4px; height: 386px; background-color: rgb(244, 109, 0);"></div>
 
 			<div id="s5-content" class="s5-content-frame">
 				<!-- 2012 -->

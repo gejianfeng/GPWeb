@@ -1952,7 +1952,7 @@ body {
 #index .s5 {
 	height: 564px;
 	max-width: 1920px;
-	background-color: #ffffff;
+	background-color: rgb(238, 238, 238);
 	margin: 0px auto;
 	position: relative;
 }
@@ -2261,7 +2261,7 @@ body {
 	width: 40px;
 	height: 26px;
 	top: 140px;
-	left: 163px;
+	left: 113px;
 	cursor: pointer;
 }
 
@@ -2273,7 +2273,7 @@ body {
 	width: 40px;
 	height: 26px;
 	top: 455px;
-	left: 163px;
+	left: 113px;
 	cursor: pointer;
 }
 
@@ -2282,7 +2282,7 @@ body {
 	height: 340px;
 	position: absolute;
 	top: 140px;
-	left: 183px;
+	left: 133px;
 	background-color: #525252;
 }
 
@@ -2348,7 +2348,7 @@ body {
 	position: absolute;
 	width: 14px;
 	height: 14px;
-	left: 177px;
+	left: 127px;
 	top: 20px;
 }
 
@@ -2356,7 +2356,7 @@ body {
 	height: 1px;
 	width: 98px;
 	position: absolute;
-	left: 191px;
+	left: 141px;
 	top: 26px;
 }
 
@@ -2365,7 +2365,7 @@ body {
 	font-size: 24px;
 	color: #333333;
 	position: absolute;
-	left: 215px;
+	left: 165px;
 	top: -5px;
 }
 
@@ -2374,7 +2374,7 @@ body {
 	height: 5px;
 	position: absolute;
 	border-radius: 2px;
-	left: 284px;
+	left: 234px;
 	top: 24px;
 }
 
@@ -2382,7 +2382,7 @@ body {
 	width: 265px;
 	height: 100%;
 	position: absolute;
-	right: 0px;
+	right: 50px;
 	top: 0px;
 	display: table;
 }
