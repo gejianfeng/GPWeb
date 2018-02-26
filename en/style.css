@@ -2287,16 +2287,16 @@ body {
 }
 
 #index .s5-scrollrect {
-	width: 570px;
+	width: 470px;
 	height: 270px;
 	position: absolute;
 	overflow: hidden;
 	top: 175px;
-	left: 0px;
+	left: 100px;
 }
 
 #index .s5-scroll-container {
-	width: 570px;
+	width: 470px;
 	height: 270px;
 	position: absolute;
 	left: 0px;
@@ -2305,17 +2305,18 @@ body {
 
 #index .s5-content-frame {
 	width: 433px;
-	height: 359px;
+	height: 1494px;
 	position: absolute;
 	right: 0px;
 	top: 140px;
 }
 
 #index .achievement-frame {
-	width: 570px;
+	width: 470px;
 	height: 54px;
 	position: absolute;
 	left: 0px;
+	cursor: pointer;
 }
 
 #index .achievement-label {
@@ -2326,7 +2327,6 @@ body {
 	height: 54px;
 	top: 0px;
 	left: 0px;
-	cursor: pointer;
 	display: table;
 }
 
@@ -2348,7 +2348,7 @@ body {
 	position: absolute;
 	width: 14px;
 	height: 14px;
-	left: 127px;
+	left: 26px;
 	top: 20px;
 }
 
@@ -2356,16 +2356,16 @@ body {
 	height: 1px;
 	width: 98px;
 	position: absolute;
-	left: 141px;
+	left: 40px;
 	top: 26px;
 }
 
 #index .achievement-label-year {
 	font-family: "Georgia";
-	font-size: 24px;
+	font-size: 23px;
 	color: #333333;
 	position: absolute;
-	left: 165px;
+	left: 55px;
 	top: -5px;
 }
 
@@ -2374,22 +2374,22 @@ body {
 	height: 5px;
 	position: absolute;
 	border-radius: 2px;
-	left: 234px;
+	left: 134px;
 	top: 24px;
 }
 
 #index .achievement-desc-frame {
-	width: 265px;
+	width: 315px;
 	height: 100%;
 	position: absolute;
-	right: 50px;
+	right: 0px;
 	top: 0px;
 	display: table;
 }
 
 #index .achievement-desc-text {
 	font-family: "Georgia";
-	font-size: 18px;
+	font-size: 16px;
 	text-align: left;
 	vertical-align: middle;
 	left: 0px;

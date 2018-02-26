@@ -48,7 +48,7 @@ Template Name: index.php
 		{
 			achievement_count++;
 			index++;
-			obj_name = "ga_label_" + index.toString();
+			obj_name = "ga_year_" + index.toString();
 			obj = document.getElementById(obj_name);
 		}
 
@@ -84,6 +84,18 @@ Template Name: index.php
 		if (investing_count > 1)
 		{
 			auto_investing_handler = self.setInterval("AutoInvestingResearch()", 5000);
+		}
+
+		if (achievement_count > 0)
+		{
+			OnLabelClicked(achievement_count - 1);
+
+			if (achievement_count > 4)
+			{
+				var target_pos = (achievement_count - 4) * 72 * -1;
+				$("#scroll-container").css("top", target_pos.toString() + 'px');
+				achievement_index = (achievement_count - 4) * -1;
+			}
 		}
 	});
 
@@ -285,57 +297,271 @@ Template Name: index.php
 
 	function OnLabelClicked(idx)
 	{
-		if (idx < 0 || idx >= achievement_count)
+		if (idx < 0 || idx >= achievement_count || idx == achievement_show_index)
 		{
 			return;
 		}
 
 		if (achievement_show_index > -1)
 		{
-			var obj_name = "#ga_label_" + achievement_show_index.toString();
-			$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)");
-
-			obj_name = "#ga_timeline_" + achievement_show_index.toString();
-			$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)");
-
-			obj_name = "#ga_line_" + achievement_show_index.toString();
-			$(obj_name).css("background-color", "#acacac");
-
-			obj_name = "#ga_round_point_" + achievement_show_index.toString();
-			$(obj_name).css("background-color", "#acacac");
-
-			obj_name = "#ga_year_" + achievement_show_index.toString();
-			$(obj_name).css("color", "#333333");
-
-			obj_name = "#ga_label_text_" + achievement_show_index.toString();
-			$(obj_name).css("color", "#333333");
-
-			obj_name = "#ga_content_" + achievement_show_index.toString();
-			$(obj_name).hide();
+			ShowInfoPanel(achievement_show_index, false);
+			SetAchievementStatus(achievement_show_index, false);
 		}
 
-		var obj_name = "#ga_label_" + idx.toString();
-		$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_orange.png'; ?>)");
+		switch(idx)
+		{
+			case 0:
+			{
+				SetTabStatus(0, true)
+				SetTabStatus(1, false)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 1:
+			{
+				SetTabStatus(0, true)
+				SetTabStatus(1, false)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 2:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, true)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 3:
+			{
+				SetTabStatus(0, true)
+				SetTabStatus(1, false)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 4:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, true)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 5:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, true)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 6:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, true)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 7:
+			{
+				SetTabStatus(0, true)
+				SetTabStatus(1, false)
+				SetTabStatus(2, false)
+				SetTabStatus(3, true)
+				break;
+			}
+			case 8:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, false)
+				SetTabStatus(2, false)
+				SetTabStatus(3, true)
+				break;
+			}
+			case 9:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, true)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 10:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, true)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 11:
+			{
+				SetTabStatus(0, true)
+				SetTabStatus(1, false)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 12:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, true)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 13:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, true)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 14:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, true)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 14:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, true)
+				SetTabStatus(2, false)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 15:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, false)
+				SetTabStatus(2, true)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 16:
+			{
+				SetTabStatus(0, true)
+				SetTabStatus(1, false)
+				SetTabStatus(2, true)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 17:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, false)
+				SetTabStatus(2, true)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 18:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, false)
+				SetTabStatus(2, false)
+				SetTabStatus(3, true)
+				break;
+			}
+			case 19:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, false)
+				SetTabStatus(2, true)
+				SetTabStatus(3, false)
+				break;
+			}
+			case 20:
+			{
+				SetTabStatus(0, false)
+				SetTabStatus(1, false)
+				SetTabStatus(2, false)
+				SetTabStatus(3, true)
+				break;
+			}
+		}
 
-		obj_name = "#ga_timeline_" + idx.toString();
-		$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_orange.png'; ?>)");
-
-		obj_name = "#ga_line_" + idx.toString();
-		$(obj_name).css("background-color", "#f96700");
-
-		obj_name = "#ga_round_point_" + idx.toString();
-		$(obj_name).css("background-color", "#f96700");
-
-		obj_name = "#ga_year_" + idx.toString();
-		$(obj_name).css("color", "#f96700");
-
-		obj_name = "#ga_label_text_" + idx.toString();
-		$(obj_name).css("color", "#f96700");
-
-		obj_name = "#ga_content_" + idx.toString();
-		$(obj_name).show();
+		ShowInfoPanel(idx, true);
+		SetAchievementStatus(idx, true);
 
 		achievement_show_index = idx;
+	}
+
+	function SetTabStatus(idx, bEnabled)
+	{
+		var obj_name = "#ga_label_" + idx.toString();
+
+		if (bEnabled)
+		{
+			$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_orange.png'; ?>)");
+		}
+		else
+		{
+			$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)");
+		}
+	}
+
+	function ShowInfoPanel(idx, bShow)
+	{
+		var obj_name = "#ga_content_" + idx.toString();
+		
+		if (bShow)
+		{
+			$(obj_name).show();
+		}
+		else
+		{
+			$(obj_name).hide();
+		}
+	}
+
+	function SetAchievementStatus(idx, bEnabled)
+	{
+		var obj_name;
+
+		if (bEnabled)
+		{
+			obj_name = "#ga_timeline_" + idx.toString();
+			$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_orange.png'; ?>)");
+
+			obj_name = "#ga_line_" + idx.toString();
+			$(obj_name).css("background-color", "#f96700");
+
+			obj_name = "#ga_round_point_" + idx.toString();
+			$(obj_name).css("background-color", "#f96700");
+
+			obj_name = "#ga_year_" + idx.toString();
+			$(obj_name).css("color", "#f96700");
+
+			obj_name = "#ga_label_text_" + idx.toString();
+			$(obj_name).css("color", "#f96700");
+		}
+		else
+		{
+			obj_name = "#ga_timeline_" + idx.toString();
+			$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)");
+
+			obj_name = "#ga_line_" + idx.toString();
+			$(obj_name).css("background-color", "#acacac");
+
+			obj_name = "#ga_round_point_" + idx.toString();
+			$(obj_name).css("background-color", "#acacac");
+
+			obj_name = "#ga_year_" + idx.toString();
+			$(obj_name).css("color", "#333333");
+
+			obj_name = "#ga_label_text_" + idx.toString();
+			$(obj_name).css("color", "#333333");
+
+			
+		}
 	}
 
 </script>
@@ -582,115 +808,403 @@ Template Name: index.php
 
 			<div class="s5-scrollrect">
 				<div id="scroll-container" class="s5-scroll-container">
-					<!-- 2012 -->
-					<div class="achievement-frame" style="top: 0px;">
+					<!-- Entry 1 -->
+					<div class="achievement-frame" style="top: 0px;" onclick="OnLabelClicked(0);">
 						<div id="ga_timeline_0" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
 						<div id="ga_line_0" class="achievement-label-line" style="background-color: #acacac;"></div>
 						<div id="ga_round_point_0" class="achievement-label-round-point" style="background-color: #acacac;"></div>
 
-						<div id="ga_year_0" class="achievement-label-year" style="color: #333333">2012</div>
+						<div id="ga_year_0" class="achievement-label-year" style="color: #333333">2010.1</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_0" class="achievement-desc-text" style="color: #333333;">Defeat short sellers on New Oriental (EDU US)</div>
+							<div id="ga_label_text_0" class="achievement-desc-text" style="color: #333333;">Opened Goldpebble Singapore headquarter</div>
 						</div>
 					</div>
 
-					<!-- 2013 -->
-					<div class="achievement-frame" style="top: 72px;">
+					<!-- Entry 2 -->
+					<div class="achievement-frame" style="top: 72px;" onclick="OnLabelClicked(1);">
 						<div id="ga_timeline_1" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
 						<div id="ga_line_1" class="achievement-label-line" style="background-color: #acacac;"></div>
 						<div id="ga_round_point_1" class="achievement-label-round-point" style="background-color: #acacac;"></div>
 
-						<div id="ga_year_1" class="achievement-label-year" style="color: #333333">2013</div>
+						<div id="ga_year_1" class="achievement-label-year" style="color: #333333">2012.5</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_1" class="achievement-desc-text" style="color: #333333;">Earliest in understanding YY's business model</div>
+							<div id="ga_label_text_1" class="achievement-desc-text" style="color: #333333;">Opened Goldpebble Hong Kong office</div>
 						</div>
 					</div>
 
-					<!-- 2014 -->
-					<div class="achievement-frame" style="top: 144px;">
+					<!-- Entry 3 -->
+					<div class="achievement-frame" style="top: 144px;" onclick="OnLabelClicked(2);">
 						<div id="ga_timeline_2" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
 						<div id="ga_line_2" class="achievement-label-line" style="background-color: #acacac;"></div>
 						<div id="ga_round_point_2" class="achievement-label-round-point" style="background-color: #acacac;"></div>
 
-						<div id="ga_year_2" class="achievement-label-year" style="color: #333333">2014</div>
+						<div id="ga_year_2" class="achievement-label-year" style="color: #333333">2012.9</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_2" class="achievement-desc-text" style="color: #333333;">Opened China branch</div>
+							<div id="ga_label_text_2" class="achievement-desc-text" style="color: #333333;">Published <i>quantamental</i> research report on New Oriental, defeated short sellers on New Oriental (EDU US)</div>
 						</div>
 					</div>
 
-					<!-- 2018 -->
-					<div class="achievement-frame" style="top: 216px;">
+					<!-- Entry 4 -->
+					<div class="achievement-frame" style="top: 216px;" onclick="OnLabelClicked(3);">
 						<div id="ga_timeline_3" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
 						<div id="ga_line_3" class="achievement-label-line" style="background-color: #acacac;"></div>
 						<div id="ga_round_point_3" class="achievement-label-round-point" style="background-color: #acacac;"></div>
 
-						<div id="ga_year_3" class="achievement-label-year" style="color: #333333">2018</div>
+						<div id="ga_year_3" class="achievement-label-year" style="color: #333333">2012.11</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_3" class="achievement-desc-text" style="color: #333333;">Enrich the portfolio of cryptocurrencies</div>
+							<div id="ga_label_text_3" class="achievement-desc-text" style="color: #333333;">Opened Goldpebble Shanghai rep office</div>
 						</div>
 					</div>
 
-					<!-- New Entry Template
-					<div class="achievement-frame" style="top: 288px;">
-						<div id="ga_label_4" class="achievement-label" style="background-image:url(<?php //echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(4);">
-							<div class="achievement-label-cell">Blockchain Application</div>
-						</div>
-
-						<div id="ga_timeline_4" class="achievement-label-point" style="background-image:url(<?php //echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+					<!-- Entry 5 -->
+					<div class="achievement-frame" style="top: 288px;" onclick="OnLabelClicked(4);">
+						<div id="ga_timeline_4" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
 						<div id="ga_line_4" class="achievement-label-line" style="background-color: #acacac;"></div>
 						<div id="ga_round_point_4" class="achievement-label-round-point" style="background-color: #acacac;"></div>
 
-						<div id="ga_year_4" class="achievement-label-year" style="color: #333333">2018</div>
+						<div id="ga_year_4" class="achievement-label-year" style="color: #333333">2012.12</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_4" class="achievement-desc-text" style="color: #333333;">Enrich the portfolio of cryptocurrencies</div>
+							<div id="ga_label_text_4" class="achievement-desc-text" style="color: #333333;">Published earliest social app monitor to check zombie accounts on Sina Weibo</div>
 						</div>
 					</div>
-					-->
+
+					<!-- Entry 6 -->
+					<div class="achievement-frame" style="top: 360px;" onclick="OnLabelClicked(5);">
+						<div id="ga_timeline_5" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_5" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_5" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_5" class="achievement-label-year" style="color: #333333">2013.1</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_5" class="achievement-desc-text" style="color: #333333;"><i>Quantamental</i> research on YY's Business Model;</div>
+						</div>
+					</div>
+
+					<!-- Entry 7 -->
+					<div class="achievement-frame" style="top: 432px;" onclick="OnLabelClicked(6);">
+						<div id="ga_timeline_6" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_6" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_6" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_6" class="achievement-label-year" style="color: #333333">2013.2</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_6" class="achievement-desc-text" style="color: #333333;">Earliest to understand big monetization potential and company value in Weibo</div>
+						</div>
+					</div>
+
+					<!-- Entry 8 -->
+					<div class="achievement-frame" style="top: 504px;" onclick="OnLabelClicked(7);">
+						<div id="ga_timeline_7" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_7" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_7" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_7" class="achievement-label-year" style="color: #333333">2013.10</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_7" class="achievement-desc-text" style="color: #333333;">Cooperate with Fortress Investment Group, who was the earliest Bitcoin investor</div>
+						</div>
+					</div>
+
+					<!-- Entry 9 -->
+					<div class="achievement-frame" style="top: 576px;" onclick="OnLabelClicked(8);">
+						<div id="ga_timeline_8" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_8" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_8" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_8" class="achievement-label-year" style="color: #333333">2014.1</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_8" class="achievement-desc-text" style="color: #333333;">Invested in one of the earliest developer of ASIC mining chips in China</div>
+						</div>
+					</div>
+
+					<!-- Entry 10 -->
+					<div class="achievement-frame" style="top: 648px;" onclick="OnLabelClicked(9);">
+						<div id="ga_timeline_9" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_9" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_9" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_9" class="achievement-label-year" style="color: #333333">2014.5</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_9" class="achievement-desc-text" style="color: #333333;">Created world first mobile game revenue forecasting system</div>
+						</div>
+					</div>
+
+					<!-- Entry 11 -->
+					<div class="achievement-frame" style="top: 720px;" onclick="OnLabelClicked(10);">
+						<div id="ga_timeline_10" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_10" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_10" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_10" class="achievement-label-year" style="color: #333333">2015.4</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_10" class="achievement-desc-text" style="color: #333333;">Integrated Baidu search data into GP Core system</div>
+						</div>
+					</div>
+
+					<!-- Entry 12 -->
+					<div class="achievement-frame" style="top: 792px;" onclick="OnLabelClicked(11);">
+						<div id="ga_timeline_11" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_11" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_11" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_11" class="achievement-label-year" style="color: #333333">2015.9</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_11" class="achievement-desc-text" style="color: #333333;">Founded Goldpebble subsidiary in Shanghai. New Shanghai office opened in KIC Shanghai</div>
+						</div>
+					</div>
+
+					<!-- Entry 13 -->
+					<div class="achievement-frame" style="top: 864px;" onclick="OnLabelClicked(12);">
+						<div id="ga_timeline_12" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_12" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_12" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_12" class="achievement-label-year" style="color: #333333">2015.10</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_12" class="achievement-desc-text" style="color: #333333;">Integrated Taobao transaction data and JD transaction data into GP Core system</div>
+						</div>
+					</div>
+
+					<!-- Entry 14 -->
+					<div class="achievement-frame" style="top: 936px;" onclick="OnLabelClicked(13);">
+						<div id="ga_timeline_13" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_13" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_13" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_13" class="achievement-label-year" style="color: #333333">2016.1</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_13" class="achievement-desc-text" style="color: #333333;">Integrated Chinese Credit Transaction data into GP Core System</div>
+						</div>
+					</div>
+
+					<!-- Entry 15 -->
+					<div class="achievement-frame" style="top: 1008px;" onclick="OnLabelClicked(14);">
+						<div id="ga_timeline_14" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_14" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_14" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_14" class="achievement-label-year" style="color: #333333">2016.8</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_14" class="achievement-desc-text" style="color: #333333;">Published <i>Quantamental</i> report on Momo Live Business</div>
+						</div>
+					</div>
+
+					<!-- Entry 16 -->
+					<div class="achievement-frame" style="top: 1080px;" onclick="OnLabelClicked(15);">
+						<div id="ga_timeline_15" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_15" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_15" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_15" class="achievement-label-year" style="color: #333333">2016.11</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_15" class="achievement-desc-text" style="color: #333333;">Acquired an asset manager for alternative investing in China</div>
+						</div>
+					</div>
+
+					<!-- Entry 17 -->
+					<div class="achievement-frame" style="top: 1152px;" onclick="OnLabelClicked(16);">
+						<div id="ga_timeline_16" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_16" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_16" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_16" class="achievement-label-year" style="color: #333333">2017.1</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_16" class="achievement-desc-text" style="color: #333333;">Goldpebble’s China asset management company got licensed by AMAC on alternative investing</div>
+						</div>
+					</div>
+
+					<!-- Entry 18 -->
+					<div class="achievement-frame" style="top: 1224px;" onclick="OnLabelClicked(17);">
+						<div id="ga_timeline_17" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_17" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_17" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_17" class="achievement-label-year" style="color: #333333">2017.3</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_17" class="achievement-desc-text" style="color: #333333;">Shanghai New Culture Fund was established</div>
+						</div>
+					</div>
+
+					<!-- Entry 19 -->
+					<div class="achievement-frame" style="top: 1296px;" onclick="OnLabelClicked(18);">
+						<div id="ga_timeline_18" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_18" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_18" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_18" class="achievement-label-year" style="color: #333333">2017.9</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_18" class="achievement-desc-text" style="color: #333333;">Published world earliest Bitcoin fundamental research report, earlier than major Wall Street firms</div>
+						</div>
+					</div>
+
+					<!-- Entry 20 -->
+					<div class="achievement-frame" style="top: 1368px;" onclick="OnLabelClicked(19);">
+						<div id="ga_timeline_19" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_19" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_19" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_19" class="achievement-label-year" style="color: #333333">2017.12</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_19" class="achievement-desc-text" style="color: #333333;">Invested more than 100 live events with more than RMB 200mn, the largest live events fund in China. Launched GP Crypto-Assets Fund</div>
+						</div>
+					</div>
+
+					<!-- Entry 21 -->
+					<div class="achievement-frame" style="top: 1440px;" onclick="OnLabelClicked(20);">
+						<div id="ga_timeline_20" class="achievement-label-point" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/droble_circle_gray.png'; ?>)"></div>
+						<div id="ga_line_20" class="achievement-label-line" style="background-color: #acacac;"></div>
+						<div id="ga_round_point_20" class="achievement-label-round-point" style="background-color: #acacac;"></div>
+
+						<div id="ga_year_20" class="achievement-label-year" style="color: #333333">2018.1</div>
+
+						<div class="achievement-desc-frame">
+							<div id="ga_label_text_20" class="achievement-desc-text" style="color: #333333;">Established Live Coins Limited for blockchain application on crowdfunding for live events</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
-			<div id="ga_label_0" class="achievement-label" style="left: -140px; top: 170px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(0);">
+			<div id="ga_label_0" class="achievement-label" style="left: -140px; top: 170px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
 				<div class="achievement-label-cell">Company Milestones</div>
 			</div>
 
-			<div id="ga_label_1" class="achievement-label" style="left: -140px; top: 245px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(1);">
+			<div id="ga_label_1" class="achievement-label" style="left: -140px; top: 245px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
 				<div class="achievement-label-cell"><i>Quantamental</i> Research</div>
 			</div>
 
-			<div id="ga_label_2" class="achievement-label" style="left: -140px; top: 320px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(2);">
+			<div id="ga_label_2" class="achievement-label" style="left: -140px; top: 320px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
 				<div class="achievement-label-cell">Alternative Investing</div>
 			</div>
 
-			<div id="ga_label_3" class="achievement-label" style="left: -140px; top: 395px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)" onclick="OnLabelClicked(3);">
+			<div id="ga_label_3" class="achievement-label" style="left: -140px; top: 395px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
 				<div class="achievement-label-cell">Blockchain Application</div>
 			</div>
 
 			<div style="position: absolute; top: 105px; left: 20px; width: 4px; height: 386px; background-color: rgb(244, 109, 0);"></div>
 
 			<div id="s5-content" class="s5-content-frame">
-				<!-- 2012 -->
-				<div id="ga_content_0" style="display: none;"></div>
+				<div id="ga_content_0" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic1.jpg'; ?>); width: 350px; height: 88px; position: absolute; left: 41px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Opened Goldpebble Singapore headquarter</div>
+				</div>
 
-				<!-- 2013 -->
 				<div id="ga_content_1" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic1.jpg'; ?>); width: 350px; height: 88px; position: absolute; left: 41px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Opened Goldpebble Hong Kong office</div>
+				</div>
+
+				<div id="ga_content_2" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic2.jpg'; ?>); width: 216px; height: 83px; position: absolute; left: 108px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Published <i>quantamental</i> research report on New Oriental, defeated short sellers on New Oriental (EDU US)</div>
+				</div>
+
+				<div id="ga_content_3" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic1.jpg'; ?>); width: 350px; height: 88px; position: absolute; left: 41px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Opened Goldpebble Shanghai rep office</div>
+				</div>
+
+				<div id="ga_content_4" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic4.png'; ?>); width: 261px; height: 87px; position: absolute; left: 86px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Published earliest social app monitor to check zombie accounts on Sina Weibo</div>
+				</div>
+
+				<div id="ga_content_5" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/logo_YY.jpg'; ?>); width: 288px; height: 103px; position: absolute; left: 72px; top: 35px;"></div>
 					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Goldpebble published a report about YY, which was not yet convered by any investment banks, The report helps institutional investors to better understand the live-streaming business. After the publishment, thestock price rose by 3 times, and trade volume rose by 5 times.</div>
 				</div>
 
-				<!-- 2014 -->
-				<div id="ga_content_2" style="display: none;"></div>
+				<div id="ga_content_6" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic4.png'; ?>); width: 261px; height: 87px; position: absolute; left: 86px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Earliest to understand big monetization potential and company value in Weibo</div>
+				</div>
 
-				<!-- 2018 -->
-				<div id="ga_content_3" style="display: none;"></div>
+				<div id="ga_content_7" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic4.jpg'; ?>); width: 282px; height: 102px; position: absolute; left: 25px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Cooperate with Fortress Investment Group, who was the earliest Bitcoin investor</div>
+				</div>
 
-				<!-- New Entry Template
-				<div id="ga_content_4" style="display: none;"></div>
-				-->
+				<div id="ga_content_8" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic5.jpg'; ?>); width: 311px; height: 103px; position: absolute; left: 61px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Invested in one of the earliest developer of ASIC mining chips in China</div>
+				</div>
+
+				<div id="ga_content_9" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic6.jpg'; ?>); width: 311px; height: 110px; position: absolute; left: 61px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Created world first mobile game revenue forecasting system</div>
+				</div>
+
+				<div id="ga_content_10" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic7.jpg'; ?>); width: 367px; height: 292px; position: absolute; left: 33px; top: 33px;"></div>
+				</div>
+
+				<div id="ga_content_11" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic1.jpg'; ?>); width: 350px; height: 88px; position: absolute; left: 41px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Founded Goldpebble subsidiary in Shanghai. New Shanghai office opened in KIC Shanghai</div>
+				</div>
+
+				<div id="ga_content_12" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic8.jpg'; ?>); width: 357px; height: 89px; position: absolute; left: 38px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Integrated Taobao transaction data and JD transaction data into GP Core system</div>
+				</div>
+
+				<div id="ga_content_13" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic9.jpg'; ?>); width: 281px; height: 110px; position: absolute; left: 76px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Integrated Chinese Credit Transaction data into GP Core System</div>
+				</div>
+
+				<div id="ga_content_14" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic10.png'; ?>); width: 281px; height: 93px; position: absolute; left: 76px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Published <i>Quantamental</i> report on Momo Live Business</div>
+				</div>
+
+				<div id="ga_content_15" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic11.jpg'; ?>); width: 285px; height: 120px; position: absolute; left: 74px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Acquired an asset manager for alternative investing in China</div>
+				</div>
+
+				<div id="ga_content_16" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic12.jpg'; ?>); width: 264px; height: 103px; position: absolute; left: 85px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Goldpebble’s China asset management company got licensed by AMAC on alternative investing</div>
+				</div>
+
+				<div id="ga_content_17" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic13.jpg'; ?>); width: 284px; height: 113px; position: absolute; left: 75px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Shanghai New Culture Fund was established</div>
+				</div>
+
+				<div id="ga_content_18" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic14.jpg'; ?>); width: 284px; height: 113px; position: absolute; left: 75px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Published world earliest Bitcoin fundamental research report, earlier than major Wall Street firms</div>
+				</div>
+
+				<div id="ga_content_19" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic15.jpg'; ?>); width: 284px; height: 113px; position: absolute; left: 75px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Invested more than 100 live events  with more than RMB 200mn, the largest live events fund in China. launched GP Crypto-Assets Fund</div>
+				</div>
+
+				<div id="ga_content_20" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
+					<div style="background-repeat: no-repeat; background-position: center; background-size:50%; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic20.png'; ?>); width: 125px; height: 125px; position: absolute; left: 155px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Established Live Coins Limited for blockchain application on crowdfunding for live events</div>
+				</div>
 			</div>
 		</div>
 	</div>
