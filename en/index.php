@@ -273,7 +273,7 @@ Template Name: index.php
 		achievement_animating = true;
 
 		var target_pos = (achievement_index - 1) * 72;
-		$("#scroll-container").animate({top:target_pos.toString() + 'px'}, 'slow', function(){
+		$("#scroll-container").animate({top:target_pos.toString() + 'px'}, 'fast', function(){
 			achievement_animating = false;
 			achievement_index--;
 		});
@@ -289,7 +289,7 @@ Template Name: index.php
 		achievement_animating = true;
 
 		var target_pos = (achievement_index + 1) * 72;
-		$("#scroll-container").animate({top:target_pos.toString() + 'px'}, 'slow', function(){
+		$("#scroll-container").animate({top:target_pos.toString() + 'px'}, 'fast', function(){
 			achievement_animating = false;
 			achievement_index++;
 		});
@@ -770,11 +770,7 @@ Template Name: index.php
 				<div class="s4-text">Groth with Collective<br/>Self Interests</div>
 			</div>
 
-			<div class="s4-frame" style="right: 0px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/Block_chain_rectangle1.jpg'; ?>);">
-
-				<div class="s4-right-1">
-					<div class="s4r1">Applications</div>
-				</div>
+			<div class="s4-frame" style="right: 0px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/home_bj.jpg'; ?>);">
 
 				<div class="s4-right-2" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/gpex');">
 					<div class="s4r2-icon"></div>
@@ -786,6 +782,9 @@ Template Name: index.php
 					<div class="s4r3">LiveCoins</div>
 				</div>
 
+				<div class="s4-right-1">
+					<div class="s4r1">Applications</div>
+				</div>
 			</div>
 
 			<div class="s4-mark" style="left: 225px;"></div>
@@ -803,8 +802,8 @@ Template Name: index.php
 
 			<div class="s5-line"></div>
 
-			<div class="s5-up-arrow" onclick="OnUpArrowClicked();"></div>
-			<div class="s5-down-arrow" onclick="OnDownArrowClicked();"></div>
+			<div class="s5-up-arrow" onclick="OnDownArrowClicked();"></div>
+			<div class="s5-down-arrow" onclick="OnUpArrowClicked();"></div>
 
 			<div class="s5-scrollrect">
 				<div id="scroll-container" class="s5-scroll-container">
@@ -817,7 +816,7 @@ Template Name: index.php
 						<div id="ga_year_0" class="achievement-label-year" style="color: #333333">2010.1</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_0" class="achievement-desc-text" style="color: #333333;">Opened Goldpebble Singapore headquarter</div>
+							<div id="ga_label_text_0" class="achievement-desc-text" style="color: #333333;">Goldpebble Singapore headquarter</div>
 						</div>
 					</div>
 
@@ -830,7 +829,7 @@ Template Name: index.php
 						<div id="ga_year_1" class="achievement-label-year" style="color: #333333">2012.5</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_1" class="achievement-desc-text" style="color: #333333;">Opened Goldpebble Hong Kong office</div>
+							<div id="ga_label_text_1" class="achievement-desc-text" style="color: #333333;">Goldpebble Hong Kong office</div>
 						</div>
 					</div>
 
@@ -843,7 +842,7 @@ Template Name: index.php
 						<div id="ga_year_2" class="achievement-label-year" style="color: #333333">2012.9</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_2" class="achievement-desc-text" style="color: #333333;">Published <i>quantamental</i> research report on New Oriental, defeated short sellers on New Oriental (EDU US)</div>
+							<div id="ga_label_text_2" class="achievement-desc-text" style="color: #333333;">Research Report on EDU US</div>
 						</div>
 					</div>
 
@@ -856,7 +855,7 @@ Template Name: index.php
 						<div id="ga_year_3" class="achievement-label-year" style="color: #333333">2012.11</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_3" class="achievement-desc-text" style="color: #333333;">Opened Goldpebble Shanghai rep office</div>
+							<div id="ga_label_text_3" class="achievement-desc-text" style="color: #333333;">Goldpebble Shanghai Rep Office</div>
 						</div>
 					</div>
 
@@ -869,7 +868,7 @@ Template Name: index.php
 						<div id="ga_year_4" class="achievement-label-year" style="color: #333333">2012.12</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_4" class="achievement-desc-text" style="color: #333333;">Published earliest social app monitor to check zombie accounts on Sina Weibo</div>
+							<div id="ga_label_text_4" class="achievement-desc-text" style="color: #333333;">Social App Monitor on Sina Weibo</div>
 						</div>
 					</div>
 
@@ -895,7 +894,7 @@ Template Name: index.php
 						<div id="ga_year_6" class="achievement-label-year" style="color: #333333">2013.2</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_6" class="achievement-desc-text" style="color: #333333;">Earliest to understand big monetization potential and company value in Weibo</div>
+							<div id="ga_label_text_6" class="achievement-desc-text" style="color: #333333;">Earliest to understand value in Weibo</div>
 						</div>
 					</div>
 
@@ -908,7 +907,7 @@ Template Name: index.php
 						<div id="ga_year_7" class="achievement-label-year" style="color: #333333">2013.10</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_7" class="achievement-desc-text" style="color: #333333;">Cooperate with Fortress Investment Group, who was the earliest Bitcoin investor</div>
+							<div id="ga_label_text_7" class="achievement-desc-text" style="color: #333333;">Cooperate with Fortress</div>
 						</div>
 					</div>
 
@@ -921,7 +920,7 @@ Template Name: index.php
 						<div id="ga_year_8" class="achievement-label-year" style="color: #333333">2014.1</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_8" class="achievement-desc-text" style="color: #333333;">Invested in one of the earliest developer of ASIC mining chips in China</div>
+							<div id="ga_label_text_8" class="achievement-desc-text" style="color: #333333;">Invested in ASIC Mining Chips Developer</div>
 						</div>
 					</div>
 
@@ -934,7 +933,7 @@ Template Name: index.php
 						<div id="ga_year_9" class="achievement-label-year" style="color: #333333">2014.5</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_9" class="achievement-desc-text" style="color: #333333;">Created world first mobile game revenue forecasting system</div>
+							<div id="ga_label_text_9" class="achievement-desc-text" style="color: #333333;">Created Game Revenue Forecasting System</div>
 						</div>
 					</div>
 
@@ -947,7 +946,7 @@ Template Name: index.php
 						<div id="ga_year_10" class="achievement-label-year" style="color: #333333">2015.4</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_10" class="achievement-desc-text" style="color: #333333;">Integrated Baidu search data into GP Core system</div>
+							<div id="ga_label_text_10" class="achievement-desc-text" style="color: #333333;">Baidu Search Data into GP Core System</div>
 						</div>
 					</div>
 
@@ -960,7 +959,7 @@ Template Name: index.php
 						<div id="ga_year_11" class="achievement-label-year" style="color: #333333">2015.9</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_11" class="achievement-desc-text" style="color: #333333;">Founded Goldpebble subsidiary in Shanghai. New Shanghai office opened in KIC Shanghai</div>
+							<div id="ga_label_text_11" class="achievement-desc-text" style="color: #333333;">Shanghai Subsidiary and Office</div>
 						</div>
 					</div>
 
@@ -973,7 +972,7 @@ Template Name: index.php
 						<div id="ga_year_12" class="achievement-label-year" style="color: #333333">2015.10</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_12" class="achievement-desc-text" style="color: #333333;">Integrated Taobao transaction data and JD transaction data into GP Core system</div>
+							<div id="ga_label_text_12" class="achievement-desc-text" style="color: #333333;">Taobao and JD Transaction Data into GP Core system</div>
 						</div>
 					</div>
 
@@ -986,7 +985,7 @@ Template Name: index.php
 						<div id="ga_year_13" class="achievement-label-year" style="color: #333333">2016.1</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_13" class="achievement-desc-text" style="color: #333333;">Integrated Chinese Credit Transaction data into GP Core System</div>
+							<div id="ga_label_text_13" class="achievement-desc-text" style="color: #333333;">Chinese Credit Transaction Data into GP Core System</div>
 						</div>
 					</div>
 
@@ -999,7 +998,7 @@ Template Name: index.php
 						<div id="ga_year_14" class="achievement-label-year" style="color: #333333">2016.8</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_14" class="achievement-desc-text" style="color: #333333;">Published <i>Quantamental</i> report on Momo Live Business</div>
+							<div id="ga_label_text_14" class="achievement-desc-text" style="color: #333333;"><i>Quantamental</i> report on MOMO Live Business</div>
 						</div>
 					</div>
 
@@ -1012,7 +1011,7 @@ Template Name: index.php
 						<div id="ga_year_15" class="achievement-label-year" style="color: #333333">2016.11</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_15" class="achievement-desc-text" style="color: #333333;">Acquired an asset manager for alternative investing in China</div>
+							<div id="ga_label_text_15" class="achievement-desc-text" style="color: #333333;">Asset Manager for Alternative Investing in China</div>
 						</div>
 					</div>
 
@@ -1025,7 +1024,7 @@ Template Name: index.php
 						<div id="ga_year_16" class="achievement-label-year" style="color: #333333">2017.1</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_16" class="achievement-desc-text" style="color: #333333;">Goldpebble’s China asset management company got licensed by AMAC on alternative investing</div>
+							<div id="ga_label_text_16" class="achievement-desc-text" style="color: #333333;">Licensed by AMAC on Alternative Investing</div>
 						</div>
 					</div>
 
@@ -1038,7 +1037,7 @@ Template Name: index.php
 						<div id="ga_year_17" class="achievement-label-year" style="color: #333333">2017.3</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_17" class="achievement-desc-text" style="color: #333333;">Shanghai New Culture Fund was established</div>
+							<div id="ga_label_text_17" class="achievement-desc-text" style="color: #333333;">Shanghai New Culture Fund Established</div>
 						</div>
 					</div>
 
@@ -1051,7 +1050,7 @@ Template Name: index.php
 						<div id="ga_year_18" class="achievement-label-year" style="color: #333333">2017.9</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_18" class="achievement-desc-text" style="color: #333333;">Published world earliest Bitcoin fundamental research report, earlier than major Wall Street firms</div>
+							<div id="ga_label_text_18" class="achievement-desc-text" style="color: #333333;">World Earliest Bitcoin Fundamental Research Report</div>
 						</div>
 					</div>
 
@@ -1064,7 +1063,7 @@ Template Name: index.php
 						<div id="ga_year_19" class="achievement-label-year" style="color: #333333">2017.12</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_19" class="achievement-desc-text" style="color: #333333;">Invested more than 100 live events with more than RMB 200mn, the largest live events fund in China. Launched GP Crypto-Assets Fund</div>
+							<div id="ga_label_text_19" class="achievement-desc-text" style="color: #333333;">Largest Live Events Fund in China &amp; GP Crypto-Assets Fund Established</div>
 						</div>
 					</div>
 
@@ -1077,7 +1076,7 @@ Template Name: index.php
 						<div id="ga_year_20" class="achievement-label-year" style="color: #333333">2018.1</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_20" class="achievement-desc-text" style="color: #333333;">Established Live Coins Limited for blockchain application on crowdfunding for live events</div>
+							<div id="ga_label_text_20" class="achievement-desc-text" style="color: #333333;">Live Coins Limited Established</div>
 						</div>
 					</div>
 				</div>
@@ -1104,52 +1103,52 @@ Template Name: index.php
 			<div id="s5-content" class="s5-content-frame">
 				<div id="ga_content_0" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic1.jpg'; ?>); width: 350px; height: 88px; position: absolute; left: 41px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Opened Goldpebble Singapore headquarter</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 148px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble Research opened its headquarter in Singapore</div>
 				</div>
 
 				<div id="ga_content_1" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic1.jpg'; ?>); width: 350px; height: 88px; position: absolute; left: 41px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Opened Goldpebble Hong Kong office</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 148px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble Research opened its office in Hong Kong</div>
 				</div>
 
 				<div id="ga_content_2" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic2.jpg'; ?>); width: 216px; height: 83px; position: absolute; left: 108px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Published <i>quantamental</i> research report on New Oriental, defeated short sellers on New Oriental (EDU US)</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 143px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble published a <i>quantamental</i> research report on New Oriental Education &amp; Technology Group Inc. (EDU US). We helped correct the overreaction of investors due to the short-selling report published, and help market regain rationality.</div>
 				</div>
 
 				<div id="ga_content_3" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic1.jpg'; ?>); width: 350px; height: 88px; position: absolute; left: 41px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Opened Goldpebble Shanghai rep office</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 148px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble opened its rep office in Shanghai</div>
 				</div>
 
 				<div id="ga_content_4" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
-					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic4.png'; ?>); width: 261px; height: 87px; position: absolute; left: 86px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Published earliest social app monitor to check zombie accounts on Sina Weibo</div>
+					<div style="background-repeat: no-repeat; background-position: center; background-size: 80%; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic4.png'; ?>); width: 261px; height: 87px; position: absolute; left: 86px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 147px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble published the earliest social app monitor to check zombie accounts on Sina Weibo.</div>
 				</div>
 
 				<div id="ga_content_5" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/logo_YY.jpg'; ?>); width: 288px; height: 103px; position: absolute; left: 72px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Goldpebble published a report about YY, which was not yet convered by any investment banks, The report helps institutional investors to better understand the live-streaming business. After the publishment, thestock price rose by 3 times, and trade volume rose by 5 times.</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 163px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble started its deep and continuous research on YY. We built up methodology to analyze business model.</div>
 				</div>
 
 				<div id="ga_content_6" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
-					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic4.png'; ?>); width: 261px; height: 87px; position: absolute; left: 86px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Earliest to understand big monetization potential and company value in Weibo</div>
+					<div style="background-repeat: no-repeat; background-position: center; background-size: 80%; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic4.png'; ?>); width: 261px; height: 87px; position: absolute; left: 86px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 147px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble was the earliest to understand the big monetization potential and company value in Weibo.</div>
 				</div>
 
 				<div id="ga_content_7" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
-					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic4.jpg'; ?>); width: 282px; height: 102px; position: absolute; left: 25px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Cooperate with Fortress Investment Group, who was the earliest Bitcoin investor</div>
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic4.jpg'; ?>); width: 282px; height: 102px; position: absolute; left: 75px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 163px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble has been cooperating with Fortress Investment Group. Fortress was one of the earlist Bitcoin investors.</div>
 				</div>
 
 				<div id="ga_content_8" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic5.jpg'; ?>); width: 311px; height: 103px; position: absolute; left: 61px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Invested in one of the earliest developer of ASIC mining chips in China</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 163px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble invested in one of the earliest developers of ASIC mining chips in China.</div>
 				</div>
 
 				<div id="ga_content_9" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic6.jpg'; ?>); width: 311px; height: 110px; position: absolute; left: 61px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Created world first mobile game revenue forecasting system</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 170px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble created the world first mobile game revenue forecasting system</div>
 				</div>
 
 				<div id="ga_content_10" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
@@ -1158,52 +1157,52 @@ Template Name: index.php
 
 				<div id="ga_content_11" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic1.jpg'; ?>); width: 350px; height: 88px; position: absolute; left: 41px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Founded Goldpebble subsidiary in Shanghai. New Shanghai office opened in KIC Shanghai</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 150px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble opened its subsidiary in Shanghai. Shanghai office was settled in Konwledge and Innovation Community (KIC) Shanghai.</div>
 				</div>
 
 				<div id="ga_content_12" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic8.jpg'; ?>); width: 357px; height: 89px; position: absolute; left: 38px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Integrated Taobao transaction data and JD transaction data into GP Core system</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 150px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble integrated Taobao transaction data and JD transaction data into GP Core System.</div>
 				</div>
 
 				<div id="ga_content_13" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic9.jpg'; ?>); width: 281px; height: 110px; position: absolute; left: 76px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Integrated Chinese Credit Transaction data into GP Core System</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 170px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble integrated Chinese credit transaction data into GP Core System.</div>
 				</div>
 
 				<div id="ga_content_14" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
-					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic10.png'; ?>); width: 281px; height: 93px; position: absolute; left: 76px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Published <i>Quantamental</i> report on Momo Live Business</div>
+					<div style="background-repeat: no-repeat; background-position: center; background-size: 80%; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic10.png'; ?>); width: 281px; height: 93px; position: absolute; left: 76px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble started its deep and continuous research on MOMO. We published a <i>quantamental</i> report on MOMO live business.</div>
 				</div>
 
 				<div id="ga_content_15" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic11.jpg'; ?>); width: 285px; height: 120px; position: absolute; left: 74px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Acquired an asset manager for alternative investing in China</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 180px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble acquired an asset manager for alternative investing in China</div>
 				</div>
 
 				<div id="ga_content_16" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic12.jpg'; ?>); width: 264px; height: 103px; position: absolute; left: 85px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Goldpebble’s China asset management company got licensed by AMAC on alternative investing</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 163px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble China asset management company got licensed by Asset Management Association of China (AMAC) on alternative investing.</div>
 				</div>
 
 				<div id="ga_content_17" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic13.jpg'; ?>); width: 284px; height: 113px; position: absolute; left: 75px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Shanghai New Culture Fund was established</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 173px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble established its Shanghai New Culture Fund for its alternative investing business.</div>
 				</div>
 
 				<div id="ga_content_18" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic14.jpg'; ?>); width: 284px; height: 113px; position: absolute; left: 75px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Published world earliest Bitcoin fundamental research report, earlier than major Wall Street firms</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 173px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble published one of the world earlist fundamental research report on Bitcoin. The research was done and published earlier than the major Wall Street firms.</div>
 				</div>
 
 				<div id="ga_content_19" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
 					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic15.jpg'; ?>); width: 284px; height: 113px; position: absolute; left: 75px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Invested more than 100 live events  with more than RMB 200mn, the largest live events fund in China. launched GP Crypto-Assets Fund</div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 173px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble has invested more than 100 live events with more than RMB 200mn. We have the largest live event fund in China. We also launched GP Crypto-Assets Fund.</div>
 				</div>
 
 				<div id="ga_content_20" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">
-					<div style="background-repeat: no-repeat; background-position: center; background-size:50%; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic20.png'; ?>); width: 125px; height: 125px; position: absolute; left: 155px; top: 35px;"></div>
-					<div style="width: 100%; padding-left: 30px; padding-right: 30px; position: absolute; top: 153px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 18px;">Established Live Coins Limited for blockchain application on crowdfunding for live events</div>
+					<div style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/8/pic16.jpg'; ?>); width: 284px; height: 114px; position: absolute; left: 75px; top: 35px;"></div>
+					<div style="width: 100%; padding-left: 40px; padding-right: 40px; position: absolute; top: 175px; text-align: left; color: #333333; font-family: 'Georgia'; font-size: 16px;">Goldpebble established Live Coins Limited for blockchain application on crowdfunding for live events.</div>
 				</div>
 			</div>
 		</div>
