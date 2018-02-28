@@ -36,11 +36,11 @@ Template Name: footer.php
 
 ?>
 
-			<div class="innerlink il-home" style="cursor: pointer;" onclick="SwitchPage('<?php echo home_url(); ?>')">Home</div>
-			<div class="innerlink il-research" style="cursor: pointer;" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/research')"><i>Quantamental</i> Research</div>
-			<div class="innerlink il-investing" style="cursor: pointer;" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/investing')">Alernative Investing</div>
-			<div class="innerlink il-blockchain" style="cursor: pointer;" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/blockchain')">Blockchain Applications</div>
-			<div class="innerlink il-career" style="cursor: pointer;" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/career')">Career</div>
+			<div id="banner_link_home" class="innerlink il-home" style="cursor: pointer;" onmousemove="$('#banner_link_home').css('color', '#f46d01');" onmouseout="$('#banner_link_home').css('color', 'rgb(255, 255, 255)');" onclick="SwitchPage('<?php echo home_url(); ?>')">Home</div>
+			<div id="banner_link_research" class="innerlink il-research" style="cursor: pointer;" onmousemove="$('#banner_link_research').css('color', '#f46d01');" onmouseout="$('#banner_link_research').css('color', 'rgb(255, 255, 255)');" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/research')"><i>Quantamental</i> Research</div>
+			<div id="banner_link_investing" class="innerlink il-investing" style="cursor: pointer;" onmousemove="$('#banner_link_investing').css('color', '#f46d01');" onmouseout="$('#banner_link_investing').css('color', 'rgb(255, 255, 255)');" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/investing')">Alernative Investing</div>
+			<div id="banner_link_blockchain" class="innerlink il-blockchain" style="cursor: pointer;" onmousemove="$('#banner_link_blockchain').css('color', '#f46d01');" onmouseout="$('#banner_link_blockchain').css('color', 'rgb(255, 255, 255)');" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/blockchain')">Blockchain Applications</div>
+			<div id="banner_link_career" class="innerlink il-career" style="cursor: pointer;" onmousemove="$('#banner_link_career').css('color', '#f46d01');" onmouseout="$('#banner_link_career').css('color', 'rgb(255, 255, 255)');" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/career')">Career</div>
 		</div>
 	</div>
 	</body>

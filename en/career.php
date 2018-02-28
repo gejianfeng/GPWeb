@@ -97,8 +97,8 @@ Template Name: career.php
 		<div class="wrap">
 			<div class="header-title">Career</div>
 			<div class="header-line"></div>
-			<div class="header-btn" onclick="SwitchPage('mailto:hr@goldpebble.com');">
-				<div class="header-btn-text">Apply Now</div>
+			<div id="btnApply" class="header-btn" onmousemove="$('#btnApplyText').css('color', 'rgb(0, 100, 121)'); $('#btnApply').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/4/button_apply_now_hover.png'; ?>)');" onmouseout="$('#btnApplyText').css('color', 'rgb(255, 255, 255)'); $('#btnApply').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/4/button_apply_now.png'; ?>)');" onclick="SwitchPage('mailto:hr@goldpebble.com');">
+				<div id="btnApplyText" class="header-btn-text">Apply Now</div>
 			</div>
 		</div>
 	</div>
