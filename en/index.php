@@ -500,7 +500,7 @@ Template Name: index.php
 
 		if (bEnabled)
 		{
-			$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_orange.png'; ?>)");
+			$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/label_orange.png'; ?>)");
 		}
 		else
 		{
@@ -1082,19 +1082,19 @@ Template Name: index.php
 				</div>
 			</div>
 
-			<div id="ga_label_0" class="achievement-label" style="left: -140px; top: 170px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
+			<div id="ga_label_0" class="achievement-label" style="left: -180px; top: 170px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
 				<div class="achievement-label-cell">Company Milestones</div>
 			</div>
 
-			<div id="ga_label_1" class="achievement-label" style="left: -140px; top: 245px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
+			<div id="ga_label_1" class="achievement-label" style="left: -180px; top: 245px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
 				<div class="achievement-label-cell"><i>Quantamental</i> Research</div>
 			</div>
 
-			<div id="ga_label_2" class="achievement-label" style="left: -140px; top: 320px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
+			<div id="ga_label_2" class="achievement-label" style="left: -180px; top: 320px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
 				<div class="achievement-label-cell">Alternative Investing</div>
 			</div>
 
-			<div id="ga_label_3" class="achievement-label" style="left: -140px; top: 395px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
+			<div id="ga_label_3" class="achievement-label" style="left: -180px; top: 395px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
 				<div class="achievement-label-cell">Blockchain Application</div>
 			</div>
 

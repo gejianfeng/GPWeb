@@ -18,7 +18,7 @@ Template Name: research.php
 			
 			if (i == index)
 			{
-				$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/1/figure_orange.png'; ?>)");
+				$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/1/label_orange.png'; ?>)");
 			}
 			else
 			{
@@ -71,7 +71,7 @@ Template Name: research.php
 				<div class="section-title-text"><font style="font-family: 'Georgia Italic'"><i>Quantamental</i></font> leads to Precision</div>
 			</div>
 			
-			<div id="btn1" class="s2-btn" style="top: 257px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/1/figure_orange.png'; ?>);" onclick="SwitchChart(1);">
+			<div id="btn1" class="s2-btn" style="top: 257px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/1/label_orange.png'; ?>);" onclick="SwitchChart(1);">
 				<div class="s2-btn-text">MOMO<span style="font-size: 14px">(USDmn)</span></div>
 			</div>
 

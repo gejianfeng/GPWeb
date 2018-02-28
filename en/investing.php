@@ -201,37 +201,37 @@ Template Name: investing.php
 	if ($count == 1)
 	{
 		$img = $img_array[0];
-		echo "<div class='live-event-image' style='top: 240px; left: 408px; background-image: url(" . $img . ");'>";
-			echo $content;
+		$pieces = explode("|", $img);
+		echo "<div id='live-event-image0' class='live-event-image' style='top: 240px; left: 408px; background-image: url(" . $pieces[0] . ");' onmousemove='$(\"#live-event-image0\").css(\"background-image\", \"url(" . $pieces[1] . ")\");' onmouseout='$(\"#live-event-image0\").css(\"background-image\", \"url(" . $pieces[0] . ")\");'>";
 		echo "</div>";
 	}
 	elseif ($count == 2)
 	{
 		$img1 = $img_array[0];
-		echo "<div class='live-event-image' style='top: 240px; left: 298px; background-image: url(" . $img1 . ");'>";
-			echo $content;
+		$pieces = explode("|", $img1);
+		echo "<div id='live-event-image0' class='live-event-image' style='top: 240px; left: 298px; background-image: url(" . $pieces[0] . ");' onmousemove='$(\"#live-event-image0\").css(\"background-image\", \"url(" . $pieces[1] . ")\");' onmouseout='$(\"#live-event-image0\").css(\"background-image\", \"url(" . $pieces[0] . ")\");'>";
 		echo "</div>";
 
 		$img2 = $img_array[1];
-		echo "<div class='live-event-image' style='top: 240px; left: 518px; background-image: url(" . $img2 . ");'>";
-			echo $content;
+		$pieces = explode("|", $img2);
+		echo "<div id='live-event-image1' class='live-event-image' style='top: 240px; left: 518px; background-image: url(" . $pieces[0] . ");' onmousemove='$(\"#live-event-image1\").css(\"background-image\", \"url(" . $pieces[1] . ")\");' onmouseout='$(\"#live-event-image0\").css(\"background-image\", \"url(" . $pieces[0] . ")\");'>";
 		echo "</div>";
 	}
 	elseif ($count == 3)
 	{
 		$img1 = $img_array[0];
-		echo "<div class='live-event-image' style='top: 240px; left: 188px; background-image: url(" . $img1 . ");'>";
-			echo $content;
+		$pieces = explode("|", $img1);
+		echo "<div id='live-event-image0' class='live-event-image' style='top: 240px; left: 188px; background-image: url(" . $pieces[0] . ");' onmousemove='$(\"#live-event-image0\").css(\"background-image\", \"url(" . $pieces[1] . ")\");' onmouseout='$(\"#live-event-image0\").css(\"background-image\", \"url(" . $pieces[0] . ")\");'>";
 		echo "</div>";
 
 		$img2 = $img_array[1];
-		echo "<div class='live-event-image' style='top: 240px; left: 408px; background-image: url(" . $img2 . ");'>";
-			echo $content;
+		$pieces = explode("|", $img2);
+		echo "<div id='live-event-image1' class='live-event-image' style='top: 240px; left: 408px; background-image: url(" . $pieces[0] . ");' onmousemove='$(\"#live-event-image1\").css(\"background-image\", \"url(" . $pieces[1] . ")\");' onmouseout='$(\"#live-event-image0\").css(\"background-image\", \"url(" . $pieces[0] . ")\");'>";
 		echo "</div>";
 
 		$img3 = $img_array[2];
-		echo "<div class='live-event-image' style='top: 240px; left: 632px; background-image: url(" . $img3 . ");'>";
-			echo $content;
+		$pieces = explode("|", $img3);
+		echo "<div id='live-event-image2' class='live-event-image' style='top: 240px; left: 632px; background-image: url(" . $pieces[0] . ");' onmousemove='$(\"#live-event-image2\").css(\"background-image\", \"url(" . $pieces[1] . ")\");' onmouseout='$(\"#live-event-image0\").css(\"background-image\", \"url(" . $pieces[0] . ")\");'>";
 		echo "</div>";
 	}
 	elseif ($count >= 4)
@@ -243,8 +243,8 @@ Template Name: investing.php
 			$offset = (208 + 12) * $i;
 
 			$img = $img_array[$i];
-
-			echo "<div id='cell" . $i . "' class='live-event-image' style='left:" . $offset . "px; top:0px; background-image: url(" . $img . ");'>";
+			$pieces = explode("|", $img);
+			echo "<div id='cell" . $i . "' class='live-event-image' style='left:" . $offset . "px; top:0px; background-image: url(" . $pieces[0] . ");' onmousemove='$(\"#cell" . $i . "\").css(\"background-image\", \"url(" . $pieces[1] . ")\");' onmouseout='$(\"#cell" . $i . "\").css(\"background-image\", \"url(" . $pieces[0] . ")\");'>";
 			echo "</div>";
 		}
 
