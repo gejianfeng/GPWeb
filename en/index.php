@@ -25,6 +25,9 @@ Template Name: index.php
 	var achievement_show_index = -1;
 	var achievement_animating = false;
 
+	var b_mouse_down = false;
+	var active_arrow_type = -1;
+
 	$(document).ready(function(){
 		var obj = document.getElementById("research_container_0");
 
@@ -263,6 +266,33 @@ Template Name: index.php
 		current_investing_index = index;
 	}
 
+	function OnMouseDown(value)
+	{
+		b_mouse_down = true;
+		active_arrow_type = value;
+
+		if (value == 0)
+		{
+			OnDownArrowClicked();
+		}
+		else
+		{
+			OnUpArrowClicked();
+		}
+	}
+
+	function OnMouseUp(value)
+	{
+		b_mouse_down = false;
+		active_arrow_type = -1;
+	}
+
+	function OnMouseOut(value)
+	{
+		b_mouse_down = false;
+		active_arrow_type = -1;
+	}
+
 	function OnUpArrowClicked()
 	{
 		if (achievement_count <= 4 || achievement_index == -(achievement_count - 4) || achievement_animating)
@@ -276,6 +306,18 @@ Template Name: index.php
 		$("#scroll-container").animate({top:target_pos.toString() + 'px'}, 'fast', function(){
 			achievement_animating = false;
 			achievement_index--;
+
+			if (b_mouse_down)
+			{
+				if (active_arrow_type == 0)
+				{
+					OnDownArrowClicked();
+				}
+				else if (active_arrow_type == 1)
+				{
+					OnUpArrowClicked();
+				}
+			}
 		});
 	}
 
@@ -292,6 +334,18 @@ Template Name: index.php
 		$("#scroll-container").animate({top:target_pos.toString() + 'px'}, 'fast', function(){
 			achievement_animating = false;
 			achievement_index++;
+
+			if (b_mouse_down)
+			{
+				if (active_arrow_type == 0)
+				{
+					OnDownArrowClicked();
+				}
+				else if (active_arrow_type == 1)
+				{
+					OnUpArrowClicked();
+				}
+			}
 		});
 	}
 
@@ -500,7 +554,7 @@ Template Name: index.php
 
 		if (bEnabled)
 		{
-			$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/label_orange.png'; ?>)");
+			$(obj_name).css("background-image", "url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_orange.png'; ?>)");
 		}
 		else
 		{
@@ -832,8 +886,8 @@ Template Name: index.php
 
 			<div class="s5-line"></div>
 
-			<div class="s5-up-arrow" onclick="OnDownArrowClicked();"></div>
-			<div class="s5-down-arrow" onclick="OnUpArrowClicked();"></div>
+			<div class="s5-up-arrow" onmousedown="OnMouseDown(0);" onmouseup="OnMouseUp(0);" onmouseout="OnMouseOut(0);"></div>
+			<div class="s5-down-arrow" onmousedown="OnMouseDown(1);" onmouseup="OnMouseUp(1);" onmouseout="OnMouseOut(1);"></div>
 
 			<div class="s5-scrollrect">
 				<div id="scroll-container" class="s5-scroll-container">
@@ -924,7 +978,7 @@ Template Name: index.php
 						<div id="ga_year_6" class="achievement-label-year" style="color: #333333">2013.2</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_6" class="achievement-desc-text" style="color: #333333;">Earliest to understand value in Weibo</div>
+							<div id="ga_label_text_6" class="achievement-desc-text" style="color: #333333;">Earliest to understand value in <br/>Weibo</div>
 						</div>
 					</div>
 
@@ -976,7 +1030,7 @@ Template Name: index.php
 						<div id="ga_year_10" class="achievement-label-year" style="color: #333333">2015.4</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_10" class="achievement-desc-text" style="color: #333333;">Baidu Search Data into GP Core System</div>
+							<div id="ga_label_text_10" class="achievement-desc-text" style="color: #333333;">Baidu Search Data into GP Core <br/>System</div>
 						</div>
 					</div>
 
@@ -1002,7 +1056,7 @@ Template Name: index.php
 						<div id="ga_year_12" class="achievement-label-year" style="color: #333333">2015.10</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_12" class="achievement-desc-text" style="color: #333333;">Taobao and JD Transaction Data into GP Core system</div>
+							<div id="ga_label_text_12" class="achievement-desc-text" style="color: #333333;">Taobao and JD Transaction Data <br/>into GP Core system</div>
 						</div>
 					</div>
 
@@ -1015,7 +1069,7 @@ Template Name: index.php
 						<div id="ga_year_13" class="achievement-label-year" style="color: #333333">2016.1</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_13" class="achievement-desc-text" style="color: #333333;">Chinese Credit Transaction Data into GP Core System</div>
+							<div id="ga_label_text_13" class="achievement-desc-text" style="color: #333333;">Chinese Credit Transaction Data <br/>into GP Core System</div>
 						</div>
 					</div>
 
@@ -1028,7 +1082,7 @@ Template Name: index.php
 						<div id="ga_year_14" class="achievement-label-year" style="color: #333333">2016.8</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_14" class="achievement-desc-text" style="color: #333333;"><i>Quantamental</i> report on MOMO Live Business</div>
+							<div id="ga_label_text_14" class="achievement-desc-text" style="color: #333333;"><i>Quantamental</i> report on MOMO <br/>Live Business</div>
 						</div>
 					</div>
 
@@ -1041,7 +1095,7 @@ Template Name: index.php
 						<div id="ga_year_15" class="achievement-label-year" style="color: #333333">2016.11</div>
 
 						<div class="achievement-desc-frame">
-							<div id="ga_label_text_15" class="achievement-desc-text" style="color: #333333;">Asset Manager for Alternative Investing in China</div>
+							<div id="ga_label_text_15" class="achievement-desc-text" style="color: #333333;">Asset Manager for Alternative <br/>Investing in China</div>
 						</div>
 					</div>
 
@@ -1112,23 +1166,23 @@ Template Name: index.php
 				</div>
 			</div>
 
-			<div id="ga_label_0" class="achievement-label" style="left: -180px; top: 170px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
+			<div id="ga_label_0" class="achievement-label" style="left: 0px; top: 170px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
 				<div class="achievement-label-cell">Company Milestones</div>
 			</div>
 
-			<div id="ga_label_1" class="achievement-label" style="left: -180px; top: 245px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
+			<div id="ga_label_1" class="achievement-label" style="left: 0px; top: 245px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
 				<div class="achievement-label-cell"><i>Quantamental</i> Research</div>
 			</div>
 
-			<div id="ga_label_2" class="achievement-label" style="left: -180px; top: 320px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
+			<div id="ga_label_2" class="achievement-label" style="left: 0px; top: 320px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
 				<div class="achievement-label-cell">Alternative Investing</div>
 			</div>
 
-			<div id="ga_label_3" class="achievement-label" style="left: -180px; top: 395px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
+			<div id="ga_label_3" class="achievement-label" style="left: 0px; top: 395px; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/figure_gray.png'; ?>)">
 				<div class="achievement-label-cell">Blockchain Application</div>
 			</div>
 
-			<div style="position: absolute; top: 105px; left: 20px; width: 4px; height: 386px; background-color: rgb(244, 109, 0);"></div>
+			<div style="position: absolute; top: 105px; left: 162px; width: 2px; height: 386px; background-color: rgb(244, 109, 0);"></div>
 
 			<div id="s5-content" class="s5-content-frame">
 				<div id="ga_content_0" style="background-repeat: no-repeat; background-position: center; background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/achievement_square_white.png'; ?>); width: 433px; height: 359px; position: absolute; left: 0px; top: 0px; display: none;">

@@ -2479,7 +2479,7 @@ body {
 	width: 40px;
 	height: 26px;
 	top: 140px;
-	left: 113px;
+	left: 178px;
 	cursor: pointer;
 }
 
@@ -2491,7 +2491,7 @@ body {
 	width: 40px;
 	height: 26px;
 	top: 455px;
-	left: 113px;
+	left: 178px;
 	cursor: pointer;
 }
 
@@ -2500,7 +2500,7 @@ body {
 	height: 340px;
 	position: absolute;
 	top: 140px;
-	left: 133px;
+	left: 198px;
 	background-color: #525252;
 }
 
@@ -2511,7 +2511,7 @@ body {
 	overflow: hidden;
 	overflow-x:hidden;
 	top: 175px;
-	left: 100px;
+	left: 165px;
 }
 
 #index .s5-scroll-container {
@@ -2542,7 +2542,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: right;
 	position: absolute;
-	width: 205px;
+	width: 165px;
 	height: 54px;
 	top: 0px;
 	display: table;
@@ -2552,7 +2552,7 @@ body {
 	font-family: "Georgia";
 	font-size: 18px;
 	color: #333333;
-	padding-left: 80px;
+	padding-left: 40px;
 	text-align: left;
 	vertical-align: middle;
 	left: 0px;
@@ -2597,17 +2597,17 @@ body {
 }
 
 #index .achievement-desc-frame {
-	width: 315px;
+	width: 300px;
 	height: 100%;
 	position: absolute;
-	right: 0px;
+	right: 25px;
 	top: 0px;
 	display: table;
 }
 
 #index .achievement-desc-text {
 	font-family: "Georgia";
-	font-size: 18px;
+	font-size: 17px;
 	text-align: left;
 	vertical-align: middle;
 	left: 0px;
