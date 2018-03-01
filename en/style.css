@@ -523,6 +523,132 @@ body {
 	top: 130px;
 }
 
+#investing .s2-icon{
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+}
+
+#investing .s2i1 {
+	background-image: url(assets/image/2/Alternative_logo1.png);
+	width: 60px;
+	height: 60px;
+	right: 365px;
+	top: 130px;
+}
+
+#investing .s2i2 {
+	background-image: url(assets/image/2/Alternative_logo2.png);
+	width: 38px;
+	height: 62px;
+	right: 257px;
+	top: 130px;
+}
+
+#investing .s2i3 {
+	background-image: url(assets/image/2/Alternative_logo3.png);
+	width: 43px;
+	height: 63px;
+	right: 140px;
+	top: 130px;
+}
+
+#investing .s2i4 {
+	background-image: url(assets/image/2/Alternative_logo4.png);
+	width: 60px;
+	height: 60px;
+	right: 13px;
+	top: 132px;
+}
+
+#investing .s2i5 {
+	background-image: url(assets/image/2/Alternative_logo5.png);
+	width: 59px;
+	height: 59px;
+	right: 365px;
+	top: 215px;
+}
+
+#investing .s2i6 {
+	background-image: url(assets/image/2/Alternative_logo6.png);
+	width: 54px;
+	height: 54px;
+	right: 250px;
+	top: 217px;
+}
+
+#investing .s2i7 {
+	background-image: url(assets/image/2/Alternative_logo7.png);
+	width: 51px;
+	height: 51px;
+	right: 135px;
+	top: 219px;
+}
+
+#investing .s2i8 {
+	background-image: url(assets/image/2/Alternative_logo8.png);
+	width: 58px;
+	height: 58px;
+	right: 14px;
+	top: 217px;
+}
+
+#investing .s2i9 {
+	background-image: url(assets/image/2/Alternative_logo9.png);
+	width: 170px;
+	height: 55px;
+	right: 250px;
+	top: 299px;
+}
+
+#investing .s2i10 {
+	background-image: url(assets/image/2/Alternative_logo10.png);
+	width: 51px;
+	height: 59px;
+	right: 135px;
+	top: 299px;
+}
+
+#investing .s2i11 {
+	background-image: url(assets/image/2/Alternative_logo11.png);
+	width: 86px;
+	height: 52px;
+	right: 0px;
+	top: 302px;
+}
+
+#investing .s2i12 {
+	background-image: url(assets/image/2/Alternative_logo12.png);
+	width: 61px;
+	height: 60px;
+	right: 363px;
+	top: 382px;
+}
+
+#investing .s2i13 {
+	background-image: url(assets/image/2/Alternative_logo13.png);
+	width: 53px;
+	height: 60px;
+	right: 250px;
+	top: 381px;
+}
+
+#investing .s2i14 {
+	background-image: url(assets/image/2/Alternative_logo14.png);
+	width: 53px;
+	height: 65px;
+	right: 142px;
+	top: 377px;
+}
+
+#investing .s2i15 {
+	background-image: url(assets/image/2/Alternative_logo15.png);
+	width: 58px;
+	height: 58px;
+	right: 14px;
+	top: 382px;
+}
+
 #investing .live-event-image {
 	background-repeat: no-repeat;
 	background-position: center;

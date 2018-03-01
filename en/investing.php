@@ -38,7 +38,22 @@ Template Name: investing.php
 
 			<div class="s2-text">With the unique characteristics endowed by blockchain technology, Cryptocurrencies differentiates themselves from other assets: it is hard to carry out valuation as cryptocurrencies usually do not generate future cash flows, and the technical properties build a barrier for traditional investors to understand their fundamentals.<br/><br/>With <i>quantamental</i> research expertise, Goldpebble has been developing a proprietary valuation framework to pick out the most valuable ones from thousands of candidates.</div>
 
-			<div class="s2-image"></div>
+			<!-- <div class="s2-image"></div> -->
+			<div class="s2-icon hover-icon s2i1"></div>
+			<div class="s2-icon hover-icon s2i2"></div>
+			<div class="s2-icon hover-icon s2i3"></div>
+			<div class="s2-icon hover-icon s2i4"></div>
+			<div class="s2-icon hover-icon s2i5"></div>
+			<div class="s2-icon hover-icon s2i6"></div>
+			<div class="s2-icon hover-icon s2i7"></div>
+			<div class="s2-icon hover-icon s2i8"></div>
+			<div class="s2-icon hover-icon s2i9"></div>
+			<div class="s2-icon hover-icon s2i10"></div>
+			<div class="s2-icon hover-icon s2i11"></div>
+			<div class="s2-icon hover-icon s2i12"></div>
+			<div class="s2-icon hover-icon s2i13"></div>
+			<div class="s2-icon hover-icon s2i14"></div>
+			<div class="s2-icon hover-icon s2i15"></div>
 		</div>
 	</div>
 
