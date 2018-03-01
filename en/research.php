@@ -115,7 +115,9 @@ Template Name: research.php
 			</div>
 
 			<div class="s4-container s4c1">
-				<div class="s4c1-icon"></div>
+				<div class="s4c1-icon-border hover-icon">
+					<div class="s4c1-icon"></div>
+				</div>
 				<div class="s4-title" style="top: 275px;">Longest Track Record</div>
 				<div class="s4-line" style="top: 334px;"></div>
 				<div class="s4-mark" style="background-color: #00647b; top: 328px;"></div>
@@ -123,7 +125,9 @@ Template Name: research.php
 			</div>
 
 			<div class="s4-container s4c2">
-				<div class="s4c2-icon"></div>
+				<div class="s4c2-icon-border hover-icon">
+					<div class="s4c2-icon"></div>
+				</div>
 				<div class="s4-title" style="top: 330px;">Not Only Data, But Also Fundamentals</div>
 				<div class="s4-line" style="top: 304px;"></div>
 				<div class="s4-mark" style="background-color: #f46d01; top: 305px;"></div>
@@ -131,7 +135,9 @@ Template Name: research.php
 			</div>
 
 			<div class="s4-container s4c3">
-				<div class="s4c3-icon"></div>
+				<div class="s4c3-icon-border hover-icon">
+					<div class="s4c3-icon"></div>
+				</div>
 				<div class="s4-title" style="top: 275px;">Systems Make Things Different</div>
 				<div class="s4-line" style="top: 364px;"></div>
 				<div class="s4-mark" style="background-color: #00647b; top: 358px;"></div>
@@ -151,22 +157,28 @@ Template Name: research.php
 				<div class="s5-title" style="top: 91px; padding-left: 145px;">Goldpebble Human Intelligence Data Expert Neuron System</div>
 				<div class="s5-line" style="top: 143px;"></div>
 				<div class="s5-mark" style="top: 137px; width: 114px;"></div>
-				<div class="s5-icon1"></div>
 				<div class="s5-text" style="padding-left: 361px; top: 195px;">GP HIDEN processes unstructured language and images into a structured database. Sources range from news portals, company websites and company filings to Twitter, Weibo and other social media networks. We developed our own Natural Language Processing (NLP) semantic technology to find relevant and actionable information at the same time leveraging our deep domain knowledge from industry experts.</div>
+				<div class="s5-icon1-border">
+					<div class="s5-icon1 hover-icon"></div>
+				</div>
 
 				<div class="s5-title" style="top: 465px;">GP CORE</div>
 				<div class="s5-title" style="top: 465px; padding-left: 143px;">Goldpebble Core Data Services</div>
 				<div class="s5-line" style="top: 518px;"></div>
 				<div class="s5-mark" style="top: 512px; width: 112px;"></div>
-				<div class="s5-icon2"></div>
 				<div class="s5-text" style="top: 560px; width: 700px;">GP Core generates high frequency, real time data from structured data sources:<br/>- Traditional data sources: company filings, industry and macro data<br/>- Big data sources: social networks, search engines, ecommerce transactions</div>
+				<div class="s5-icon2-border">
+					<div class="s5-icon2 hover-icon"></div>
+				</div>
 
 				<div class="s5-title" style="top: 760px;">GP OS</div>
 				<div class="s5-title" style="top: 760px; padding-left: 108px;">Goldpebble Offline Services</div>
 				<div class="s5-line" style="top: 811px;"></div>
 				<div class="s5-mark" style="top: 806px; width: 75px;"></div>
-				<div class="s5-icon3"></div>
 				<div class="s5-text" style="padding-left: 366px; top: 880px;">The missing component of data applications is normally unavailable information or unverifiable correlations. Goldpebble has built its own offline survey system and maintains a rela-time responsive team that covers 2,400 cities across China with high accessibility, flexibility and quality.</div>
+				<div class="s5-icon3-border">
+					<div class="s5-icon3 hover-icon"></div>
+				</div>
 			</div>
 		</div>
 	</div>
