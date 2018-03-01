@@ -37,16 +37,19 @@ Template Name: blockchain.php
 			</div>
 
 			<div class="s2-frame s2-frame-1">
+				<div class="s2-frame-bg s2-frame-1-bg"></div>
 				<div class="s2-frame-title">Decentralization</div>
 				<div class="s2-frame-content">Security with Distributed<br/>System</div>
 			</div>
 
 			<div class="s2-frame s2-frame-2">
+				<div class="s2-frame-bg s2-frame-2-bg"></div>
 				<div class="s2-frame-title">Openness</div>
 				<div class="s2-frame-content">Trust with Transparency</div>
 			</div>
 
 			<div class="s2-frame s2-frame-3">
+				<div class="s2-frame-bg s2-frame-3-bg"></div>
 				<div class="s2-frame-title">Ecosystem</div>
 				<div class="s2-frame-content">Growth with Collective<br/>Self Interests</div>
 			</div>
