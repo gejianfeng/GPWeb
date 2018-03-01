@@ -607,6 +607,14 @@ Template Name: index.php
 			
 			<div class="s2-container">
 
+				<div class="s" style="top: 53px;">
+					<div class="s-icon" style="top: 0px; left: 0px; width: 34px; height: 34px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/icon_quantamental_research.png'; ?>);"></div>
+					<div class="s-title" style="color: #333333;"><i>Quantamental</i> Research</div>
+					<div class="s-line"></div>
+					<div id="s2-arrow" class="s-arrow" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_green.png'; ?>);"></div>
+					<div id="s2-lm" class="s-lm" style="color: #00555b;" onmousemove="$('#s2-lm').css('color', '#ff7503'); $('#s2-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_orange.png'; ?>)');" onmouseout="$('#s2-lm').css('color', '#00555b'); $('#s2-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_green.png'; ?>)');">Learn More</div>
+				</div>
+
 <?php
 
 	$research_query = new WP_Query('category_name=HomeResearch');
@@ -632,6 +640,7 @@ Template Name: index.php
 		}
 
 		// draw content
+		echo "<div class='s2-scroll-rect'>";
 
 		for ($i = 0; $i < $count; ++$i)
 		{
@@ -640,6 +649,8 @@ Template Name: index.php
 			echo $research_array[$i]->post_content;
 			echo "</div>";
 		}
+
+		echo "</div>";
 
 		// draw circle
 		
@@ -680,6 +691,13 @@ Template Name: index.php
 
 			<div class="s3-container">
 
+			<div class="s" style="top: 51px;">
+				<div class="s-icon" style="top: 0px; left: 0px; width: 33px; height: 33px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/icon_alternative_investing.png'; ?>);"></div>
+				<div class="s-title" style="color: #ffffff;">Alternative Investing</div>
+				<div class="s-line" style="background-color: #ffffff;"></div>
+				<div id="s3-arrow" class="s-arrow" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_white.png'; ?>);"></div>
+				<div id="s3-lm" class="s-lm" style="color: #ffffff;" onmousemove="$('#s3-lm').css('color', '#ff7503'); $('#s3-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_orange.png'; ?>)');" onmouseout="$('#s3-lm').css('color', '#ffffff'); $('#s3-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_white.png'; ?>)');">Learn More</div>
+			</div>
 <?php
 
 	$investing_query = new WP_Query('category_name=HomeInvesting');
@@ -705,6 +723,7 @@ Template Name: index.php
 		}
 
 		// draw content
+		echo "<div class='s2-scroll-rect'>";
 
 		for ($i = 0; $i < $count; ++$i)
 		{
@@ -713,6 +732,8 @@ Template Name: index.php
 			echo $investing_array[$i]->post_content;
 			echo "</div>";
 		}
+
+		echo "</div>";
 
 		// draw circle
 		
@@ -754,7 +775,7 @@ Template Name: index.php
 				<div class="s-icon" style="top: 0px; left: 0px; width: 37px; height: 35px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/icon_block_chain.png'; ?>);"></div>
 				<div class="s-title" style="color: #333333;">Blockchain Applications</div>
 				<div class="s-line"></div>
-				<div class="s-arrow" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/icon_learn_more.png'; ?>);"></div>
+				<div class="s-arrow" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_green.png'; ?>);"></div>
 				<div class="s-lm" style="color: #333333;">Learn More</div>
 			</div>
 
