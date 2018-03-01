@@ -98,7 +98,7 @@ Template Name: research.php
 
 	<div class="s3">
 		<div class="wrap">
-			<div class="s3-icon"></div>
+			<div class="s3-icon hover-icon"></div>
 			<div class="s3-title">Problem: from No Data to Too Much Data</div>
 			<div class="s3-line"></div>
 			<div class="s3-mark"></div>

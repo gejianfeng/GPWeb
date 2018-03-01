@@ -92,12 +92,31 @@ body {
 	transform: scale(1.2);
 }
 
+.animateIn{
+  transform: translateY(0px);
+}
+
+.animateOut{
+  transform: translateY(-100%);
+}
+
 /* banner stylesheet */
-#banner {
+
+.banner-container {
 	max-width: 1920px;
 	height: 138px;
 	margin: 0px auto;
-	position: relative;
+}
+
+#banner {
+	/*max-width: 1920px;*/
+	width: 100%;
+	height: 138px;
+	margin: 0px auto;
+	z-index: 4;
+	transition: all 300ms ease-in-out;
+	position: fixed;
+	background-color: #ffffff;
 }
 
 #banner .logo {
@@ -106,9 +125,10 @@ body {
 	height: 57px;
 	background-repeat: no-repeat;
 	background-position: center;
-	position: absolute;
 	top: 55px;
 	left: 36px;
+	position: absolute;
+	cursor: pointer;
 }
 
 #banner .logo-gpex {

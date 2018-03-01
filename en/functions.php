@@ -4,6 +4,7 @@ function get_top_banner()
 {
 	$home_url = home_url();
 	$ret = '';
+	$ret .= "<div class='banner-container'>";
 	$ret .= "<div id='banner'>";
 
 		if (is_page('gpex'))
@@ -12,7 +13,7 @@ function get_top_banner()
 		}
 		else
 		{
-			$ret .= "<div class='logo'></div>";
+			$ret .= "<div class='logo' onclick='SwitchPage(\"" . $home_url . "\")'></div>";
 			$ret .= "<div class='cp-name'>Goldpebble Research</div>";
 
 			if (is_home())
@@ -80,6 +81,7 @@ function get_top_banner()
 
 		$ret .= "<div class='lang-en'></div>";
 		$ret .= "<div class='lang-cn'></div>";
+	$ret .= "</div>";
 	$ret .= "</div>";
 	echo $ret;
 }

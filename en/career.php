@@ -12,8 +12,9 @@ Template Name: career.php
 
 	var bAnimPlayed = false;
 
-	$(window).scroll(function() {
-
+	//$(window).scroll(function() {
+	function OnScreenScrolled()
+	{
 		if (!bAnimPlayed)
 		{
 			var cp_div = document.getElementById("path");
@@ -88,7 +89,7 @@ Template Name: career.php
 				$("#st62").delay(3900).animate({"opacity" : "1"}, 200);
 			}
 		}
-	});
+	};
 
 </script>
 
