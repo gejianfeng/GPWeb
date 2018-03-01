@@ -2045,6 +2045,42 @@ body {
 	position: absolute;
 }
 
+#index .s1-frame-icon-border {
+	width: 322px;
+	height: 250px;
+	position: absolute;
+	overflow: hidden;
+	top: 5px;
+	left: 7px;
+}
+
+#index .s1-frame-icon {
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 323px;
+	height: 225px;
+	-webkit-transition: .3s;
+	transition: .3s;
+	position: absolute;
+}
+
+#index .s1-frame-icon:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+#index .s1-frame-icon-1 {
+	background-image: url(assets/image/0/pic_big_data_icon.png);
+}
+
+#index .s1-frame-icon-2 {
+	background-image: url(assets/image/0/pic_technology_icon.png);
+}
+
+#index .s1-frame-icon-3 {
+	background-image: url(assets/image/0/pic_edge_icon.png);
+}
+
 #index .s1-title {
 	font-family: "Georgia";
 	font-size: 24px;
