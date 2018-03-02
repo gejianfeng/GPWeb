@@ -76,7 +76,7 @@ Template Name: blockchain.php
 			<div class="s3-frame s3-frame-2">
 				<div class="s3-frame-title"><font style="color: #fa7015">L</font>IVECO<font style="color: #fa7015">IN</font>S</div>
 				<div class="s3-frame2-content">Decentralized Live Event Ecosystem</div>
-				<div id="s3_btn2" class="btn-lm" onclick="SwitchPage('<?php echo home_url(); ?>/../../livecoin/en');" onmousemove="$('#s3_btn2_text').css('color', '#f46d00'); $('#s3_btn2').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/3/Blockchain_button_learn_more_orange.png'; ?>)');" onmouseout="$('#s3_btn2_text').css('color', '#005960'); $('#s3_btn2').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/3/Blockchain_button_learn_more.png'; ?>)');">
+				<div id="s3_btn2" class="btn-lm" onclick="SwitchPage('<?php echo home_url(); ?>/livecoin');" onmousemove="$('#s3_btn2_text').css('color', '#f46d00'); $('#s3_btn2').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/3/Blockchain_button_learn_more_orange.png'; ?>)');" onmouseout="$('#s3_btn2_text').css('color', '#005960'); $('#s3_btn2').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/3/Blockchain_button_learn_more.png'; ?>)');">
 					<div id="s3_btn2_text" class="btn-lm-text">Learn More</div>
 				</div>
 			</div>
