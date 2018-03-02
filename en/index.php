@@ -829,8 +829,8 @@ Template Name: index.php
 				<div class="s-icon" style="top: 0px; left: 0px; width: 37px; height: 35px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/icon_block_chain.png'; ?>);"></div>
 				<div class="s-title" style="color: #333333;">Blockchain Applications</div>
 				<div class="s-line"></div>
-				<div class="s-arrow" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_green.png'; ?>);"></div>
-				<div class="s-lm" style="color: #333333;">Learn More</div>
+				<div id="s4-arrow" class="s-arrow" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_green.png'; ?>);"></div>
+				<div id="s4-lm" class="s-lm" style="color: #00555b;" onmousemove="$('#s4-lm').css('color', '#ff7503'); $('#s4-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_orange.png'; ?>)');" onmouseout="$('#s4-lm').css('color', '#00555b'); $('#s4-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_green.png'; ?>)');">Learn More</div>
 			</div>
 
 			<div class="s4-frame" style="left: 0px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/Block_chain_rectangle.jpg'; ?>);">

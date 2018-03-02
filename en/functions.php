@@ -14,7 +14,7 @@ function get_top_banner()
 		else
 		{
 			$ret .= "<div class='logo' onclick='SwitchPage(\"" . $home_url . "\")'></div>";
-			$ret .= "<div class='cp-name'>Goldpebble Research</div>";
+			$ret .= "<div class='cp-name' onclick='SwitchPage(\"" . $home_url . "\")'>Goldpebble Research</div>";
 
 			if (is_home())
 			{

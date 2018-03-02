@@ -149,6 +149,7 @@ body {
 	left: 119px;
 	bottom: 33px;
 	position: absolute;
+	cursor: pointer;
 }
 
 #banner .lang-en {
@@ -1726,7 +1727,7 @@ body {
 }
 
 /* career.php stylesheet */
-#career { height: 3398px; }
+#career { height: 3163px; }
 
 #career .header {
 	background-image: url(assets/image/4/Career_banner.jpg);
@@ -1789,7 +1790,7 @@ body {
 	background-color: #eeeeee;
 	margin: 0px auto;
 	position: relative;
-	height: 776px;
+	height: 541px;
 }
 
 #career .header-title {
@@ -1960,7 +1961,6 @@ body {
 	margin: 0px auto;
 	position: absolute;
 	display: table;
-	cursor: pointer;
 }
 
 #career .s3-btn-text {
@@ -2027,7 +2027,7 @@ body {
 	font-family: "Georgia";
 	font-size: 20px;
 	color: #333333;
-	right: 95px;
+	right: 45px;
 	position: absolute;
 	top: 215px;
 	text-align: right;
@@ -2039,7 +2039,7 @@ body {
 	background-position: center;
 	height: 30px;
 	width: 30px;
-	top: 215px;
+	top: 35px;
 	right: 51px;
 	position: absolute;
 }
@@ -2051,7 +2051,7 @@ body {
 	left: 0px;
 	position: absolute;
 	top: 250px;
-	text-align: center;
+	text-align: left;
 	padding-left: 40px;
 	padding-right: 40px;
 }
@@ -2792,7 +2792,7 @@ body {
 }
 
 #blockchain .s3-frame1-content {
-	top: 230px;
+	top: 220px;
 	width: 100%;
 	position: absolute;
 	font-family: "Georgia";
