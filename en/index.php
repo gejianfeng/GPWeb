@@ -630,7 +630,7 @@ Template Name: index.php
 
 	<div class="s1">
 		<div class="wrap">
-			<div class="s1-frame" style="left: 0px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/pic_big_data.png'; ?>);">
+			<div class="s1-frame" style="left: 0px;">
 				<div class="s1-frame-icon-border">
 					<div class="s1-frame-icon s1-frame-icon-1"></div>
 				</div>
@@ -638,7 +638,7 @@ Template Name: index.php
 				<div class="s1-text">With the advanced data storage and processing capabilities, large scale data and information can now be digitized and stored. Search engine technology and crowd-sourcing make data easily accessible. The challenge in this new era is how to process this deluge of data and information into knowledge and wisdom.</div>
 			</div>
 
-			<div class="s1-frame" style="left: 343px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/pic_technology.png'; ?>);">
+			<div class="s1-frame" style="left: 343px;">
 				<div class="s1-frame-icon-border">
 					<div class="s1-frame-icon s1-frame-icon-2"></div>
 				</div>
@@ -646,7 +646,7 @@ Template Name: index.php
 				<div class="s1-text">Goldpebble implements the leading technology in big data processing with expertise in investment applications.<br/><br/>Goldpebble built proprietary systems including GP HIDEN, GP CORE, GP OS and GP Psyc to identify relevant and actionable data for investment decision making.</div>
 			</div>
 
-			<div class="s1-frame" style="right: 0px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/pic_edge.png'; ?>);">
+			<div class="s1-frame" style="right: 0px;">
 				<div class="s1-frame-icon-border">
 					<div class="s1-frame-icon s1-frame-icon-3"></div>
 				</div>

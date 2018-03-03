@@ -10,6 +10,9 @@ function get_top_banner()
 		if (is_page('gpex'))
 		{
 			$ret .= "<div class='logo-gpex'></div>";
+
+			$ret .= "<div class='lang-en-gpex'></div>";
+			$ret .= "<div class='lang-cn-gpex'></div>";
 		}
 		else
 		{
@@ -77,10 +80,10 @@ function get_top_banner()
 			//$ret .= "<div class='nav investing'>Alernative Investing</div>";
 			//$ret .= "<div class='nav blockchain'>Blockchain Application</div>";
 			//$ret .= "<div class='nav career'>Career</div>";
+			
+			$ret .= "<div class='lang-en'></div>";
+			$ret .= "<div class='lang-cn'></div>";
 		}
-
-		$ret .= "<div class='lang-en'></div>";
-		$ret .= "<div class='lang-cn'></div>";
 	$ret .= "</div>";
 	$ret .= "</div>";
 	echo $ret;
