@@ -126,7 +126,7 @@ body {
 	height: 48px;
 	background-repeat: no-repeat;
 	background-position: center;
-	top: 58px;
+	bottom: 27px;
 	left: 15px;
 	position: absolute;
 	cursor: pointer;
@@ -134,35 +134,34 @@ body {
 
 #banner .cp-name {
 	font-family: "Tahoma Bold";
-	font-size: 30px;
+	font-size: 18px;
 	color: #333333;
-	left: 119px;
+	left: 80px;
 	bottom: 33px;
 	position: absolute;
 	cursor: pointer;
-	display: none;
 }
 
 #banner .lang-en {
-	background-image: url(assets/image/6/flag_England.jpg);
-	width: 45px;
-	height: 30px;
+	background-image: url(assets/image/6/flag_EN.jpg);
+	width: 36px;
+	height: 24px;
 	background-repeat: no-repeat;
 	background-position: center;
 	position: absolute;
-	bottom: 43px;
-	right: 10px;
+	top: 38px;
+	right: 18px;
 }
 
 #banner .lang-cn {
-	background-image: url(assets/image/6/flag_china.jpg);
-	width: 45px;
-	height: 30px;
+	background-image: url(assets/image/6/flag_CN.jpg);
+	width: 36px;
+	height: 24px;
 	background-repeat: no-repeat;
 	background-position: center;
 	position: absolute;
-	bottom: 43px;
-	right: 65px;
+	top: 38px;
+	right: 61px;
 }
 
 #banner .nav {
@@ -172,62 +171,112 @@ body {
 	bottom: 38px;
 	text-align: left;
 	font-family: "Georgia";
-	font-size: 18px;
+	font-size: 16px;
 }
 
 #banner .home {
-	right: 820px;
+	right: 635px;
 	color: #333333;
 	cursor: pointer;
 }
 
 #banner .home-selected {
-	right: 820px;
+	right: 635px;
 	color: #f96700;
 }
 
 #banner .research {
-	right: 610px;
+	right: 445px;
 	color: #333333;
 	cursor: pointer;
 }
 
 #banner .research-selected {
-	right: 610px;
+	right: 445px;
 	color: #f96700;
 }
 
 #banner .investing {
-	right: 423px;
+	right: 280px;
 	color: #333333;
 	cursor: pointer;
 }
 
 #banner .investing-selected {
-	right: 423px;
+	right: 280px;
 	color: #f96700;
 }
 
 #banner .blockchain {
-	right: 212px;
+	right: 90px;
 	color: #333333;
 	cursor: pointer;
 }
 
 #banner .blockchain-selected {
-	right: 212px;
+	right: 90px;
 	color: #f96700;
 }
 
 #banner .career {
-	right: 140px;
+	right: 20px;
 	color: #333333;
 	cursor: pointer;
 }
 
 #banner .career-selected {
-	right: 140px;
+	right: 20px;
 	color: #f96700;
+}
+
+#banner .home_line {
+	right: 0px; 
+	bottom: 0px; 
+	height: 1px; 
+	background-color: rgb(0, 100, 121); 
+	width: 45px; 
+	position: absolute; 
+	display: none;
+}
+
+#banner .research_line {
+	right: 0px; 
+	bottom: 0px; 
+	height: 1px; 
+	background-color: rgb(0, 100, 121); 
+	width: 170px; 
+	position: absolute; 
+	display: none;
+}
+
+#banner .investing_line {
+	right: 0px; 
+	bottom: 0px; 
+	height: 1px; 
+	background-color: rgb(0, 100, 121); 
+	width: 145px; 
+	position: absolute; 
+	display: none;
+}
+
+#banner .blockchain_line {
+	right: 0px; 
+	bottom: 0px; 
+	height: 1px; 
+	background-color: rgb(0, 100, 121); 
+	width: 165px; 
+	position: absolute; 
+	display: none;
+}
+
+#banner .career_line {
+	right: 0px; 
+	bottom: 0px; 
+	height: 1px; 
+	background-color: rgb(0, 100, 121); 
+	width: 48px; 
+	position: absolute; 
+	display: none;
 }
 
 @media screen and (min-width: 1600px) { 
@@ -261,7 +310,7 @@ body {
 		background-repeat: no-repeat;
 		background-position: center;
 		position: absolute;
-		bottom: 43px;
+		top: 65px;
 		right: 40px;
 	}
 
@@ -272,7 +321,7 @@ body {
 		background-repeat: no-repeat;
 		background-position: center;
 		position: absolute;
-		bottom: 43px;
+		top: 65px;
 		right: 95px;
 	}
 
@@ -389,6 +438,56 @@ body {
 		right: 190px;
 		padding-left: 30px;
 		color: #f96700;
+	}
+
+	#banner .home_line {
+		right: 0px; 
+		bottom: 0px; 
+		height: 1px; 
+		background-color: rgb(0, 100, 121); 
+		width: 50px; 
+		position: absolute; 
+		display: none;
+	}
+
+	#banner .research_line {
+		right: 0px; 
+		bottom: 0px; 
+		height: 1px; 
+		background-color: rgb(0, 100, 121); 
+		width: 192px; 
+		position: absolute; 
+		display: none;
+	}
+
+	#banner .investing_line {
+		right: 0px; 
+		bottom: 0px; 
+		height: 1px; 
+		background-color: rgb(0, 100, 121); 
+		width: 160px; 
+		position: absolute; 
+		display: none;
+	}
+
+	#banner .blockchain_line {
+		right: 0px; 
+		bottom: 0px; 
+		height: 1px; 
+		background-color: rgb(0, 100, 121); 
+		width: 185px; 
+		position: absolute; 
+		display: none;
+	}
+
+	#banner .career_line {
+		right: 0px; 
+		bottom: 0px; 
+		height: 1px; 
+		background-color: rgb(0, 100, 121); 
+		width: 55px; 
+		position: absolute; 
+		display: none;
 	}
 } 
 

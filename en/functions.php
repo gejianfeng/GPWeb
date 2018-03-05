@@ -26,7 +26,7 @@ function get_top_banner()
 			else
 			{
 				$ret .= "<div class='nav home' onclick='SwitchPage(\"" . $home_url . "\")' onmousemove='$(\"#banner_home_bl\").show();' onmouseout='$(\"#banner_home_bl\").hide();'>Home";
-				$ret .= "<div id='banner_home_bl' style='right: 0px; bottom: 0px; height: 1px; background-color: rgb(0, 100, 121); width: 50px; position: absolute; display: none;'></div>";
+				$ret .= "<div id='banner_home_bl' class='home_line'></div>";
 				$ret .= "</div>";
 			}
 
@@ -37,7 +37,7 @@ function get_top_banner()
 			else
 			{
 				$ret .= "<div class='nav research' onclick='SwitchPage(\"" . $home_url . "/index.php/research\")' onmousemove='$(\"#banner_research_bl\").show();' onmouseout='$(\"#banner_research_bl\").hide();'><i>Quantamental</i> Research";
-				$ret .= "<div id='banner_research_bl' style='right: 0px; bottom: 0px; height: 1px; background-color: rgb(0, 100, 121); width: 192px; position: absolute; display: none;'></div>";
+				$ret .= "<div id='banner_research_bl' class='research_line'></div>";
 				$ret .= "</div>";
 			}
 
@@ -48,7 +48,7 @@ function get_top_banner()
 			else
 			{
 				$ret .= "<div class='nav investing' onclick='SwitchPage(\"" . $home_url . "/index.php/investing\")' onmousemove='$(\"#banner_investing_bl\").show();' onmouseout='$(\"#banner_investing_bl\").hide();'>Alernative Investing";
-				$ret .= "<div id='banner_investing_bl' style='right: 0px; bottom: 0px; height: 1px; background-color: rgb(0, 100, 121); width: 160px; position: absolute; display: none;'></div>";
+				$ret .= "<div id='banner_investing_bl' class='investing_line'></div>";
 				$ret .= "</div>";
 			}
 
@@ -59,7 +59,7 @@ function get_top_banner()
 			else
 			{
 				$ret .= "<div class='nav blockchain' onclick='SwitchPage(\"" . $home_url . "/index.php/blockchain\")' onmousemove='$(\"#banner_blockchain_bl\").show();' onmouseout='$(\"#banner_blockchain_bl\").hide();'>Blockchain Application";
-				$ret .= "<div id='banner_blockchain_bl' style='right: 0px; bottom: 0px; height: 1px; background-color: rgb(0, 100, 121); width: 185px; position: absolute; display: none;'></div>";
+				$ret .= "<div id='banner_blockchain_bl' class='blockchain_line'></div>";
 				$ret .= "</div>";
 			}
 
@@ -70,7 +70,7 @@ function get_top_banner()
 			else
 			{
 				$ret .= "<div class='nav career' onclick='SwitchPage(\"" . $home_url . "/index.php/career\")' onmousemove='$(\"#banner_career_bl\").show();' onmouseout='$(\"#banner_career_bl\").hide();'>Career";
-				$ret .= "<div id='banner_career_bl' style='right: 0px; bottom: 0px; height: 1px; background-color: rgb(0, 100, 121); width: 55px; position: absolute; display: none;'></div>";
+				$ret .= "<div id='banner_career_bl' class='career_line'></div>";
 				$ret .= "</div>";
 			}
 
