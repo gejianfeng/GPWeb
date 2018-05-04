@@ -96,41 +96,41 @@ Template Name: gpex.php
 		<div class="s3-border3"></div>
 		<div class="s3-border4"></div>
 
-		<div class="s3-title">GPEX Advantages</div>
+		<div class="s3-title">BITMAGA Advantages</div>
 
 		<div class="s3-content s3-content-1">
 			<div class="s3-icon-professionalism"></div>
 			<div class="s3-content-title">Professionalism</div>
 			<div class="s3-line"></div>
-			<div class="s3-content-text">Team members of GPEX have on average 20-year experience in financial industry.<br/>They are senior managers of licensed financial institutions in Hong Kong, Singapore, US and Pakistan.</div>
+			<div class="s3-content-text">Team members of BITMAGA have on average 20-year experience in financial industry.<br/>They are senior managers of licensed financial institutions in Hong Kong, Singapore, US and Pakistan.</div>
 		</div>
 
 		<div class="s3-content s3-content-2">
 			<div class="s3-icon-ability"></div>
 			<div class="s3-content-title">High Ability</div>
 			<div class="s3-line"></div>
-			<div class="s3-content-text">Team members of GPEX have high ability to deal with the problems along with the fast-changing regulations.</div>
+			<div class="s3-content-text">Team members of BITMAGA have high ability to deal with the problems along with the fast-changing regulations.</div>
 		</div>
 
 		<div class="s3-content s3-content-3">
 			<div class="s3-icon-cooperation"></div>
 			<div class="s3-content-title">Cooperation</div>
 			<div class="s3-line"></div>
-			<div class="s3-content-text">Along with the establishment of a compliant crypto-to-fiat exchange, GPEX could help to improve the compliance of current crypto-to-crypto exchanges through cooperation.</div>
+			<div class="s3-content-text">Along with the establishment of a compliant crypto-to-fiat exchange, BITMAGA could help to improve the compliance of current crypto-to-crypto exchanges through cooperation.</div>
 		</div>
 
 		<div class="s3-content s3-content-4" style="width: 625px!important">
 			<div class="s3-icon-experience"></div>
 			<div class="s3-content-title">Rich Experiences</div>
 			<div class="s3-line"></div>
-			<div class="s3-content-text">Team members of GPEX have rich experiences in financial compliance in Hong Kong, Singapore, US. They have participated in the successful cases in regulatory agencies, law enforcement agencies, and compliance groups.</div>
+			<div class="s3-content-text">Team members of BITMAGA have rich experiences in financial compliance in Hong Kong, Singapore, US. They have participated in the successful cases in regulatory agencies, law enforcement agencies, and compliance groups.</div>
 		</div>
 
 		<div class="s3-content s3-content-5" style="width: 625px!important">
 			<div class="s3-icon-market"></div>
 			<div class="s3-content-title">Market Insights</div>
 			<div class="s3-line"></div>
-			<div class="s3-content-text">Team members of GPEX have good insights into crytocurrency market. They can provide a better exchange services.</div>
+			<div class="s3-content-text">Team members of BITMAGA have good insights into crytocurrency market. They can provide a better exchange services.</div>
 		</div>
 	</div>
 
@@ -141,11 +141,11 @@ Template Name: gpex.php
 		<div class="s4-border4"></div>
 		<div class="s4-border5"></div>
 
-		<div class="s4-title">Main Milstones of GPEX</div>
+		<div class="s4-title">Main Milstones of BITMAGA</div>
 
 		<div class="s4-content s4-content-1">
 			<div class="s4-content-icon"></div>
-			<div class="s4-content-text">GPEX will set up subsidiaries in each of the highly-regulated financial centers to serve the local users.</div>
+			<div class="s4-content-text">BITMAGA will set up subsidiaries in each of the highly-regulated financial centers to serve the local users.</div>
 
 			<div class="s4-sub-content s4-sub-content-1">
 				<div class="s4-sub-content-icon"></div>
@@ -175,7 +175,7 @@ Template Name: gpex.php
 
 		<div class="s4-content s4-content-2">
 			<div class="s4-content-icon"></div>
-			<div class="s4-content-text">GPEX will value-stable electronic money (GPSGD, GPUSD, PKUSD...) in line with financial regulation in different countries. They will become the first fully compliant substitutes for USDT.</div>
+			<div class="s4-content-text">BITMAGA will value-stable electronic money (GPSGD, GPUSD, PKUSD...) in line with financial regulation in different countries. They will become the first fully compliant substitutes for USDT.</div>
 		</div>
 	</div>
 </div>

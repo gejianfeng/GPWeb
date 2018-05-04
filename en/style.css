@@ -492,14 +492,15 @@ body {
 } 
 
 #banner .logo-gpex {
-	background-image: url(assets/image/5/GPEX_logo.png);
+	background-image: url(assets/image/5/Bitmaga-logo.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: 368px 85px;
 	position: absolute;
-	top: 56px;
-	left: 87px;
-	width: 218px;
-	height: 65px;
+	top: 26px;
+	left: 57px;
+	width: 368px;
+	height: 85px;
 }
 
 #banner .lang-en-gpex {

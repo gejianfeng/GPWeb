@@ -65,7 +65,7 @@ Template Name: blockchain.php
 			</div>
 
 			<div class="s3-frame s3-frame-1">
-				<div class="s3-frame-title">GPEX</div>
+				<div class="s3-frame-title">BITMAGA</div>
 				<div class="s3-frame1-content">Global Crypto-to-Fiat Exchange</div>
 
 				<div id="s3_btn1" class="btn-lm" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/gpex');" onmousemove="$('#s3_btn1_text').css('color', '#f46d00'); $('#s3_btn1').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/3/Blockchain_button_learn_more_orange.png'; ?>)');" onmouseout="$('#s3_btn1_text').css('color', '#005960'); $('#s3_btn1').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/3/Blockchain_button_learn_more.png'; ?>)');">
