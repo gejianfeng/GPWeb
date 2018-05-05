@@ -858,7 +858,7 @@ Template Name: index.php
 
 				<div class="s4-right-2" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/gpex');">
 					<div class="s4r2-icon"></div>
-					<div class="s4r2">BITMAGA</div>
+					<!--<div class="s4r2">BITMAGA</div>-->
 				</div>
 
 				<div class="s4-right-3" onclick="SwitchPage('<?php echo home_url(); ?>/livecoin');">

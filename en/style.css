@@ -2709,12 +2709,12 @@ body {
 #index .s4r2-icon {
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url(assets/image/0/icon_GPEX.png);
+	background-image: url(assets/image/0/home_bitmaga_logo.png);
 	position: absolute;
-	width: 44px;
-	height: 48px;
+	width: 163px;
+	height: 39px;
 	top: 30px;
-	left: 35px;
+	left: 40px;
 }
 
 #index .s4r3-icon {
