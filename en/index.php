@@ -851,7 +851,7 @@ Template Name: index.php
 
 				<div class="s4-icon3"></div>
 				<div class="s4-title">Ecosystem</div>
-				<div class="s4-text">Groth with Collective<br/>Self Interests</div>
+				<div class="s4-text">Growth with Collective<br/>Self Interests</div>
 			</div>
 
 			<div class="s4-frame" style="right: 0px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/home_bj.jpg'; ?>);">

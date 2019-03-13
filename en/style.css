@@ -2709,12 +2709,13 @@ body {
 #index .s4r2-icon {
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url(assets/image/0/home_bitmaga_logo.png);
+	background-image: url(assets/image/0/home_bitmaga_logo2.png);
 	position: absolute;
-	width: 163px;
-	height: 39px;
+	width: 180px;
+	height: 48px;
 	top: 30px;
-	left: 40px;
+	left: 30px;
+	background-size: 180px 48px;
 }
 
 #index .s4r3-icon {
@@ -3010,7 +3011,7 @@ body {
 }
 
 #blockchain .s3-frame-1 {
-	background-image: url(assets/image/3/Blockchain_application_pic1.jpg);
+	background-image: url(assets/image/3/Blockchain_application_pic3.jpg);
 	left: 260px;
 }
 
