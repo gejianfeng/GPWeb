@@ -121,7 +121,7 @@ Template Name: research.php
 				<div class="s4-title" style="top: 275px;">Longest Track Record</div>
 				<div class="s4-line" style="top: 334px;"></div>
 				<div class="s4-mark" style="background-color: #00647b; top: 328px;"></div>
-				<div class="s4-text" style="top: 350px;">Since 2012, Goldpebble has been pioneering in providing <i>quantamental</i> research services to world-top investors. With the longest track record, Goldpebble is the first research company to adopt big data and cloud computing technologies in building investing edge.<br/><br/>Goldpebble's alernative data about companies' key operation metrics have been more accurate than Wall Street analysis for more than 20 quarters. The companies covered includes not only mid-cap stocks (e.g. MOMO, YY), but also mega-cap ones (e.g. Tencent, BABA).</div>
+				<div class="s4-text" style="top: 350px;">Since 2012, Goldpebble has been pioneering in providing <i>quantamental</i> research services to world-top investors. With the longest track record, Goldpebble is the first research company to adopt big data and cloud computing technologies in building investing edge.<br/><br/>Goldpebble's alernative data about companies' key operation metrics have been more accurate than Wall Street analysis for more than 20 quarters. The companies covered include not only mid-cap stocks (e.g. MOMO, YY), but also mega-cap ones (e.g. Tencent, BABA).</div>
 			</div>
 
 			<div class="s4-container s4c2">

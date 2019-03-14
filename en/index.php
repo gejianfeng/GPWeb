@@ -666,7 +666,7 @@ Template Name: index.php
 					<div class="s-title" style="color: #333333;"><i>Quantamental</i> Research</div>
 					<div class="s-line"></div>
 					<div id="s2-arrow" class="s-arrow" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_green.png'; ?>);"></div>
-					<div id="s2-lm" class="s-lm" style="color: #00555b;" onmousemove="$('#s2-lm').css('color', '#ff7503'); $('#s2-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_orange.png'; ?>)');" onmouseout="$('#s2-lm').css('color', '#00555b'); $('#s2-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_green.png'; ?>)');">Learn More</div>
+					<div id="s2-lm" class="s-lm" style="color: #00555b;" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/research');" onmousemove="$('#s2-lm').css('color', '#ff7503'); $('#s2-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_orange.png'; ?>)');" onmouseout="$('#s2-lm').css('color', '#00555b'); $('#s2-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_green.png'; ?>)');">Learn More</div>
 				</div>
 
 <?php
@@ -750,7 +750,7 @@ Template Name: index.php
 				<div class="s-title" style="color: #ffffff;">Alternative Investing</div>
 				<div class="s-line" style="background-color: #ffffff;"></div>
 				<div id="s3-arrow" class="s-arrow" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_white.png'; ?>);"></div>
-				<div id="s3-lm" class="s-lm" style="color: #ffffff;" onmousemove="$('#s3-lm').css('color', '#ff7503'); $('#s3-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_orange.png'; ?>)');" onmouseout="$('#s3-lm').css('color', '#ffffff'); $('#s3-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_white.png'; ?>)');">Learn More</div>
+				<div id="s3-lm" class="s-lm" style="color: #ffffff;" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/investing');" onmousemove="$('#s3-lm').css('color', '#ff7503'); $('#s3-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_orange.png'; ?>)');" onmouseout="$('#s3-lm').css('color', '#ffffff'); $('#s3-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_white.png'; ?>)');">Learn More</div>
 			</div>
 <?php
 
@@ -830,7 +830,7 @@ Template Name: index.php
 				<div class="s-title" style="color: #333333;">Blockchain Applications</div>
 				<div class="s-line"></div>
 				<div id="s4-arrow" class="s-arrow" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_green.png'; ?>);"></div>
-				<div id="s4-lm" class="s-lm" style="color: #00555b;" onmousemove="$('#s4-lm').css('color', '#ff7503'); $('#s4-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_orange.png'; ?>)');" onmouseout="$('#s4-lm').css('color', '#00555b'); $('#s4-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_green.png'; ?>)');">Learn More</div>
+				<div id="s4-lm" class="s-lm" style="color: #00555b;" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/blockchain');" onmousemove="$('#s4-lm').css('color', '#ff7503'); $('#s4-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_orange.png'; ?>)');" onmouseout="$('#s4-lm').css('color', '#00555b'); $('#s4-arrow').css('background-image', 'url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/arrow_green.png'; ?>)');">Learn More</div>
 			</div>
 
 			<div class="s4-frame" style="left: 0px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/Block_chain_rectangle.jpg'; ?>);">
@@ -856,7 +856,7 @@ Template Name: index.php
 
 			<div class="s4-frame" style="right: 0px; background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/image/0/home_bj.jpg'; ?>);">
 
-				<div class="s4-right-2" onclick="SwitchPage('<?php echo home_url(); ?>/index.php/gpex');">
+				<div class="s4-right-2" onclick="SwitchPage('https://www.bitleague.com');">
 					<div class="s4r2-icon"></div>
 					<!--<div class="s4r2">BITMAGA</div>-->
 				</div>
